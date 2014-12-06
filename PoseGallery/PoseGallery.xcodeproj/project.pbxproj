@@ -125,6 +125,7 @@
 				FA6E649D1A279B7700395E94 /* Sources */,
 				FA6E649E1A279B7700395E94 /* Frameworks */,
 				FA6E649F1A279B7700395E94 /* Resources */,
+				FA87774C1A3332C00064C035 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -209,6 +210,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA87774C1A3332C00064C035 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 186ef2a41f30e2ce39a21f35b61600d3ae927290 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50    ";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA6E649D1A279B7700395E94 /* Sources */ = {
@@ -411,6 +428,7 @@
 				FA6E64C41A279B7800395E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA6E64C51A279B7800395E94 /* Build configuration list for PBXNativeTarget "PoseGalleryTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +437,7 @@
 				FA6E64C71A279B7800395E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
