@@ -23,7 +23,8 @@ class PoseGalleryTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        let delegate = UIApplication.sharedApplication().delegate
+        XCTAssertNotNil(delegate, "Delegate exists")
     }
     
     func testPerformanceExample() {
