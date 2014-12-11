@@ -4,9 +4,7 @@
 // Copyright (c) 2014 Trollwerks Inc. All rights reserved.
 //
 
-//#include "Pods/Pods.xcconfig"
-
-//PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_NAME = "$(TARGET_NAME)"
 
 // note that this will pick up the Project settings in $(inherited)
 //GCC_PREPROCESSOR_DEFINITIONS = $(inherited) POSESPRO=1

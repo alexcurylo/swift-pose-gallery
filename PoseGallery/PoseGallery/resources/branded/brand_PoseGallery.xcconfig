@@ -1,0 +1,10 @@
+//
+//  brand_PoseGallery.xcconfig
+//
+//  Copyright (c) 2014 Trollwerks Inc. All rights reserved.
+//
+
+PRODUCT_NAME = BrandGeneric
+PRODUCT_VERSION_STRING = 3.0
+PRODUCT_BUNDLE_VERSION = 66
+PRODUCT_BUNDLE_IDENTIFIER = com.trollwerks.posespro

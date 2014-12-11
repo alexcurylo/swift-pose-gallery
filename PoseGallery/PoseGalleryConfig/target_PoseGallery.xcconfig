@@ -6,8 +6,6 @@
 
 //#include "Pods/Pods.xcconfig"
 
-//PRODUCT_NAME = PosesPro
-
 // note that this will pick up the Project settings in $(inherited)
 //GCC_PREPROCESSOR_DEFINITIONS = $(inherited) POSESPRO=1
 
@@ -28,3 +26,13 @@ INFOPLIST_FILE = PoseGallery/resources/Info.plist
 
 // 1 = iPhone; 2 = iPad; 1,2 = iPhone/iPad
 //TARGETED_DEVICE_FAMILY = 1,2
+
+
+// things that should be set in brand xcconfig
+
+PRODUCT_NAME = UNBRANDED!
+PRODUCT_VERSION_STRING = 0.0
+PRODUCT_BUNDLE_VERSION = 0
+PRODUCT_BUNDLE_IDENTIFIER = com.unbranded.unbranded
+
+#include "../PoseGallery/resources/branded/brand_PoseGallery.xcconfig"
