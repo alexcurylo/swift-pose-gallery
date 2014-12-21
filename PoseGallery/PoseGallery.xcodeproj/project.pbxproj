@@ -14,6 +14,8 @@
 		FA6E64AB1A279B7700395E94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64AA1A279B7700395E94 /* SecondViewController.swift */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
+		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
+		FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 		FA38C2BE1A38A67A00A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA38C2C11A38A69900A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
-		FA6E64A11A279B7700395E94 /* BrandGeneric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandGeneric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6E64A11A279B7700395E94 /* Poses Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poses Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64A61A279B7700395E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6E64A81A279B7700395E94 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		FA6E64B81A279B7800395E94 /* "PoseGalleryTests".xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "\"PoseGalleryTests\".xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64BD1A279B7800395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryTests.swift; sourceTree = "<group>"; };
+		FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FA957B611A478ED60015CCC3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
 		FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_PoseGallery.xcconfig; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */,
+				FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +109,7 @@
 		FA6E64A21A279B7700395E94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA6E64A11A279B7700395E94 /* BrandGeneric.app */,
+				FA6E64A11A279B7700395E94 /* Poses Pro.app */,
 				FA6E64B81A279B7800395E94 /* "PoseGalleryTests".xctest */,
 			);
 			name = Products;
@@ -114,6 +120,7 @@
 			children = (
 				FA38C2BC1A38A50F00A76606 /* source */,
 				FA6E64A41A279B7700395E94 /* resources */,
+				FA957B601A478E130015CCC3 /* libraries */,
 			);
 			path = PoseGallery;
 			sourceTree = "<group>";
@@ -147,6 +154,15 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		FA957B601A478E130015CCC3 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
+				FA957B611A478ED60015CCC3 /* Fabric.framework */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
 		FAB13EEA1A3878850053620A /* PoseGalleryConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +194,7 @@
 			);
 			name = PoseGallery;
 			productName = PoseGallery;
-			productReference = FA6E64A11A279B7700395E94 /* BrandGeneric.app */;
+			productReference = FA6E64A11A279B7700395E94 /* Poses Pro.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FA6E64B71A279B7800395E94 /* PoseGalleryTests */ = {
@@ -422,6 +438,11 @@
 			baseConfigurationReference = FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
+				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
@@ -431,6 +452,11 @@
 			baseConfigurationReference = FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
+				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Release;
