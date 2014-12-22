@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 swift-pose-gallery
 ==================
 
