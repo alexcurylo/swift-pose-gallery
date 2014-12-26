@@ -20,10 +20,9 @@ class PoseGalleryTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
+    func testConfiguration() {
         let delegate = UIApplication.sharedApplication().delegate
-        XCTAssertNotNil(delegate, "Delegate exists")
+        XCTAssertNotNil(delegate, "Delegate does not exist - did you set host application properly?")
     }
     
     func testPerformanceExample() {

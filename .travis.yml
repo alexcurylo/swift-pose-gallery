@@ -11,7 +11,7 @@
 
 language: objective-c
 before_script:
-- brew update && brew upgrade xctool
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- xctool -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- xctool test -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGalleryTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- set -o pipefail && xcodebuild -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild test -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGalleryTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c

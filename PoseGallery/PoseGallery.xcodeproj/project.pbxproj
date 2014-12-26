@@ -481,7 +481,7 @@
 					"$(inherited)",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poses Pro.app/Poses Pro";
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 					"$(inherited)",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poses Pro.app/Poses Pro";
 			};
 			name = Release;
 		};
