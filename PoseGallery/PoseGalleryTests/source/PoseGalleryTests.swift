@@ -21,7 +21,8 @@ class PoseGalleryTests: XCTestCase {
     }
     
     func testConfiguration() {
-        let delegate = UIApplication.sharedApplication().delegate
+        let app = UIApplication.sharedApplication()
+        let delegate = app.delegate
         XCTAssertNotNil(delegate, "Delegate does not exist - did you set host application properly?")
     }
     
@@ -31,5 +32,4 @@ class PoseGalleryTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }

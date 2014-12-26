@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
+		FA44CA161A4E110900776BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A61A279B7700395E94 /* AppDelegate.swift */; };
+		FA44CA171A4E110C00776BD6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A81A279B7700395E94 /* FirstViewController.swift */; };
+		FA44CA181A4E110F00776BD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64AA1A279B7700395E94 /* SecondViewController.swift */; };
+		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
+		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
 		FA6E64A71A279B7700395E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A61A279B7700395E94 /* AppDelegate.swift */; };
 		FA6E64A91A279B7700395E94 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A81A279B7700395E94 /* FirstViewController.swift */; };
 		FA6E64AB1A279B7700395E94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64AA1A279B7700395E94 /* SecondViewController.swift */; };
@@ -35,6 +40,7 @@
 		FA44C9DA1A499BC400776BD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
+		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
 		FA6E64A11A279B7700395E94 /* Poses Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poses Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64A61A279B7700395E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */,
+				FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +183,7 @@
 				FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */,
 				FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
+				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
 			);
@@ -324,6 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA44CA181A4E110F00776BD6 /* SecondViewController.swift in Sources */,
+				FA44CA171A4E110C00776BD6 /* FirstViewController.swift in Sources */,
+				FA44CA161A4E110900776BD6 /* AppDelegate.swift in Sources */,
 				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +487,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -493,6 +506,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poses Pro.app/Poses Pro";

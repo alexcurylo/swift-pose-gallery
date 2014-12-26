@@ -1,0 +1,17 @@
+#
+# .slather.yml
+# PoseGallery
+#
+# Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+#
+
+# references:
+# https://github.com/venmo/slather/issues/39 -- track Swift support status
+# * https://github.com/venmo/slather#usage
+
+coverage_service: coveralls
+xcodeproj: PoseGallery/PoseGallery.xcodeproj
+source_directory: PoseGallery/PoseGallery/source
+ignore:
+  - PoseGallery/PoseGalleryConfig/*
+  - PoseGallery/PoseGalleryTests/*
