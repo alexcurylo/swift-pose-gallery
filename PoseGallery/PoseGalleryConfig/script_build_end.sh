@@ -2,8 +2,9 @@
 
 #
 # script_end_begin.sh
+# PoseGallery
 #
-# Copyright (c) 2014 Trollwerks Inc. All rights reserved.
+# Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 #
 
 # Crashlytics magic 

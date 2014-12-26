@@ -1,7 +1,8 @@
 //
 // project_PoseGallery.xcconfig
+// PoseGallery
 //
-// Copyright (c) 2014 Trollwerks Inc. All rights reserved.
+// Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 //
 
 // read http://danwright.info/blog/2012/10/xcode-build-configurations/ about new debug/release format to see if it's Xcode 5 friendly

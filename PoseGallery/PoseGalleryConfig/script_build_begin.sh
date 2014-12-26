@@ -2,8 +2,9 @@
 
 #
 # script_build_begin.sh
+# PoseGallery
 #
-# Copyright (c) 2014 Trollwerks Inc. All rights reserved.
+# Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 #
 
 # Version update by svnversion + 1 -- no, use git thingy

@@ -1,9 +1,8 @@
 //
-//  SecondViewController.swift
-//  PoseGallery
+// SecondViewController.swift
+// PoseGallery
 //
-//  Created by alex on 2014-11-27.
-//  Copyright (c) 2014 Trollwerks Inc. All rights reserved.
+// Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 //
 
 import UIKit

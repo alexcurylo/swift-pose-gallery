@@ -1,6 +1,17 @@
+#
+# .travis.yml
+# PoseGallery
+#
+# Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+#
+
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
 language: objective-c
 before_script:
 - brew update && brew upgrade xctool
-xcode_project: PoseGallery/PoseGallery.xcodeproj
-xcode_scheme: PoseGallery
-xcode_sdk: iphonesimulator
+script:
+- xctool -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool test -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGalleryTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
