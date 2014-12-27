@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=master)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
-<!---
+[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=master)](https://travis-ci.org/alexcurylo/swift-pose-gallery) <!---
  # https://github.com/venmo/slather/issues/39 -- track Swift support status
  [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
--->
- [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
+--> [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
  
  swift-pose-gallery
@@ -44,8 +42,8 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## Author
  
- Alex Curylo, alex@alexcurylo.com
+ [Alex Curylo](http://www.alexcurylo.com/), [@trollwerks](https://www.twitter.com/trollwerks)
 
 ## License
 
- The MIT License. See the LICENSE file for details.
+ The [MIT License](http://opensource.org/licenses/MIT). See the LICENSE file for details.
