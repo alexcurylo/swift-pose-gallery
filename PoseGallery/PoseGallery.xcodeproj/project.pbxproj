@@ -41,7 +41,7 @@
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
 		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
-		FA6E64A11A279B7700395E94 /* Poses Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poses Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6E64A11A279B7700395E94 /* Poses Pro∆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poses Pro∆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64A61A279B7700395E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6E64A81A279B7700395E94 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_PoseGallery.xcconfig; sourceTree = "<group>"; };
 		FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGallery.xcconfig; sourceTree = "<group>"; };
 		FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGalleryTests.xcconfig; sourceTree = "<group>"; };
+		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +121,7 @@
 		FA6E64A21A279B7700395E94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA6E64A11A279B7700395E94 /* Poses Pro.app */,
+				FA6E64A11A279B7700395E94 /* Poses Pro∆.app */,
 				FA6E64B81A279B7800395E94 /* "PoseGalleryTests".xctest */,
 			);
 			name = Products;
@@ -179,6 +180,7 @@
 			children = (
 				FAB13EF41A3878850053620A /* script_build_begin.sh */,
 				FAB13EF51A3878850053620A /* script_build_end.sh */,
+				FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */,
 				FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */,
 				FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */,
 				FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */,
@@ -209,7 +211,7 @@
 			);
 			name = PoseGallery;
 			productName = PoseGallery;
-			productReference = FA6E64A11A279B7700395E94 /* Poses Pro.app */;
+			productReference = FA6E64A11A279B7700395E94 /* Poses Pro∆.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FA6E64B71A279B7800395E94 /* PoseGalleryTests */ = {

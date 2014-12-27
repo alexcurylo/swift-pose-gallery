@@ -36,10 +36,10 @@ echo Build date set to current date: $CFBuildDate
 
 # https://gist.github.com/dulaccc/a52154ac4c007db2be55
 
-update_icon()
+restore_icon()
 {
 if [ $CONFIGURATION != "Release" ] ; then
-${SRCROOT}/PoseGallery/PoseGalleryConfig/tag_icons.sh tag YourApp/Images.xcassets/AppIcon.appiconset
+${SRCROOT}/PoseGalleryConfig/script_tag_icon.sh cleanup PoseGallery/resources/Images.xcassets/AppIcon.appiconset
 fi
 }
 
@@ -56,7 +56,7 @@ find -L ${SRCROOT}// -type f -not -name “.*” -not -name “`basename ${INFOP
 echo Setting info in plist $plist:
 update_bundle_version
 update_build_date
-#update_icon
+restore_icon
 #copy_branding
 
 # reveal the binary in the Finder if you like

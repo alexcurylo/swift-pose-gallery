@@ -1,8 +1,10 @@
-[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=master)](https://travis-ci.org/alexcurylo/swift-pose-gallery) <!---
- # https://github.com/venmo/slather/issues/39 -- track Swift support status
- [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
---> [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
+[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=master)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
+[![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<!---
+  # https://github.com/venmo/slather/issues/39 -- track Swift support status
+  [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
+--> 
  
  swift-pose-gallery
 ==================
