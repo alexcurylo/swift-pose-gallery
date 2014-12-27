@@ -28,12 +28,28 @@ INFOPLIST_FILE = PoseGallery/resources/Info.plist
 // 1 = iPhone; 2 = iPad; 1,2 = iPhone/iPad
 //TARGETED_DEVICE_FAMILY = 1,2
 
+PRODUCT_NAME = $(TARGET_NAME)
 
 // things that should be set in brand xcconfig
 
-PRODUCT_NAME = UNBRANDED!
-PRODUCT_VERSION_STRING = 0.0
-PRODUCT_BUNDLE_VERSION = 0
-PRODUCT_BUNDLE_IDENTIFIER = com.unbranded.unbranded
+BRAND_NAME = unbranded
+BRAND_BUNDLE_ID = unbranded
+BRAND_VERSION = 0.0
 
 #include "../PoseGallery/resources/branded/brand_PoseGallery.xcconfig"
+
+// for simultaneous install of each configuration
+
+CONFIG_ID_SUFFIX = $(CONFIG_ID_SUFFIX_$(CONFIGURATION))
+CONFIG_ID_SUFFIX_Debug = .debug
+CONFIG_ID_SUFFIX_Adhoc = .adhoc
+CONFIG_ID_SUFFIX_Release =
+
+CONFIG_NAME_SUFFIX = $(CONFIG_NAME_SUFFIX_$(CONFIGURATION))
+CONFIG_NAME_SUFFIX_Debug = ∆
+CONFIG_NAME_SUFFIX_Adhoc = ß
+CONFIG_NAME_SUFFIX_Release =
+
+BUILT_NAME = $(BRAND_NAME)$(CONFIG_NAME_SUFFIX)
+BUILT_BUNDLE_ID = $(BRAND_BUNDLE_ID)$(CONFIG_ID_SUFFIX)
+BUILT_VERSION = $(BRAND_VERSION)

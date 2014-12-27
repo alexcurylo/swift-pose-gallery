@@ -88,13 +88,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Adhoc"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA6E64A01A279B7700395E94"
-            BuildableName = "Poses Pro.app"
+            BuildableName = ".app"
             BlueprintName = "PoseGallery"
             ReferencedContainer = "container:PoseGallery.xcodeproj">
          </BuildableReference>

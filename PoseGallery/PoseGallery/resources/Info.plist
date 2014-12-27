@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>CFBuildDate</key>
-	<string>update_build_date()</string>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>-scripted-</string>
+	<key>CFBundleVersion</key>
+	<string>-scripted-</string>
+	<key>CFBundleName</key>
+	<string>$(BUILT_NAME)</string>
+	<key>CFBundleDisplayName</key>
+	<string>${BUILT_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(BUILT_BUNDLE_ID)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(BUILT_VERSION)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(PRODUCT_VERSION_STRING)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>$(PRODUCT_BUNDLE_VERSION)</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>

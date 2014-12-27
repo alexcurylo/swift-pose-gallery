@@ -6,7 +6,7 @@
   [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
 --> 
  
- swift-pose-gallery
+swift-pose-gallery
 ==================
  
  Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
@@ -29,7 +29,7 @@
 
 ## Requirements
   
- - iOS, minimum version 8.0
+ - Xcode, iOS minimum version 8.0
  - Some interesting pose images
 
 ## Usage
@@ -44,7 +44,7 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## Author
  
- [Alex Curylo](http://www.alexcurylo.com/), [@trollwerks](https://www.twitter.com/trollwerks)
+ [Alex Curylo](http://www.alexcurylo.com/) -- [@trollwerks](https://www.twitter.com/trollwerks). Available for interesting contract work in exotic locales!
 
 ## License
 

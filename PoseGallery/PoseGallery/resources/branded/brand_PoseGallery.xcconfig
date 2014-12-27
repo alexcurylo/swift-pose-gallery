@@ -5,21 +5,8 @@
 // Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 //
 
-// for simultaneous install of each configuration
-
-BUNDLE_ID_SUFFIX = $(BUNDLE_ID_SUFFIX_$(CONFIGURATION))
-BUNDLE_ID_SUFFIX_Debug = .debug
-BUNDLE_ID_SUFFIX_Adhoc = .adhoc
-BUNDLE_ID_SUFFIX_Release =
-
-BUNDLE_DISPLAY_NAME_SUFFIX = $(BUNDLE_DISPLAY_NAME_SUFFIX_$(CONFIGURATION))
-BUNDLE_DISPLAY_NAME_SUFFIX_Debug = ∆
-BUNDLE_DISPLAY_NAME_SUFFIX_Adhoc = ß
-BUNDLE_DISPLAY_NAME_SUFFIX_Release =
-
 // base branding
 
-PRODUCT_NAME = Poses Pro$(BUNDLE_DISPLAY_NAME_SUFFIX)
-PRODUCT_VERSION_STRING = 3.0
-PRODUCT_BUNDLE_VERSION = 1
-PRODUCT_BUNDLE_IDENTIFIER = com.trollwerks.posespro$(BUNDLE_ID_SUFFIX)
+BRAND_NAME = Poses Pro
+BRAND_BUNDLE_ID = com.trollwerks.posespro
+BRAND_VERSION = 3.0
