@@ -29,7 +29,7 @@ echo Build version set to git specs: $version
 
 update_build_date()
 {
-CFBuildDate=$(date +"%a %b %d %H:%M:%S %Z %Y")
+CFBuildDate=$(date +"%y.%m.%d %H:%M:%S %Z")
 /usr/libexec/PlistBuddy -c "Set :CFBuildDate $CFBuildDate" "${plist}"
 echo Build date set to current date: $CFBuildDate
 }

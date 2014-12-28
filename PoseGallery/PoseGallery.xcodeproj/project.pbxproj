@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
-		FA44CA161A4E110900776BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A61A279B7700395E94 /* AppDelegate.swift */; };
-		FA44CA171A4E110C00776BD6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A81A279B7700395E94 /* FirstViewController.swift */; };
-		FA44CA181A4E110F00776BD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64AA1A279B7700395E94 /* SecondViewController.swift */; };
 		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
 		FA6E64A71A279B7700395E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A61A279B7700395E94 /* AppDelegate.swift */; };
@@ -21,6 +18,7 @@
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
+		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +56,7 @@
 		FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGallery.xcconfig; sourceTree = "<group>"; };
 		FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGalleryTests.xcconfig; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
+		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +144,7 @@
 				FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */,
 				FA6E64AF1A279B7700395E94 /* Images.xcassets */,
 				FA6E64A51A279B7700395E94 /* Info.plist */,
+				FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -275,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */,
 				FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */,
 				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
 				FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */,
@@ -336,9 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA44CA181A4E110F00776BD6 /* SecondViewController.swift in Sources */,
-				FA44CA171A4E110C00776BD6 /* FirstViewController.swift in Sources */,
-				FA44CA161A4E110900776BD6 /* AppDelegate.swift in Sources */,
 				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

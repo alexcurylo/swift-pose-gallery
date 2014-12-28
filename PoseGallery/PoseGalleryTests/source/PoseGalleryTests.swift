@@ -7,23 +7,25 @@
 
 import UIKit
 import XCTest
+// don't add AppDelegate to target, PoseGallery.AppDelegate and PoseGalleryTests.AppDelegate become different!
+// http://stackoverflow.com/questions/26946677/uiapplication-sharedapplication-delegate-as-appdelegate-causes-exc-bad-access
+import PoseGallery
 
 class PoseGalleryTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testConfiguration() {
-        let app = UIApplication.sharedApplication()
-        let delegate = app.delegate
-        XCTAssertNotNil(delegate, "Delegate does not exist - did you set host application properly?")
+        let delegate = UIApplication.sharedApplication().delegate
+        XCTAssertNotNil(delegate, "sharedApplication().delegate does not exist - set host application!")
+        let appDelegate = delegate as AppDelegate
+        XCTAssertTrue(appDelegate.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
     }
     
     func testPerformanceExample() {
