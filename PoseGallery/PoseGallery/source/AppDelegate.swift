@@ -61,6 +61,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
         defaults.setObject(version_number, forKey:"version_number")
         defaults.setObject(build_number, forKey:"build_number")
         defaults.setObject(build_date, forKey:"build_date")
+        defaults.synchronize();
 
         println("FYI: launched \(display_name) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
 
