@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA6E64B71A279B7800395E94"
-               BuildableName = "&quot;PoseGalleryTests&quot;.xctest"
+               BuildableName = "PoseGalleryTests.xctest"
                BlueprintName = "PoseGalleryTests"
                ReferencedContainer = "container:PoseGallery.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA6E64B71A279B7800395E94"
-               BuildableName = "&quot;PoseGalleryTests&quot;.xctest"
+               BuildableName = "PoseGalleryTests.xctest"
                BlueprintName = "PoseGalleryTests"
                ReferencedContainer = "container:PoseGallery.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA6E64B71A279B7800395E94"
-            BuildableName = "&quot;PoseGalleryTests&quot;.xctest"
+            BuildableName = "PoseGalleryTests.xctest"
             BlueprintName = "PoseGalleryTests"
             ReferencedContainer = "container:PoseGallery.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA6E64B71A279B7800395E94"
-            BuildableName = "&quot;PoseGalleryTests&quot;.xctest"
+            BuildableName = "PoseGalleryTests.xctest"
             BlueprintName = "PoseGalleryTests"
             ReferencedContainer = "container:PoseGallery.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA6E64B71A279B7800395E94"
-            BuildableName = "&quot;PoseGalleryTests&quot;.xctest"
+            BuildableName = "PoseGalleryTests.xctest"
             BlueprintName = "PoseGalleryTests"
             ReferencedContainer = "container:PoseGallery.xcodeproj">
          </BuildableReference>

@@ -28,6 +28,17 @@ class PoseGalleryTests: XCTestCase {
         XCTAssertTrue(appDelegate.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
     }
     
+    func testLifeScope() {
+        var controller : SecondViewController?;
+        func lifeScope() {
+            controller = SecondViewController()
+        }
+        XCTAssertNil(controller, "controller unintialized")
+        lifeScope()
+        //XCTAssertNil(controller, "life of controller exceeds scope")
+        // deinit called after this. #NOTE! figure out where subfunction scope is....
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {

@@ -44,7 +44,10 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## Author
  
- [Alex Curylo](http://www.alexcurylo.com/) -- [@trollwerks](https://www.twitter.com/trollwerks). Available for interesting contract work in exotic locales!
+ [![web: trollwerks.com](http://img.shields.io/badge/trollwerks.com-green.svg?style=flat)](http://trollwerks.com) 
+ [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40dylan36032-blue.svg?style=flat)](https://twitter.com/trollwerks) 
+ [![email: alex@trollwerks.com](http://img.shields.io/badge/email-alex@trollwerks.com-orange.svg?style=flat)]
+ Available for interesting contract work in exotic locales!
 
 ## License
 
