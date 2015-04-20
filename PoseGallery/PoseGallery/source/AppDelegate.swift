@@ -47,10 +47,10 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     public func configureSettingsApp(launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Info.plist configured with build scripts
         let bundle = NSBundle.mainBundle()
-        let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as String
-        let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as String
-        let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as String
-        let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as String
+        let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as! String
+        let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+        let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as! String
+        let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as! String
         if (display_name.isEmpty || version_number.isEmpty || build_number.isEmpty || build_date.isEmpty)
         {
             return false

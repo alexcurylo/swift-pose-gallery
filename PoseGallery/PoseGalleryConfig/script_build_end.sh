@@ -59,6 +59,10 @@ update_build_date
 restore_icon
 #copy_branding
 
+# Fabric magic
+
+./PoseGallery/libraries/Fabric.framework/run 186ef2a41f30e2ce39a21f35b61600d3ae927290 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50
+
 # reveal the binary in the Finder if you like
 
 echo Built at ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}

@@ -45,108 +45,90 @@ GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO
 // and don't forget &amp; for & in strings, like URLs, or put them in InfoPlist.strings perhaps
 //INFOPLIST_OTHER_PREPROCESSOR_FLAGS = -traditional
 
-
 // Compiler/analyzer warning management
 
+CLANG_ANALYZER_DEADCODE_DEADSTORES = YES
+CLANG_ANALYZER_MEMORY_MANAGEMENT = YES
+CLANG_ANALYZER_GCD = YES
+CLANG_ANALYZER_OBJC_ATSYNC = YES
+CLANG_ANALYZER_OBJC_NSCFERROR = YES
+CLANG_ANALYZER_OBJC_INCOMP_METHOD_TYPES = YES
+CLANG_ANALYZER_OBJC_COLLECTIONS = YES
+CLANG_ANALYZER_OBJC_UNUSED_IVARS = YES
+CLANG_ANALYZER_OBJC_SELF_INIT = YES
+CLANG_ANALYZER_OBJC_RETAIN_COUNT = YES
+CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES
+CLANG_ANALYZER_SECURITY_KEYCHAIN_API = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK = YES
 
-// things iOS defaults to NO as of Xcode 5.0
-//CLANG_WARN_BOOL_CONVERSION = YES
-//CLANG_WARN_CONSTANT_CONVERSION = YES
-//CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
-//CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES
+//CLANG_WARN_ASSIGN_ENUM = YES
+CLANG_WARN_BOOL_CONVERSION = YES
+CLANG_WARN_CONSTANT_CONVERSION = YES
+CLANG_WARN_CXX0X_EXTENSIONS = YES
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
 //CLANG_WARN_DOCUMENTATION_COMMENTS = YES
-//CLANG_WARN_EMPTY_BODY = YES
-//CLANG_WARN_ENUM_CONVERSION = YES
+CLANG_WARN_EMPTY_BODY = YES
+CLANG_WARN_ENUM_CONVERSION = YES
 //CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES
-//CLANG_WARN_INT_CONVERSION = YES
-//CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES
+CLANG_WARN_INT_CONVERSION = YES
+CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES
 //CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES
 //CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
 //CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES
 //CLANG_WARN_OBJC_RECEIVER_WEAK = YES
 //CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES
-//CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
 //CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES
-//CLANG_WARN_UNREACHABLE_CODE = YES
-//CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
-//CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES
+CLANG_WARN_UNREACHABLE_CODE = YES
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES
 
-//CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES
-//CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES
-//CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES
-
-// should check these warnings against
-// http://clang.llvm.org/docs/UsersManual.html
-// Options intentionally turned off
-// http://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
-// -Wpadded - lots of structures will get padded, so although this warning may
-//            be useful to show us badly padded structures, it causes to many
-//            warnings to be on generally.
-// -Wunreachable-code - several macros use the do {} while (0) which always 
-//                      flags this. e.g. all the ST... macros for unittesting
-// -Wredundant-decls - we sometimes use redundant decls to add an attribute
-//                     to a function/method (i.e. 
-// -Waggregate-return - NSPoint, NSRect etc are often returned as aggregates
-// -Wshorten-64-to-32 - this is defined in the 64 bit build settings
-// -Wcast-qual - Would love to turn this on, but causes issues when converting
-//               CFTypes to NSTypes and also has issues with some external
-//               libraries (notably zlib)
-// -Wundef - we conditionalize on TARGET_OS_IPHONE which is only defined 
-//           in the iPhoneSDK making us unable to turn this warning on.
-// -Wcast-align - causes a whole pile of problems buildng with iPhoneSDK
-
-// C Only Warnings
-// -Wbad-function-cast catches all result casts, we probably don't want that
-//TWX_BASE_OTHER_CFLAGS = -Wdiv-by-zero -Wnested-externs -Wold-style-definition
-
-// C++ Only Warnings
-//TWX_BASE_OTHER_CPLUSPLUSFLAGS = -Wabi -Wctor-dtor-privacy -Wsign-promo
-
-// General C/C++/ObjC/ObjC++ warnings
-// removed -Wformat=2, annoying 'Format string is not a string literal' for NSString.initWithFormat
-//TWX_BASE_WARNING_CFLAGS = -Wall -Wextra -Wendif-labels -Winvalid-pch -Wmissing-format-attribute -Wwrite-strings -Wstack-protector -Wstrict-aliasing=2 -Wpacked -Wmissing-field-initializers -Wglobal-constructors -Wpointer-arith -Wdisabled-optimization -Wstrict-prototypes -Wfloat-equal -Wformat -Winit-self
-
-// start with -Weverything and subtract
-// warning: cast from function call of type $X to non-matching type $Y [-Wbad-function-cast]
-// warning: format string is not a string literal [-Wformat-nonliteral]
-// warning: auto property synthesis is synthesizing property not explicitly synthesized [-Wobjc-missing-property-synthesis]
-// warning: $X is a language extension [-Wpedantic]
-// warning: macro is not used [-Wunused-macros]
-// warning: $X was marked unused but was used [-Wused-but-marked-unused]
-// warning: unimplemented selector $X [-Wselector]
-// warning: instance variable '$X' is being directly accessed [-Wdirect-ivar-access]
-//TWX_BASE_WARNING_EXCLUSIONS = -Wno-bad-function-cast -Wno-format-nonliteral -Wno-objc-missing-property-synthesis -Wno-pedantic -Wno-unused-macros -Wno-used-but-marked-unused -Wno-selector -Wno-direct-ivar-access
-
-//GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES
-//GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS  = YES
-//GCC_WARN_64_TO_32_BIT_CONVERSION = YES
-//GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES
-//GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES
-//GCC_WARN_ABOUT_MISSING_NEWLINE = YES
+GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES
+GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS  = YES
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES
+GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES
+GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES
+GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES
+GCC_WARN_ABOUT_MISSING_NEWLINE = YES
 //GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES
-//GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES
-//GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
-//GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES
-//GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
-//GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES
-//GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES
-//GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
-//GCC_WARN_MISSING_PARENTHESES = YES
-//GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES
+GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
+GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES
+GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
+GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES
+GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES
+GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
+CC_WARN_MISSING_PARENTHESES = YES
+GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES
 //GCC_WARN_SHADOW = YES
 //GCC_WARN_SIGN_COMPARE = YES
-//GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES
-//GCC_WARN_UNDECLARED_SELECTOR = YES
-//GCC_WARN_UNINITIALIZED_AUTOS = YES
+GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES
+GCC_WARN_UNDECLARED_SELECTOR = YES
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE
 //GCC_WARN_UNKNOWN_PRAGMAS = YES
-//GCC_WARN_UNUSED_FUNCTION = YES
-//GCC_WARN_UNUSED_LABEL = YES
+GCC_WARN_UNUSED_FUNCTION = YES
+GCC_WARN_UNUSED_LABEL = YES
 //GCC_WARN_UNUSED_PARAMETER = YES
-//GCC_WARN_UNUSED_VALUE = YES
-//GCC_WARN_UNUSED_VARIABLE = YES
+GCC_WARN_UNUSED_VALUE = YES
+GCC_WARN_UNUSED_VARIABLE = YES
 //GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES
 //GCC_WARN_PEDANTIC = YES
-//GCC_WARN_STRICT_SELECTOR_MATCH = NO // many setDelegate: matches for instance
+//GCC_WARN_STRICT_SELECTOR_MATCH = YES
+
+// exclusions we intend:
+// warning: auto property synthesis is synthesizing property not explicitly synthesized [-Wobjc-missing-property-synthesis]
+// warning: $X is a language extension [-Wpedantic]
+// exclusions we're tolerating for now:
+//WARNING_EXCLUSIONS = -Wno-objc-missing-property-synthesis -Wno-pedantic
+
+//WARNING_CFLAGS = -Weverything $(WARNING_EXCLUSIONS)
 
 
 // merge flag/path settings with possible previous configuration file flag settings

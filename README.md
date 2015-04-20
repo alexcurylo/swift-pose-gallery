@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=master)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
+[![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=develop)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
 <!---
   # https://github.com/venmo/slather/issues/39 -- track Swift support status
   [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
@@ -24,7 +24,7 @@ swift-pose-gallery
   
 - Experimenting with best practices for how to handle what keeps turning out to be a recurring development pattern for us, how to most efficiently ship and maintain branded variations on a common engine. Open sourcing the engine and keeping private the assets of [the App Store-shipping branded version](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme) is pretty much the logical conclusion of that strategy.
  
-- Demonstrating our current grasp of Swift idioms, and encouraging people to improve said grasp; as they say, "the best way to get the right answer on the Internet is not to ask a question, it's to post the wrong answer." [This is called Godwin's Law](http://meta.wikimedia.org/wiki/Cunningham%27s_Law). So if you see anything you figure could be done more Swiftily, or just plain better, correct away!
+- Demonstrating our current grasp of Swift idioms and support tools, and encouraging people to improve said grasp; as they say, "the best way to get the right answer on the Internet is not to ask a question, it's to post the wrong answer." [This is called Godwin's Law](http://meta.wikimedia.org/wiki/Cunningham%27s_Law). So if you see anything you figure could be done more Swiftily, or just plain better, correct away!
  
 
 ## Requirements
@@ -44,8 +44,8 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## Author
  
- [![web: trollwerks.com](http://img.shields.io/badge/trollwerks.com-green.svg?style=flat)](http://trollwerks.com) 
- [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40dylan36032-blue.svg?style=flat)](https://twitter.com/trollwerks) 
+ [![web: trollwerks.com](http://img.shields.io/badge/web-www.trollwerks.com-green.svg?style=flat)](http://trollwerks.com) 
+ [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40trollwerks-blue.svg?style=flat)](https://twitter.com/trollwerks) 
  [![email: alex@trollwerks.com](http://img.shields.io/badge/email-alex@trollwerks.com-orange.svg?style=flat)]
  Available for interesting contract work in exotic locales!
 

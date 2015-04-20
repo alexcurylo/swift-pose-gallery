@@ -24,7 +24,7 @@ class PoseGalleryTests: XCTestCase {
     func testConfiguration() {
         let delegate = UIApplication.sharedApplication().delegate
         XCTAssertNotNil(delegate, "sharedApplication().delegate does not exist - set host application!")
-        let appDelegate = delegate as AppDelegate
+        let appDelegate = delegate as! AppDelegate
         XCTAssertTrue(appDelegate.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
     }
     
