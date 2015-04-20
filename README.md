@@ -26,7 +26,6 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 
 - Demonstrating our current grasp of Swift idioms and support tools, and encouraging people to improve said grasp; as they say, "the best way to get the right answer on the Internet is not to ask a question, it's to post the wrong answer." [This is called Godwin's Law](http://meta.wikimedia.org/wiki/Cunningham%27s_Law). So if you see anything you figure could be done more Swiftily, or just plain better, correct away!
 
-
 ## Requirements
 
 - Xcode, iOS minimum version 8.0
@@ -46,9 +45,10 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 [![web: trollwerks.com](http://img.shields.io/badge/web-www.trollwerks.com-green.svg?style=flat)](http://trollwerks.com) 
 [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40trollwerks-blue.svg?style=flat)](https://twitter.com/trollwerks) 
-[![email: alex@trollwerks.com](http://img.shields.io/badge/email-alex@trollwerks.com-orange.svg?style=flat)]
+[![email: the Troll](http://img.shields.io/badge/email-theTroll-orange.svg?style=flat)](mailto:alex@alexcurylo.com) 
+
 Available for interesting contract work in exotic locales!
 
 ## License
 
-The [MIT License](http://opensource.org/licenses/MIT). See the LICENSE file for details.icenses/MIT). See the LICENSE file for details.
+The [MIT License](http://opensource.org/licenses/MIT). See the LICENSE file for details.
