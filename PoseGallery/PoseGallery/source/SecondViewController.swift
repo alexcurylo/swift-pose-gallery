@@ -7,31 +7,22 @@
 
 import UIKit
 
+/**
+Second tab
+*/
 public class SecondViewController: UIViewController {
 
-    /*override init (nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        println("inited controller")
-    }
-    override init (coder: NSCoder) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        println("inited controller")
-    }*/
-
-    deinit {
-        println("deinited controller")
-    }
-
+    /// UIViewController override
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    /// UIViewController override
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
