@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		FA16E4F91AEB6D85005425F8 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA16E4FD1AEB6D85005425F8 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				FA16E4FE1AEB6D9E005425F8 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
@@ -241,6 +255,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Trollwerks Inc.";
 				TargetAttributes = {
+					FA16E4F91AEB6D85005425F8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					FA6E64A01A279B7700395E94 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 556343DW3U;
@@ -266,6 +283,7 @@
 			targets = (
 				FA6E64A01A279B7700395E94 /* PoseGallery */,
 				FA6E64B71A279B7800395E94 /* PoseGalleryTests */,
+				FA16E4F91AEB6D85005425F8 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +310,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FA16E4FE1AEB6D9E005425F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=$(bash -l -c 'echo $PATH')\n\njazzy --clean --author \"Alex Curylo\" --author_url \"http://www.alexcurylo.com\" --module PoseGallery --min-acl private --readme ../README.md --github_url \"https://github.com/alexcurylo/swift-pose-gallery\"\n";
+		};
 		FA8162481A3879110014EE14 /* Run script_build_end.sh */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +402,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA16E4FA1AEB6D85005425F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA16E4FB1AEB6D85005425F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA16E4FC1AEB6D85005425F8 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Adhoc;
+		};
 		FA6E64C01A279B7800395E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */;
@@ -592,6 +644,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA16E4FD1AEB6D85005425F8 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA16E4FA1AEB6D85005425F8 /* Debug */,
+				FA16E4FB1AEB6D85005425F8 /* Release */,
+				FA16E4FC1AEB6D85005425F8 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FA6E649C1A279B7700395E94 /* Build configuration list for PBXProject "PoseGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

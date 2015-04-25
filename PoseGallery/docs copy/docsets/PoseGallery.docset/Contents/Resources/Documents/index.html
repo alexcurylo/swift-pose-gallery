@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PoseGallery  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a title="PoseGallery  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">PoseGallery Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/alexcurylo/swift-pose-gallery"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">PoseGallery Reference</a>
+        <img id="carat" src="img/carat.png" />
+        PoseGallery  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+          <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FirstViewController.html">FirstViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecondViewController.html">SecondViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><a href="https://travis-ci.org/alexcurylo/swift-pose-gallery"><img src="https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=develop" alt="Build Status"></a>
+<a href="https://github.com/alexcurylo/swift-pose-gallery/issues"><img src="https://img.shields.io/github/issues/alexcurylo/swift-pose-gallery.svg?style=flat" alt="Issues"></a>
+<a href="https://waffle.io/alexcurylo/swift-pose-gallery"><img src="https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&amp;title=Ready" alt="Stories in Ready"></a>
+<a href="https://gitter.im/alexcurylo/swift-pose-gallery"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
+&lt;!&mdash;
+ # <a href="https://github.com/venmo/slather/issues/39">https://github.com/venmo/slather/issues/39</a> &ndash; track Swift support status
+ <a href="https://coveralls.io/r/alexcurylo/swift-pose-gallery"><img src="https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png" alt="Coverage Status"></a>
+ &ndash;&gt; </p>
+<a href='#swift_pose_gallery' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='swift_pose_gallery'>swift-pose-gallery</h1>
+
+<p>Pose displaying app engine in Swift for iOS 8 &ndash; powers <a href="https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&amp;at=10l4B9&amp;ct=SRCreadme">Poses Professional 3.0 on the App Store</a></p>
+<a href='#table_of_contents' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='table_of_contents'>Table of Contents</h2>
+
+<ol>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+<a href='#purpose' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='purpose'>Purpose</h2>
+
+<ul>
+<li><p>Experimenting with best practices for how to handle what keeps turning out to be a recurring development pattern for us, how to most efficiently ship and maintain branded variations on a common engine. Open sourcing the engine and keeping private the assets of <a href="https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&amp;at=10l4B9&amp;ct=SRCreadme">the App Store-shipping branded version</a> is pretty much the logical conclusion of that strategy.</p></li>
+<li><p>Demonstrating our current grasp of Swift idioms and support tools, and encouraging people to improve said grasp; as they say, <q>the best way to get the right answer on the Internet is not to ask a question, it&rsquo;s to post the wrong answer.</q> <a href="http://meta.wikimedia.org/wiki/Cunningham%27s_Law">This is called Godwin&rsquo;s Law</a>. So if you see anything you figure could be done more Swiftily, or just plain better, correct away!</p></li>
+</ul>
+<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+
+<ul>
+<li>OS X 10.10.3 or later</li>
+<li>Xcode 6.3.1 or later</li>
+<li>iOS 8.0 or later
+
+<ul>
+<li><a href="https://github.com/realm/jazzy">jazzy</a>, for automatic documentation generation</li>
+</ul></li>
+<li>Some interesting pose images</li>
+</ul>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+
+<ol>
+<li>Place your images in /resource/branded replacing the samples there.</li>
+<li>Set your App Store branding in /resources/branded/brand_PoseGallery.xcconfig.</li>
+<li>Build and run!</li>
+</ol>
+<a href='#roadmap' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='roadmap'>Roadmap</h2>
+
+<p>Feel free to <a href="https://github.com/alexcurylo/swift-pose-gallery/issues/new">open an issue</a> if there&rsquo;s something in particular you&rsquo;d like to see here. Or, preferably, a pull request!</p>
+<a href='#author' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='author'>Author</h2>
+
+<p><a href="http://trollwerks.com"><img src="http://img.shields.io/badge/web-www.trollwerks.com-green.svg?style=flat" alt="web: trollwerks.com"></a> 
+<a href="https://twitter.com/trollwerks"><img src="http://img.shields.io/badge/twitter-%40trollwerks-blue.svg?style=flat" alt="twitter: @trollwerks"></a> 
+<a href="mailto:alex@alexcurylo.com"><img src="http://img.shields.io/badge/email-theTroll-orange.svg?style=flat" alt="email: the Troll"></a> </p>
+
+<p>Available for interesting contract work in exotic locales!</p>
+<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
+
+<p>The <a href="http://opensource.org/licenses/MIT">MIT License</a>. See the LICENSE file for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="http://www.alexcurylo.com" target="_blank" rel="external">Alex Curylo</a>. All rights reserved. (Last updated: 2015-04-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
