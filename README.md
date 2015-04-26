@@ -3,6 +3,8 @@
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
 <!---
  # https://github.com/venmo/slather/issues/39 -- track Swift support status
  [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
@@ -33,7 +35,7 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 - OS X 10.10.3 or later
 - Xcode 6.3.1 or later
 - iOS 8.0 or later
- - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
+- [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - Some interesting pose images
 
 ## Usage
