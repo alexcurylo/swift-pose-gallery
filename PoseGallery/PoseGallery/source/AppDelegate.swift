@@ -23,7 +23,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Crashlytics()])
 
-        configureSettingsApp(launchOptions);
+        configureSettingsApp(launchOptions)
         
         return true
     }

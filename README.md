@@ -36,6 +36,7 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 - Xcode 6.3.1 or later
 - iOS 8.0 or later
 - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
+- [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
 - Some interesting pose images
 
 ## Usage
