@@ -10,16 +10,16 @@ import UIKit
 /**
     First tab
 */
-class FirstViewController: UIViewController {
+public class FirstViewController: UIViewController {
 
     /// UIViewController override
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     /// UIViewController override
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

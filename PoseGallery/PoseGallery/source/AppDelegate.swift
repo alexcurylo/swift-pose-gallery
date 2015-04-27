@@ -64,26 +64,27 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     */
     public func configureSettingsApp(launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Info.plist configured with build scripts
-        let bundle = NSBundle.mainBundle()
-        let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as! String
-        let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
-        let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as! String
-        let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as! String
-        if (display_name.isEmpty || version_number.isEmpty || build_number.isEmpty || build_date.isEmpty)
+        if let bundle = NSBundle.mainBundle() as NSBundle?,
+            let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
+            let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
+            let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
+            let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty
         {
-            return false
+            // copy to keys specified in Settings.bundle
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject(version_number, forKey:"version_number")
+            defaults.setObject(build_number, forKey:"build_number")
+            defaults.setObject(build_date, forKey:"build_date")
+            defaults.synchronize()
+            
+            // no launch options handled currently
+            
+            println("FYI: launched \(display_name) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
+            
+            return true
         }
-
-        // copy to keys specified in Settings.bundle
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(version_number, forKey:"version_number")
-        defaults.setObject(build_number, forKey:"build_number")
-        defaults.setObject(build_date, forKey:"build_date")
-        defaults.synchronize();
-
-        println("FYI: launched \(display_name) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
-
-        return true
+        
+        return false
     }
 
 }
