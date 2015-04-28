@@ -6,6 +6,8 @@
 	<string>-scripted-</string>
 	<key>CFBundleVersion</key>
 	<string>-scripted-</string>
+	<key>CFBuildConfiguration</key>
+	<string>$(CONFIGURATION)</string>
 	<key>CFBundleName</key>
 	<string>$(BUILT_NAME)</string>
 	<key>CFBundleDisplayName</key>

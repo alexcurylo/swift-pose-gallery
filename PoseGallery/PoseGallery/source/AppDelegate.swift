@@ -68,7 +68,8 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
             let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
             let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
             let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
-            let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty
+            let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
+            let build_config = bundle.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty
         {
             // copy to keys specified in Settings.bundle
             let defaults = NSUserDefaults.standardUserDefaults()
@@ -79,7 +80,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // no launch options handled currently
             
-            println("FYI: launched \(display_name) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
+            println("FYI: launched \(display_name) \(build_config) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
             
             return true
         }
