@@ -46,6 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287D91AF08D8500B905DC /* PoseGallery_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_base.xcconfig; sourceTree = "<group>"; };
+		FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Release.xcconfig; sourceTree = "<group>"; };
+		FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287DD1AF08D8500B905DC /* PoseGalleryTests_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_base.xcconfig; sourceTree = "<group>"; };
+		FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Release.xcconfig; sourceTree = "<group>"; };
+		FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287E11AF08D8500B905DC /* project_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_base.xcconfig; sourceTree = "<group>"; };
+		FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287E31AF08D8500B905DC /* project_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Release.xcconfig; sourceTree = "<group>"; };
 		FA38C2BE1A38A67A00A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA38C2C11A38A69900A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
@@ -66,9 +78,6 @@
 		FA957B611A478ED60015CCC3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
-		FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_PoseGallery.xcconfig; sourceTree = "<group>"; };
-		FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGallery.xcconfig; sourceTree = "<group>"; };
-		FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_PoseGalleryTests.xcconfig; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,9 +204,18 @@
 				FAB13EF41A3878850053620A /* script_build_begin.sh */,
 				FAB13EF51A3878850053620A /* script_build_end.sh */,
 				FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */,
-				FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */,
-				FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */,
-				FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */,
+				FA3287E11AF08D8500B905DC /* project_base.xcconfig */,
+				FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */,
+				FA3287E31AF08D8500B905DC /* project_Release.xcconfig */,
+				FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */,
+				FA3287D91AF08D8500B905DC /* PoseGallery_base.xcconfig */,
+				FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */,
+				FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */,
+				FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */,
+				FA3287DD1AF08D8500B905DC /* PoseGalleryTests_base.xcconfig */,
+				FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */,
+				FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */,
+				FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
 				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
@@ -405,236 +423,81 @@
 		FA16E4FA1AEB6D85005425F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		FA16E4FB1AEB6D85005425F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		FA16E4FC1AEB6D85005425F8 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Adhoc;
 		};
 		FA6E64C01A279B7800395E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FA6E64C11A279B7800395E94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287E31AF08D8500B905DC /* project_Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		FA6E64C31A279B7800395E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FA6E64C41A279B7800395E94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		FA6E64C61A279B7800395E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */;
+			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery";
 			};
 			name = Debug;
 		};
 		FA6E64C71A279B7800395E94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */;
+			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery";
 			};
 			name = Release;
 		};
 		FAD9A7E21A4F6425000DE885 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EF71A3878850053620A /* project_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Adhoc;
 		};
 		FAD9A7E31A4F6425000DE885 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13EFF1A3878850053620A /* target_PoseGallery.xcconfig */;
+			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Adhoc;
 		};
 		FAD9A7E41A4F6425000DE885 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB13F001A3878850053620A /* target_PoseGalleryTests.xcconfig */;
+			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery";
 			};
 			name = Adhoc;
 		};

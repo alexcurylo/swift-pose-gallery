@@ -3,6 +3,7 @@
 #
 # script_tag_icon.sh
 # from iconVersioning.h, https://github.com/krzysztofzablocki/KZBootstrap
+# via https://gist.github.com/dulaccc/a52154ac4c007db2be55
 #
 
 export PATH=/opt/local/bin/:/opt/local/sbin:$PATH:/usr/local/bin:

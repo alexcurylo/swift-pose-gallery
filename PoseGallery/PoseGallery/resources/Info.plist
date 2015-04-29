@@ -9,13 +9,13 @@
 	<key>CFBuildConfiguration</key>
 	<string>$(CONFIGURATION)</string>
 	<key>CFBundleName</key>
-	<string>$(BUILT_NAME)</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleDisplayName</key>
-	<string>${BUILT_NAME}</string>
+	<string>${CONFIGURATION_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(BUILT_BUNDLE_ID)</string>
+	<string>$(CONFIGURATION_BUNDLE_ID)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(BUILT_VERSION)</string>
+	<string>$(BRAND_VERSION)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleDevelopmentRegion</key>
