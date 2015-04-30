@@ -8,7 +8,7 @@
 import UIKit
 import Fabric
 import Crashlytics
-
+import XCGLogger
 
 /**
 Singleton UIApplication delegate
@@ -18,10 +18,18 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// Root window
     public var window: UIWindow?
-
+    
+    /// Logging library
+    let log = XCGLogger.defaultInstance()
+    
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        // TODO: start state flow; beta distribution?
+
         Fabric.with([Crashlytics()])
+
+        log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
 
         configureSettingsApp(launchOptions)
         
@@ -80,8 +88,8 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // no launch options handled currently
             
-            println("FYI: launched \(display_name) \(build_config) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
-            
+            log.info("launched \(display_name) \(build_config) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
+
             return true
         }
         

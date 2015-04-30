@@ -25,6 +25,8 @@
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
 		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
+		FA52B52A1AF20E4A008229D8 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; };
+		FA52B52C1AF20E56008229D8 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA6E64A71A279B7700395E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A61A279B7700395E94 /* AppDelegate.swift */; };
 		FA6E64A91A279B7700395E94 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64A81A279B7700395E94 /* FirstViewController.swift */; };
 		FA6E64AB1A279B7700395E94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64AA1A279B7700395E94 /* SecondViewController.swift */; };
@@ -44,6 +46,20 @@
 			remoteInfo = PoseGallery;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA52B52D1AF20E56008229D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA52B52C1AF20E56008229D8 /* XCGLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Adhoc.xcconfig; sourceTree = "<group>"; };
@@ -65,6 +81,8 @@
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
 		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
+		FA52B5281AF20B29008229D8 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		FA52B5291AF20E4A008229D8 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "../../../../../../AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS/XCGLogger.framework"; sourceTree = "<group>"; };
 		FA6E64A11A279B7700395E94 /* PoseGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoseGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64A61A279B7700395E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +107,7 @@
 			files = (
 				FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */,
 				FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */,
+				FA52B52A1AF20E4A008229D8 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +213,7 @@
 			children = (
 				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
 				FA957B611A478ED60015CCC3 /* Fabric.framework */,
+				FA52B5291AF20E4A008229D8 /* XCGLogger.framework */,
 			);
 			path = libraries;
 			sourceTree = "<group>";
@@ -216,6 +236,7 @@
 				FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */,
 				FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */,
 				FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */,
+				FA52B5281AF20B29008229D8 /* Cartfile */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
 				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
@@ -236,6 +257,7 @@
 				FA6E649E1A279B7700395E94 /* Frameworks */,
 				FA6E649F1A279B7700395E94 /* Resources */,
 				FA8162481A3879110014EE14 /* Run script_build_end.sh */,
+				FA52B52D1AF20E56008229D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

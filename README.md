@@ -42,9 +42,14 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 
 ## Usage
 
-1. Place your images in /resource/branded replacing the samples there.
-2. Set your App Store branding in /resources/branded/brand_PoseGallery.xcconfig.
-3. Build and run!
+Place your images in /resources/branded/brand_images replacing the samples there; set your App Store branding in /resources/branded/brand_PoseGallery.xcconfig.
+
+ `carthage build --platform iOS` to build checked in dependencies; `carthage update --platform iOS` to update.
+
+Build the app with the 'PoseGallery' target. Tests are in the 'PoseGalleryTests' target.
+ 
+Document into /docs by building the 'Documentation' target.
+
 
 ## Roadmap
 
