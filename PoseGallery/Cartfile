@@ -1,0 +1,8 @@
+#
+# Cartfile
+# MdCalc
+#
+# Copyright (c) 2015 Assembly Co. All rights reserved.
+#
+
+github "DaveWoodCom/XCGLogger" >= 2.0
