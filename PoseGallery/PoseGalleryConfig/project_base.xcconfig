@@ -14,6 +14,7 @@ SDKROOT = iphoneos
 IPHONEOS_DEPLOYMENT_TARGET = 8.0
 // 1 = iPhone; 2 = iPad; 1,2 = iPhone/iPad
 TARGETED_DEVICE_FAMILY = 1,2
+PRODUCT_NAME = $(TARGET_NAME)
 
 // undoes all our external compression, and isn't that useful anyways
 COMPRESS_PNG_FILES = NO

@@ -23,6 +23,7 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 4. [Roadmap](#roadmap)
 5. [Author](#author)
 6. [License](#license)
+6. [Change Log](#changelog)
 
 ## Purpose
 
@@ -32,12 +33,13 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 
 ## Requirements
 
-- OS X 10.10.3 or later
 - Xcode 6.3.1 or later
 - iOS 8.0 or later
 - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
- - [Fabric](https://fabric.io) account, for Crashlytics crash reporting
+- [Fabric](https://fabric.io) account, for Crashlytics crash reporting and beta distribution
+- [Carthage](https://github.com/Carthage/Carthage), for dependency management:
+ - [XCGLogger]() for logging
 - Some interesting pose images
 
 ## Usage
@@ -48,8 +50,7 @@ Place your images in /resources/branded/brand_images replacing the samples there
 
 Build the app with the 'PoseGallery' target. Tests are in the 'PoseGalleryTests' target.
  
-Document into /docs by building the 'Documentation' target.
-
+Create [source code documentation in /docs](http:./PoseGallery/docs/) by building the 'Documentation' target.
 
 ## Roadmap
 
@@ -66,3 +67,8 @@ Available for interesting contract work in exotic locales!
 ## License
 
 The [MIT License](http://opensource.org/licenses/MIT). See the LICENSE file for details.
+ 
+## Change Log
+ 
+ * **Version 1.0**: *(????.??.??)* - Initial Release
+
