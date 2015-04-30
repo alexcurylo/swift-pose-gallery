@@ -50,7 +50,7 @@ Place your images in /resources/branded/brand_images replacing the samples there
 
 Build the app with the 'PoseGallery' target. Tests are in the 'PoseGalleryTests' target.
  
-Build [source code documentation](PoseGallery/docs/index.html) with the 'Documentation' target.
+Build [source code documentation](PoseGallery/docs/) with the 'Documentation' target.
 
 ## Roadmap
 
