@@ -10,7 +10,7 @@
  [![Coverage Status](https://coveralls.io/repos/alexcurylo/swift-pose-gallery/badge.png)](https://coveralls.io/r/alexcurylo/swift-pose-gallery)
  --> 
 
-swift-pose-gallery
+[swift-pose-gallery](https://github.com/alexcurylo/swift-pose-gallery)
 ==================
 
 Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
@@ -37,7 +37,7 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 - iOS 8.0 or later
 - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
-- [Fabric](https://fabric.io) account, for Crashlytics crash reporting and beta distribution
+- [Fabric](https://fabric.io) account, for Crashlytics crash reporting and Beta distribution
 - [Carthage](https://github.com/Carthage/Carthage), for dependency management:
  - [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
 - Some interesting pose images
@@ -60,7 +60,7 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 [![web: trollwerks.com](http://img.shields.io/badge/web-www.trollwerks.com-green.svg?style=flat)](http://trollwerks.com) 
 [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40trollwerks-blue.svg?style=flat)](https://twitter.com/trollwerks) 
-[![email: the Troll](http://img.shields.io/badge/email-theTroll-orange.svg?style=flat)](mailto:alex@alexcurylo.com) 
+[![email: the Troll](http://img.shields.io/badge/email-alex%40alexcurylo.com-orange.svg?style=flat)](mailto:alex@alexcurylo.com) 
 
 Available for interesting contract work in exotic locales!
 

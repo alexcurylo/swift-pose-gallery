@@ -19,6 +19,11 @@ public class SecondViewController: UIViewController {
     }
 
     /// UIViewController override
+    override public func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    /// UIViewController override
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

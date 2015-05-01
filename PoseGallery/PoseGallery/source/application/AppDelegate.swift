@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Fabric
-import Crashlytics
 import XCGLogger
 
 /**
@@ -27,7 +25,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // TODO: start state flow; beta distribution?
 
-        Fabric.with([Crashlytics()])
+        startCrashReporting()
 
         log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
 
