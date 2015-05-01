@@ -61,10 +61,10 @@ restore_icon
 
 # Fabric magic
 
-if [ $CONFIGURATION != "Debug" ] ; then
+#if [ $CONFIGURATION != "Debug" ] ; then
 echo Uploading to Crashlytics:
 ./PoseGallery/libraries/Fabric.framework/run 186ef2a41f30e2ce39a21f35b61600d3ae927290 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50
-fi
+#fi
 
 # reveal the binary in the Finder if you like
 

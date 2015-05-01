@@ -16,6 +16,9 @@ ENABLE_NS_ASSERTIONS = NO
 VALIDATE_PRODUCT = YES
 GCC_TREAT_WARNINGS_AS_ERRORS = NO
 
+GCC_PREPROCESSOR_DEFINITIONS = NDEBUG=1 $(inherited)
+OTHER_SWIFT_FLAGS = -D NDEBUG
+
 // Swift Optimization Level
 //
 // None: Compile without any optimization. [-Onone]
