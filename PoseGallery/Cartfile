@@ -17,9 +17,4 @@ github "DaveWoodCom/XCGLogger" >= 2.0
 # networking
 #github "Alamofire/Alamofire" >= 1.2.1
 
-# resource management
-#https://github.com/mac-cain13/R.swift/
-#https://github.com/krzyzanowskim/Natalie
-#https://github.com/indragiek/swiftrsrc
-
 # state machine

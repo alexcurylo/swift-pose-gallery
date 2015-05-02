@@ -38,6 +38,7 @@ Pose displaying app engine in Swift for iOS 8 -- powers [Poses Professional 3.0 
 - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
 - [Fabric](https://fabric.io) account, for Crashlytics crash reporting and Beta distribution
+- [R.swift](https://github.com/mac-cain13/R.swift/) in /libraries for typed resource identifiers
 - [Carthage](https://github.com/Carthage/Carthage), for dependency management:
  - [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
 - Some interesting pose images

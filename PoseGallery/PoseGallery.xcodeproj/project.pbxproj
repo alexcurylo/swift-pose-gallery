@@ -38,6 +38,7 @@
 		FAFB2E6E1AF32BD000A8AB21 /* CrashlyticsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E6A1AF32BD000A8AB21 /* CrashlyticsAdapter.swift */; };
 		FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */; };
 		FAFB2E7F1AF4859100A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; };
+		FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FAFB2E6A1AF32BD000A8AB21 /* CrashlyticsAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticsAdapter.swift; sourceTree = "<group>"; };
 		FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Optionals.swift"; sourceTree = "<group>"; };
+		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
+		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,7 @@
 		FA6E64A41A279B7700395E94 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */,
 				FA38C2C41A39CCB700A76606 /* branded */,
 				FA38C2C01A38A69900A76606 /* Main.storyboard */,
 				FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */,
@@ -220,6 +224,7 @@
 			children = (
 				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
 				FA957B611A478ED60015CCC3 /* Fabric.framework */,
+				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
 				FA52B5291AF20E4A008229D8 /* XCGLogger.framework */,
 			);
 			path = libraries;
@@ -432,6 +437,7 @@
 			files = (
 				FAFB2E6E1AF32BD000A8AB21 /* CrashlyticsAdapter.swift in Sources */,
 				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
+				FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */,
 				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
 				FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */,
 			);
