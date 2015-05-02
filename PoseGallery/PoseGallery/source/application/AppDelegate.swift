@@ -18,7 +18,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     public var window: UIWindow?
     
     /// Logging library
-    let log = XCGLogger.defaultInstance()
+    public var log = XCGLogger.defaultInstance()
     
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

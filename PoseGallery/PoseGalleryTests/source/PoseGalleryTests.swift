@@ -11,10 +11,12 @@
 
 import UIKit
 import XCTest
-
 // don't add AppDelegate to target, PoseGallery.AppDelegate and PoseGalleryTests.AppDelegate become different!
 // http://stackoverflow.com/questions/26946677/uiapplication-sharedapplication-delegate-as-appdelegate-causes-exc-bad-access
 import PoseGallery
+import XCGLogger
+import Fabric
+import Crashlytics
 
 // also problems with adding view controllers that are instantiated from storyboards
 
@@ -30,19 +32,40 @@ class PoseGalleryTests: XCTestCase {
         super.tearDown()
     }
     
+    /// Make sure our extensions perform as expected
+    func testOptionalTests() {
+        var optional: String?
+        XCTAssertNilOptional(optional, "XCTAssertNilOptional broken?")
+        optional = "option"
+        XCTAssertNotNilOptional(optional, "XCTAssertNotNilOptional broken?")
+        XCTAssertEqualOptional(optional, "option", "XCTAssertEqualOptional broken?")
+    }
+    
     /// Check that setup, target plist and main storyboard are good
     func testConfiguration() {
-        let delegate = UIApplication.sharedApplication().delegate
-        XCTAssertNotNil(delegate, "sharedApplication().delegate does not exist - set host application!")
-        let appDelegate = delegate as! AppDelegate
-        XCTAssertNotNil(appDelegate.window)
-        XCTAssertNotNil(appDelegate.window!.rootViewController as? UITabBarController)
-        let tabController = appDelegate.window!.rootViewController as! UITabBarController
-        XCTAssertEqual(tabController.viewControllers!.count, 2)
-        XCTAssertNotNil(tabController.viewControllers![0] as? FirstViewController)
-        XCTAssertNotNil(tabController.viewControllers![1] as? SecondViewController)
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        XCTAssertNotNilOptional(delegate, "sharedApplication().delegate does not exist - set host application!")
+        XCTAssertNotNilOptional(delegate?.window, "missing main window")
+        let root = delegate?.window?.rootViewController as? UITabBarController
+        XCTAssertNotNilOptional(root, "missing root tab controller")
+        XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, "wrong first view controller")
+        XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, "wrong second view controller")
 
-        XCTAssertTrue(appDelegate.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
+        XCTAssertTrue(delegate!.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
+    }
+    
+    /// Check that external dependencies are good
+    func testDependenciesConfiguration() {
+        
+        // Fabric and Crashlytics library configured ok
+        XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
+        let crashKey = Crashlytics().apiKey;
+        XCTAssertEqual(crashKey, "99cec92a3fd08dcc72275ff9d713c1150c1e9c31", "wrong Crashlytics apiKey")
+        
+        // XCGLogger was initialzed ok
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        XCTAssertTrue(delegate!.log === XCGLogger.defaultInstance(), "wrong XCGLogger?")
+        
     }
     
     /// This is an example of a performance test case.
