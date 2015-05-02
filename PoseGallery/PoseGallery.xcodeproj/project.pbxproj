@@ -25,8 +25,6 @@
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
 		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
-		FA52B52A1AF20E4A008229D8 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; };
-		FA52B52C1AF20E56008229D8 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
@@ -37,8 +35,14 @@
 		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
 		FAFB2E6E1AF32BD000A8AB21 /* CrashlyticsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E6A1AF32BD000A8AB21 /* CrashlyticsAdapter.swift */; };
 		FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */; };
-		FAFB2E7F1AF4859100A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52B5291AF20E4A008229D8 /* XCGLogger.framework */; };
 		FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
+		FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */; };
+		FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
+		FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
+		FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
+		FAFB2EA81AF58CA800A8AB21 /* Swiftalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
+		FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +62,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA52B52C1AF20E56008229D8 /* XCGLogger.framework in Embed Frameworks */,
+				FAFB2EA81AF58CA800A8AB21 /* Swiftalytics.framework in Embed Frameworks */,
+				FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +91,6 @@
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
 		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
 		FA52B5281AF20B29008229D8 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
-		FA52B5291AF20E4A008229D8 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "../../../../../../AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS/XCGLogger.framework"; sourceTree = "<group>"; };
 		FA6E64A11A279B7700395E94 /* PoseGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoseGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64AF1A279B7700395E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,9 @@
 		FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Optionals.swift"; sourceTree = "<group>"; };
 		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
 		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTracking.swift; sourceTree = "<group>"; };
+		FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swiftalytics.framework; sourceTree = "<group>"; };
+		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCGLogger.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
 				FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */,
 				FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */,
-				FA52B52A1AF20E4A008229D8 /* XCGLogger.framework in Frameworks */,
+				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,9 +131,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
 				FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */,
 				FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */,
-				FAFB2E7F1AF4859100A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +234,8 @@
 				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
 				FA957B611A478ED60015CCC3 /* Fabric.framework */,
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
-				FA52B5291AF20E4A008229D8 /* XCGLogger.framework */,
+				FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */,
+				FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */,
 			);
 			path = libraries;
 			sourceTree = "<group>";
@@ -278,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFB2E6A1AF32BD000A8AB21 /* CrashlyticsAdapter.swift */,
+				FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */,
 			);
 			path = support;
 			sourceTree = "<group>";
@@ -437,6 +448,7 @@
 			files = (
 				FAFB2E6E1AF32BD000A8AB21 /* CrashlyticsAdapter.swift in Sources */,
 				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
+				FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */,
 				FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */,
 				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
 				FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */,
@@ -518,6 +530,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
 		};
@@ -525,6 +542,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Release;
 		};
@@ -535,6 +557,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Debug;
@@ -546,6 +569,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Release;
@@ -561,6 +585,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Adhoc;
 		};
@@ -571,6 +600,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Adhoc;

@@ -34,7 +34,7 @@ CFBuildDate=$(date +"%y.%m.%d %H:%M:%S %Z")
 echo Build date set to current date: $CFBuildDate
 }
 
-# https://gist.github.com/dulaccc/a52154ac4c007db2be55
+# see script_tag_icon.sh
 
 restore_icon()
 {
@@ -60,6 +60,7 @@ restore_icon
 #copy_branding
 
 # Fabric magic
+# Scripts for automating Beta distribution: https://dev.twitter.com/crashlytics/beta-distribution/ios
 
 #if [ $CONFIGURATION != "Debug" ] ; then
 echo Uploading to Crashlytics:

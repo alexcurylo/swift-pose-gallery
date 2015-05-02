@@ -5,6 +5,9 @@
 # Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 #
 
+# analytics
+github "MrAlek/Swiftalytics" >= 0.1.1
+
 # Core Data
 # see blog post...
 

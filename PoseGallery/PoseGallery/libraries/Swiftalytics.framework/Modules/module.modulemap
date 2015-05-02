@@ -1,0 +1,10 @@
+framework module Swiftalytics {
+  umbrella header "Swiftalytics.h"
+
+  export *
+  module * { export * }
+}
+
+module Swiftalytics.Swift {
+    header "Swiftalytics-Swift.h"
+}

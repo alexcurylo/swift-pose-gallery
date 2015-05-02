@@ -17,6 +17,7 @@ import PoseGallery
 import XCGLogger
 import Fabric
 import Crashlytics
+import Swiftalytics
 
 // also problems with adding view controllers that are instantiated from storyboards
 
@@ -42,7 +43,7 @@ class PoseGalleryTests: XCTestCase {
     }
     
     /// Check that setup, target plist and main storyboard are good
-    func testConfiguration() {
+    func testAppDelegateConfiguration() {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         XCTAssertNotNilOptional(delegate, "sharedApplication().delegate does not exist - set host application!")
         XCTAssertNotNilOptional(delegate?.window, "missing main window")
@@ -60,13 +61,17 @@ class PoseGalleryTests: XCTestCase {
         // Fabric and Crashlytics library configured ok
         XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
         let crashKey = Crashlytics().apiKey;
-        XCTAssertEqual(crashKey, "99cec92a3fd08dcc72275ff9d713c1150c1e9c31", "wrong Crashlytics apiKey")
+        XCTAssertEqual(crashKey, "186ef2a41f30e2ce39a21f35b61600d3ae927290", "wrong Crashlytics apiKey")
         
         // XCGLogger was initialzed ok
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         XCTAssertTrue(delegate!.log === XCGLogger.defaultInstance(), "wrong XCGLogger?")
         
-    }
+        // Swiftalytics was initialzed ok
+        let top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
+            trackMaster = Swiftalytics.trackingNameForViewController(top!)
+        XCTAssertEqualOptional(trackMaster, "FirstViewController (start)")
+     }
     
     /// This is an example of a performance test case.
     func testPerformanceExample() {
@@ -75,4 +80,5 @@ class PoseGalleryTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
 }
