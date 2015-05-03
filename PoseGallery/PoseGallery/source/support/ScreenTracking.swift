@@ -25,6 +25,9 @@
 import UIKit
 import Swiftalytics
 
+/**
+Associate an identifier with all tracked screens
+*/
 func setupScreenTracking() {
     FirstViewController.self  >>   "FirstViewController (start)"
     SecondViewController.self  >>   .NavigationTitle
@@ -32,9 +35,16 @@ func setupScreenTracking() {
     //RandomQuoteViewController.computedPageName<<
 }
 
+/**
+Adorn viewDidAppear with screen tracking
+*/
 extension UIViewController {
+    
+    ///swizzle viewDidAppear to add screen tracking
     public override class func initialize() {
+        /// wrap associated variables in structure
         struct Static {
+            /// only swizzle once
             static var token: dispatch_once_t = 0
         }
         
@@ -62,6 +72,7 @@ extension UIViewController {
     
     // MARK: - Method Swizzling
     
+    /// track screen if set up
     func swiftalytics_viewDidAppear(animated: Bool) {
         self.swiftalytics_viewDidAppear(animated)
         if let name = Swiftalytics.trackingNameForViewController(self) {
@@ -73,16 +84,19 @@ extension UIViewController {
 
 
 postfix operator << { }
+/// postfix operator to associate closure
 private postfix func <<<T: UIViewController>(trackClassFunction: (T -> () -> String)) {
     Swiftalytics.setTrackingNameForViewController(trackClassFunction)
 }
-
+/// infix operator to associate closure
 private func >> <T: UIViewController>(left: T.Type, @autoclosure right: () -> String) {
     Swiftalytics.setTrackingNameForViewController(left, name: right)
 }
+/// infix operator to associate type
 private func >> <T: UIViewController>(left: T.Type, right: TrackingNameType) {
     Swiftalytics.setTrackingNameForViewController(left, trackingType: right)
 }
+/// infix operator to associate string
 private func >> <T: UIViewController>(left: T.Type, right: (T -> String)) {
     Swiftalytics.setTrackingNameForViewController(left, nameFunction: right)
 }

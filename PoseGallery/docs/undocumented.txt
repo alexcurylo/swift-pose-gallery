@@ -1,0 +1,20 @@
+R.generated.swift
+	struct R
+	static func validate()
+	struct image
+	static var appIcon: UIImage? { return UIImage(named: "AppIcon") }
+	static var first: UIImage? { return UIImage(named: "first") }
+	static var second: UIImage? { return UIImage(named: "second") }
+	struct nib
+	struct launchScreen
+	static var instance: UINib { return UINib.init(nibName: "LaunchScreen", bundle: nil) }
+	static func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView?
+	static func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject]
+	struct reuseIdentifier
+	struct segue
+	struct storyboard
+	struct main
+	static var initialViewController: UITabBarController? { return instance.instantiateInitialViewController() as? UITabBarController }
+	static var instance: UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
+	static func validateImages()
+	static func validateViewControllers()

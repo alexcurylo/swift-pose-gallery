@@ -14,10 +14,10 @@ import XCTest
 // don't add AppDelegate to target, PoseGallery.AppDelegate and PoseGalleryTests.AppDelegate become different!
 // http://stackoverflow.com/questions/26946677/uiapplication-sharedapplication-delegate-as-appdelegate-causes-exc-bad-access
 import PoseGallery
-import XCGLogger
 import Fabric
 import Crashlytics
 import Swiftalytics
+import XCGLogger
 
 // also problems with adding view controllers that are instantiated from storyboards
 

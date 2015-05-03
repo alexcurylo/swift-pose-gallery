@@ -5,19 +5,8 @@
 # Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 #
 
-# analytics
+# Swiftalytics: view analytics
 github "MrAlek/Swiftalytics" >= 0.1.1
 
-# Core Data
-# see blog post...
-
-# logging
+# XCGLogger: logging
 github "DaveWoodCom/XCGLogger" >= 2.0
-
-# JSON
-#github "SwiftyJSON/SwiftyJSON" >= 2.2
-
-# networking
-#github "Alamofire/Alamofire" >= 1.2.1
-
-# state machine

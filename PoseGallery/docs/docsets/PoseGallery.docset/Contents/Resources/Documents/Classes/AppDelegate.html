@@ -13,7 +13,7 @@
     <a title="AppDelegate Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PoseGallery Docs</a> (100% documented)</p>
+        <p><a href="../index.html">PoseGallery Docs</a> (60% documented)</p>
         <p class="header-right"><a href="https://github.com/alexcurylo/swift-pose-gallery"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -42,8 +42,28 @@
             </ul>
           </li>
           <li class="nav-group-name">
+          <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
           <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF11PoseGalleryP33_36CAA765197757C709C53B39E14EB1D4oP2llU__FFQ_FT_SST_">&lt;&lt;(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF11PoseGalleryP33_36CAA765197757C709C53B39E14EB1D4oi2ggU__FTMQ_O12Swiftalytics16TrackingNameType_T_">&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF11PoseGalleryP33_36CAA765197757C709C53B39E14EB1D4oi2ggU__FTMQ_KT_SS_T_">&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF11PoseGalleryP33_36CAA765197757C709C53B39E14EB1D4oi2ggU__FTMQ_FQ_SS_T_">&gt;&gt;(_:_:)</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:F11PoseGallery13CLS_LOG_SWIFTFTSSGSaPSs11CVarArgType__4fileSS8functionSS4lineSi_T_">CLS_LOG_SWIFT(_:_:file:function:line:)</a>
               </li>
@@ -51,7 +71,18 @@
                 <a href="../Functions.html#/s:F11PoseGallery5crashFT_T_">crash()</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Functions.html#/s:F11PoseGallery19setupScreenTrackingFT_T_">setupScreenTracking()</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Functions.html#/s:F11PoseGallery19startCrashReportingFT_T_">startCrashReporting()</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/R.html">R</a>
               </li>
             </ul>
           </li>
@@ -144,6 +175,58 @@
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11PoseGallery11AppDelegate20configureSettingsAppFS0_FGSqGVSs10DictionaryCSo8NSObjectPSs9AnyObject___Sb"></a>
+                    <a name="//apple_ref/swift/Method/configureSettingsApp(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11PoseGallery11AppDelegate20configureSettingsAppFS0_FGSqGVSs10DictionaryCSo8NSObjectPSs9AnyObject___Sb">configureSettingsApp(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Copy build parameters to Settings display via NSUserDefaults</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configureSettingsApp</span><span class="p">(</span><span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>launchOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>as passed to didFinishLaunchingWithOptions</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Whether bundle has all expected fields</p>
+
                       </div>
                     </section>
                   </div>
@@ -283,64 +366,12 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC11PoseGallery11AppDelegate20configureSettingsAppFS0_FGSqGVSs10DictionaryCSo8NSObjectPSs9AnyObject___Sb"></a>
-                    <a name="//apple_ref/swift/Method/configureSettingsApp(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC11PoseGallery11AppDelegate20configureSettingsAppFS0_FGSqGVSs10DictionaryCSo8NSObjectPSs9AnyObject___Sb">configureSettingsApp(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Copy build parameters to Settings display via NSUserDefaults</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="Swift">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configureSettingsApp</span><span class="p">(</span><span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>launchOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>as passed to didFinishLaunchingWithOptions</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Whether bundle has all expected fields</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="http://www.alexcurylo.com" target="_blank" rel="external">Alex Curylo</a>. All rights reserved. (Last updated: 2015-05-01)</p>
+          <p>&copy; 2015 <a class="link" href="http://www.alexcurylo.com" target="_blank" rel="external">Alex Curylo</a>. All rights reserved. (Last updated: 2015-05-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
