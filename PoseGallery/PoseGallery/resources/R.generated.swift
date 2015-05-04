@@ -3,51 +3,51 @@
 
 import UIKit
 
-struct R {
-  static func validate() {
+/// :nodoc:struct R {
+  /// :nodoc:static func validate() {
     storyboard.main.validateImages()
     storyboard.main.validateViewControllers()
   }
   
-  struct image {
-    static var appIcon: UIImage? { return UIImage(named: "AppIcon") }
-    static var first: UIImage? { return UIImage(named: "first") }
-    static var second: UIImage? { return UIImage(named: "second") }
+  /// :nodoc:struct image {
+    /// :nodoc:static var appIcon: UIImage? { return UIImage(named: "AppIcon") }
+    /// :nodoc:static var first: UIImage? { return UIImage(named: "first") }
+    /// :nodoc:static var second: UIImage? { return UIImage(named: "second") }
   }
   
-  struct nib {
-    struct launchScreen {
-      static var instance: UINib { return UINib.init(nibName: "LaunchScreen", bundle: nil) }
+  /// :nodoc:struct nib {
+    /// :nodoc:struct launchScreen {
+      /// :nodoc:static var instance: UINib { return UINib.init(nibName: "LaunchScreen", bundle: nil) }
       
-      static func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView? {
+      /// :nodoc:static func firstView(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> UIView? {
         return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
       }
       
-      static func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject] {
+      /// :nodoc:static func instantiateWithOwner(ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]?) -> [AnyObject] {
         return instance.instantiateWithOwner(ownerOrNil, options: optionsOrNil)
       }
     }
   }
   
-  struct reuseIdentifier {
+  /// :nodoc:struct reuseIdentifier {
     
   }
   
-  struct segue {
+  /// :nodoc:struct segue {
     
   }
   
-  struct storyboard {
-    struct main {
-      static var initialViewController: UITabBarController? { return instance.instantiateInitialViewController() as? UITabBarController }
-      static var instance: UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
+  /// :nodoc:struct storyboard {
+    /// :nodoc:struct main {
+      /// :nodoc:static var initialViewController: UITabBarController? { return instance.instantiateInitialViewController() as? UITabBarController }
+      /// :nodoc:static var instance: UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
       
-      static func validateImages() {
+      /// :nodoc:static func validateImages() {
         assert(UIImage(named: "first") != nil, "[R.swift] Image named 'first' is used in storyboard 'Main', but couldn't be loaded.")
         assert(UIImage(named: "second") != nil, "[R.swift] Image named 'second' is used in storyboard 'Main', but couldn't be loaded.")
       }
       
-      static func validateViewControllers() {
+      /// :nodoc:static func validateViewControllers() {
         
       }
     }
