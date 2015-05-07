@@ -63,23 +63,37 @@ class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(defaults.stringForKey("build_date"), "missing build date");
     }
     
-    /// Check that external dependencies are good
-    func testDependenciesConfiguration() {
-        
+    /// Fabric and Crashlytics library configured ok
+    func testFabricCrashlytics() {
         // Fabric and Crashlytics library configured ok
         XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
         let crashKey = Crashlytics().apiKey;
         XCTAssertEqual(crashKey, "186ef2a41f30e2ce39a21f35b61600d3ae927290", "wrong Crashlytics apiKey")
-        
-        // XCGLogger was initialzed ok
-        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
-        XCTAssertTrue(delegate!.log === XCGLogger.defaultInstance(), "wrong XCGLogger?")
-        
-        // Swiftalytics was initialzed ok
-        let top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
+    }
+    
+    /// XCGLogger initialized ok
+    func testXCGLogger() {
+        XCTAssertTrue(log === XCGLogger.defaultInstance(), "wrong XCGLogger")
+    }
+    
+    /// Swiftalytics initialized ok
+    func testSwiftalytics() {
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
+            top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
             trackMaster = Swiftalytics.trackingNameForViewController(top!)
         XCTAssertEqualOptional(trackMaster, "FirstViewController (start)")
-     }
+    }
+    
+    /// JSQCoreDataKit initialized ok
+    func testJSQCoreDataKit() {
+//        let stack = (UIApplication.sharedApplication().delegate as! AppDelegate).stack
+//        XCTAssertNotNil(stack.model.storeURL, " bad model store")
+//        XCTAssertNotNil(stack.model.managedObjectModel, " bad model")
+//        XCTAssertNotNil(stack.managedObjectContext, "bad MOC")
+//        XCTAssertNotNil(stack.persistentStoreCoordinator, "bad PSC")
+//        let event = entity(name: Event.entityName(), context: stack.managedObjectContext)
+//        XCTAssertNotNil(event, "bad Event")
+    }
     
     /// This is an example of a performance test case.
     func testPerformanceExample() {

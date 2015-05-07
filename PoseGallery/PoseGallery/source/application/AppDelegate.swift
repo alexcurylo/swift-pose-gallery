@@ -8,17 +8,21 @@
 import UIKit
 import XCGLogger
 
+/// Logging singleton
+public let log = XCGLogger.defaultInstance()
+
 /**
 Singleton UIApplication delegate
 */
 @UIApplicationMain
 public class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Properties
+
     /// Root window
     public var window: UIWindow?
     
-    /// Logging library
-    public var log = XCGLogger.defaultInstance()
+    // MARK: - Life cycle methods
     
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

@@ -31,6 +31,8 @@
 		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
+		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
+		FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
 		FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */; };
 		FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */; };
 		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
@@ -105,6 +107,7 @@
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQCoreDataKit.framework; path = Carthage/Build/iOS/JSQCoreDataKit.framework; sourceTree = SOURCE_ROOT; };
 		FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +116,8 @@
 		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
 		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTracking.swift; sourceTree = "<group>"; };
-		FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swiftalytics.framework; sourceTree = "<group>"; };
-		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCGLogger.framework; sourceTree = "<group>"; };
+		FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftalytics.framework; path = ../../Carthage/Build/iOS/Swiftalytics.framework; sourceTree = "<group>"; };
+		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = ../../Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		FAFB2EB41AF5E34500A8AB21 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */,
 				FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */,
 				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
@@ -135,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
 				FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */,
 				FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */,
@@ -238,6 +243,7 @@
 				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
 				FA957B611A478ED60015CCC3 /* Fabric.framework */,
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
+				FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */,
 				FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */,
 				FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */,
 			);
@@ -547,6 +553,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -559,6 +566,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -568,6 +576,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Debug;
 		};
@@ -575,6 +587,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Release;
 		};
@@ -592,6 +608,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -601,6 +618,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Adhoc;
 		};
