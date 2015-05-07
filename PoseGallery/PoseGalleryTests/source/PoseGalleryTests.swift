@@ -51,8 +51,16 @@ class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(root, "missing root tab controller")
         XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, "wrong first view controller")
         XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, "wrong second view controller")
-
-        XCTAssertTrue(delegate!.configureSettingsApp(nil), "Settings.app variables not properly set in Info.plist!")
+    }
+    
+    /// Check that resource configurations are good
+    func testAppResources() {
+        
+        // items copied to NSUserDefaults from plist for settings
+        let defaults = NSUserDefaults.standardUserDefaults()
+        XCTAssertNotNilOptional(defaults.stringForKey("version_number"), "missing version number");
+        XCTAssertNotNilOptional(defaults.stringForKey("build_number"), "missing build number");
+        XCTAssertNotNilOptional(defaults.stringForKey("build_date"), "missing build date");
     }
     
     /// Check that external dependencies are good

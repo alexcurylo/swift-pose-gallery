@@ -142,6 +142,7 @@ processIcon $icon
 else
 processIcon "${icon}.png"
 processIcon "${icon}@2x.png"
+processIcon "${icon}@3x.png"
 fi
 let i=i+1
 done

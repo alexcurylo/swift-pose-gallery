@@ -42,7 +42,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     
     :returns: Whether bundle has all expected fields
     */
-    public func configureSettingsApp(launchOptions: [NSObject: AnyObject]?) -> Bool {
+    public func configureSettingsApp(launchOptions: [NSObject: AnyObject]?) {
         // Info.plist configured with build scripts
         if let bundle = NSBundle.mainBundle() as NSBundle?,
             let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
@@ -61,11 +61,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
             // no launch options handled currently
             
             log.info("launched \(display_name) \(build_config) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
-
-            return true
         }
-        
-        return false
     }
 
     /// UIApplicationDelegate implementation

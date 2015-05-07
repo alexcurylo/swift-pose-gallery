@@ -25,6 +25,7 @@
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
 		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
 		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
+		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
@@ -91,6 +92,7 @@
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
 		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
 		FA52B5281AF20B29008229D8 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		FA6E39BB1AF96949006E0C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA6E64A11A279B7700395E94 /* PoseGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoseGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64AF1A279B7700395E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				FA38C2C41A39CCB700A76606 /* branded */,
 				FA38C2C01A38A69900A76606 /* Main.storyboard */,
 				FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */,
+				FA6E39BA1AF96949006E0C18 /* Localizable.strings */,
 				FA6E64AF1A279B7700395E94 /* Images.xcassets */,
 				FA6E64A51A279B7700395E94 /* Info.plist */,
 				FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */,
@@ -383,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */,
 				FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */,
 				FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */,
 				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
@@ -493,6 +497,14 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		FA6E39BA1AF96949006E0C18 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6E39BB1AF96949006E0C18 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -556,11 +568,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Debug;
 		};
@@ -568,11 +575,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Release;
 		};
@@ -599,11 +601,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Volumes/Coding/Trollwerks/ProjectsActive/AssemblyCo/github/MdCalc-iOS/MdCalc/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Adhoc;
 		};
