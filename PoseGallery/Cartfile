@@ -5,6 +5,9 @@
 # Copyright (c) 2015 Trollwerks Inc. All rights reserved.
 #
 
+# JSQCoreDataKit: Core Data
+github "jessesquires/JSQCoreDataKit"
+
 # Swiftalytics: view analytics
 github "MrAlek/Swiftalytics" >= 0.1.1
 
