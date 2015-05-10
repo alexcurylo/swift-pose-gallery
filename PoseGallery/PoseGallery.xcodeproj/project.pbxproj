@@ -33,6 +33,7 @@
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
 		FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
+		FAF27C6E1AFC137F00190CC3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
 		FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */; };
 		FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */; };
 		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
@@ -473,6 +474,7 @@
 			files = (
 				FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */,
 				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
+				FAF27C6E1AFC137F00190CC3 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

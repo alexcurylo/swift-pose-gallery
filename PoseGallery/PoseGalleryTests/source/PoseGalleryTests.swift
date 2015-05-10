@@ -61,6 +61,9 @@ class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(defaults.stringForKey("version_number"), "missing version number");
         XCTAssertNotNilOptional(defaults.stringForKey("build_number"), "missing build number");
         XCTAssertNotNilOptional(defaults.stringForKey("build_date"), "missing build date");
+        
+        // images and storyboards, as provided by R.swift
+        R.validate()
     }
     
     /// Fabric and Crashlytics library configured ok

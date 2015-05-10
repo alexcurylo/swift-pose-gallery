@@ -27,8 +27,6 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        // TODO: start state flow; beta distribution?
-
         startCrashReporting()
 
         log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
