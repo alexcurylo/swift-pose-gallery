@@ -29,10 +29,15 @@ import Swiftalytics
 Associate an identifier with all tracked screens
 */
 func setupScreenTracking() {
+
+#if TESTING
+    // no tracking
+#else
     FirstViewController.self  >>   "FirstViewController (start)"
     SecondViewController.self  >>   .NavigationTitle
     //QuoteViewController.self    >> { "Quote: "+$0.author.name }
     //RandomQuoteViewController.computedPageName<<
+#endif
 }
 
 /**

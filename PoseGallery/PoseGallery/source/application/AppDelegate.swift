@@ -6,10 +6,6 @@
 //
 
 import UIKit
-import XCGLogger
-
-/// Logging singleton
-public let log = XCGLogger.defaultInstance()
 
 /**
 Singleton UIApplication delegate
@@ -27,12 +23,9 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        startCrashReporting()
+        startReporting()
 
-        log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-        setupScreenTracking()
-
-        configureSettingsApp(launchOptions)
+        DataModel.model.configureSettingsApp()
         
         return true
     }

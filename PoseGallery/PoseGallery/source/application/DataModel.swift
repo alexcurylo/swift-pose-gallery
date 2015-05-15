@@ -6,13 +6,12 @@
 //  Copyright (c) 2015 Assembly Co. All rights reserved.
 //
 
-import CoreData
+//import CoreData
 import UIKit
-import Alamofire
-import Signals
-import JSQCoreDataKit
-import SwiftyJSON
-import XCGLogger
+//import Alamofire
+//import Signals
+//import JSQCoreDataKit
+//import SwiftyJSON
 
 /// Encapsulate our data model
 struct DataModel {
@@ -22,55 +21,7 @@ struct DataModel {
     /// Singleton access
     static var model = DataModel()
     
-    /// Vine connection status
-    var connectedVine = false {
-        willSet
-        {
-        }
-        didSet
-        {
-            if connectedVine != oldValue
-            {
-                self.onConnectedChange.fire(connectedVine)
-            }
-        }
-    }
-    /// Signal connection change
-    let onConnectedChange = Signal<Bool>()
-
-    /// Rankzoo signed in status
-    var signedInRankzoo = false {
-        willSet
-        {
-        }
-        didSet
-        {
-            if signedInRankzoo != oldValue
-            {
-                self.connectedVine = false
-                self.onSignedInChange.fire(signedInRankzoo)
-            }
-        }
-    }
-    /// Signal signed in change
-    let onSignedInChange = Signal<Bool>()
-    
-    /// onboarded
-    var onboarded = false {
-        willSet
-        {
-        }
-        didSet
-        {
-            if onboarded != oldValue
-            {
-                self.onOnboardedChange.fire(onboarded)
-            }
-        }
-    }
-    /// Signal connection change
-    let onOnboardedChange = Signal<Bool>()
-
+/*
     /// Core Data stack
     var stack: CoreDataStack = {
         let model = CoreDataModel(name: "Rankzoo")
@@ -82,24 +33,12 @@ struct DataModel {
         //log.info(stack.description)
         return stack
         }()
-    
-    /// Currently loading user data
-    var loadingUsers = false
-    /// Current page of user data being loaded
-    var currentUsersPage = 0
-
-    /// Currently loading post data
-    var loadingPosts = false
-    /// Current page of rank data being loaded
-    var currentPostsPage = 0
+    */
 
     // MARK: - Life cycle methods
 
     /// Reflect last saved state
     init() {
-        onboarded = false
-        connectedVine = false
-        signedInRankzoo = false
     }
 
     // MARK: - Exposed functionality
@@ -130,140 +69,10 @@ struct DataModel {
     }
     
     /// write data out to disk
+    /*
     func save() {
         stack.save()
     }
+*/
     
-    // TODO: Implement paging, profile, stats, posts?
-
-    /// reload Users from scratch
-    mutating func refreshUsers() {
-        if (!loadingUsers) {
-            currentUsersPage = 0
-            loadNextPageUsers()
-        }
-    }
-    
-    /// load next Users page
-    mutating func loadNextPageUsers() {
-        currentUsersPage += 1
-        loadingUsers = true
-        Alamofire.request(RankzooAPI.Router.Users(RankzooAPI.UsersInterval(),  RankzooAPI.UsersOrder(), currentUsersPage, 50)).validate().responseSwiftyJSON {
-            (request, response, json, error) in
-            self.loadingUsers = false
-            if let error = error  {
-                log.error("Error: \(error)")
-                log.error(request.description)
-                log.error(response?.description)
-            }
-            else {
-                log.info("Success: \(request)")
-                log.info("\(json.count) items: \(json)")
-                
-                let childContext = self.stack.childManagedObjectContext()
-                if self.currentUsersPage == 1 {
-                    let result = User.fetchUsers(childContext)
-                    deleteObjects(result.objects, inContext: childContext)
-                    log.info("\(result.objects.count) deleted!")
-                }
-                User.createUsers(childContext, items:json)
-                childContext.save()
-                self.save()
-            }
-        }
-    }
-
-    /// reload Posts from scratch
-    mutating func refreshPosts() {
-        if (!loadingPosts) {
-            currentPostsPage = 0
-            loadNextPagePosts()
-        }
-    }
-    
-    /// load next Posts page
-    mutating func loadNextPagePosts() {
-        currentPostsPage += 1
-        loadingPosts = true
-        Alamofire.request(RankzooAPI.Router.Posts(RankzooAPI.PostsInterval(),  RankzooAPI.PostsOrder(), currentPostsPage, 50)).validate().responseSwiftyJSON {
-            (request, response, json, error) in
-            self.loadingPosts = false
-            if let error = error  {
-                log.error("Error: \(error)")
-                log.error(request.description)
-                log.error(response?.description)
-            }
-            else {
-                log.info("Success: \(request)")
-                log.info("\(json.count) items: \(json)")
-                /*
-                let childContext = self.stack.childManagedObjectContext()
-                if self.currentPostsPage == 1 {
-                    let result = User.fetchPosts(childContext)
-                    deleteObjects(result.objects, inContext: childContext)
-                    log.info("\(result.objects.count) deleted!")
-                }
-                User.createPosts(childContext, items:json)
-                childContext.save()
-                self.save()
-                */
-            }
-        }
-    }
-
-    /// load user profile
-    func loadProfile(userID: Int) {
-        Alamofire.request(RankzooAPI.Router.Profile(userID)).validate().responseSwiftyJSON {
-            (request, response, json, error) in
-            if let error = error  {
-                log.error("Error: \(error)")
-                log.error(request.description)
-                log.error(response?.description)
-            }
-            else {
-                log.info("Success: \(request)")
-                log.info("Profile: \(json)")
-                
-                /*
-                let childContext = self.stack.childManagedObjectContext()
-                if self.currentUsersPage == 1 {
-                    let result = User.fetchUsers(childContext)
-                    deleteObjects(result.objects, inContext: childContext)
-                    log.info("\(result.objects.count) deleted!")
-                }
-                User.createUsers(childContext, items:json)
-                childContext.save()
-                self.save()
-                */
-            }
-        }
-    }
-    
-    /// load user stats
-    func loadStats(userID: Int) {
-        Alamofire.request(RankzooAPI.Router.Stats(userID, RankzooAPI.StatsInterval())).validate().responseSwiftyJSON {
-            (request, response, json, error) in
-            if let error = error  {
-                log.error("Error: \(error)")
-                log.error(request.description)
-                log.error(response?.description)
-            }
-            else {
-                log.info("Success: \(request)")
-                log.info("Profile: \(json)")
-                
-                /*
-                let childContext = self.stack.childManagedObjectContext()
-                if self.currentUsersPage == 1 {
-                let result = User.fetchUsers(childContext)
-                deleteObjects(result.objects, inContext: childContext)
-                log.info("\(result.objects.count) deleted!")
-                }
-                User.createUsers(childContext, items:json)
-                childContext.save()
-                self.save()
-                */
-            }
-        }
-    }
 }

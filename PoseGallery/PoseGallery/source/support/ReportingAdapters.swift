@@ -7,6 +7,14 @@
 import Foundation
 import Fabric
 import Crashlytics
+import XCGLogger
+//import Mixpanel
+
+// Analytics singleton -- Alex's token!
+//public let mixpanel = Mixpanel(token: "f92302f6975b0dcd77ee32db93cf778e")
+
+/// Logging singleton
+public let log = XCGLogger.defaultInstance()
 
 /**
 this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift function, the only differences are that we have to use array syntax for the argument list and that we don't get see if the method being called is a class method or an instance method. We also have to define the DEBUG compiler flag with -DDEBUG.
@@ -29,17 +37,25 @@ func CLS_LOG_SWIFT( _ format: String = "", _ args:[CVarArgType] = [], file: Stri
 {
     #if DEBUG
         CLSNSLogv("\(file.lastPathComponent.stringByDeletingPathExtension).\(function) line \(line) $ \(format)", getVaList(args))
-        #else
+    #else
         CLSLogv("\(file.lastPathComponent.stringByDeletingPathExtension).\(function) line \(line) $ \(format)", getVaList(args))
     #endif
     
 }
 
 /**
-centralize Crashlytics dependencies -- launching
+centralize crash/log/analytics setup
 */
-func startCrashReporting() {
+public func startReporting() {
+    // crashes
     Fabric.with([Crashlytics()])
+    // logging
+    log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+    // analytics
+    setupScreenTracking()
+    // TO DO: Turn on when ready for beta
+    //mixpanel.enabled = false; // remove when ready to start producing data
+    //mixpanel.track("Launch")
 }
 
 /**
