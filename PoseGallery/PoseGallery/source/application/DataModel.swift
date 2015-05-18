@@ -14,7 +14,7 @@ import UIKit
 //import SwiftyJSON
 
 /// Encapsulate our data model
-struct DataModel {
+class DataModel {
     
     // MARK: - Properties
 

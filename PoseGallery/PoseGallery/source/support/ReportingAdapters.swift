@@ -48,6 +48,7 @@ centralize crash/log/analytics setup
 */
 public func startReporting() {
     // crashes
+    //Fabric.with([Crashlytics.sharedInstance()])
     Fabric.with([Crashlytics()])
     // logging
     log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
@@ -62,5 +63,5 @@ public func startReporting() {
 centralize Crashlytics dependencies -- crashing
 */
 func crash() {
-    Crashlytics().crash()
+    Crashlytics.sharedInstance().crash()
 }

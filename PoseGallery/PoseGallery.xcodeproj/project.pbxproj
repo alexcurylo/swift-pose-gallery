@@ -23,13 +23,13 @@
 /* Begin PBXBuildFile section */
 		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
-		FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
-		FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
+		FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C221B0A9DA000528A37 /* Crashlytics.framework */; };
+		FA422C251B0A9DA000528A37 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C221B0A9DA000528A37 /* Crashlytics.framework */; };
+		FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
+		FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
 		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
-		FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */; };
-		FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA957B611A478ED60015CCC3 /* Fabric.framework */; };
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
 		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
@@ -92,6 +92,8 @@
 		FA38C2BE1A38A67A00A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA38C2C11A38A69900A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
+		FA422C221B0A9DA000528A37 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FA422C231B0A9DA000528A37 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FA44C9DA1A499BC400776BD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
@@ -104,8 +106,6 @@
 		FA6E64B81A279B7800395E94 /* PoseGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoseGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64BD1A279B7800395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryTests.swift; sourceTree = "<group>"; };
-		FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		FA957B611A478ED60015CCC3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
-				FA957B5E1A4786AC0015CCC3 /* Crashlytics.framework in Frameworks */,
-				FA957B621A478ED60015CCC3 /* Fabric.framework in Frameworks */,
+				FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */,
+				FA422C251B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
-				FA44CA191A4E115500776BD6 /* Crashlytics.framework in Frameworks */,
-				FA44CA1A1A4E115700776BD6 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +244,8 @@
 		FA957B601A478E130015CCC3 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
-				FA957B5C1A4786AC0015CCC3 /* Crashlytics.framework */,
-				FA957B611A478ED60015CCC3 /* Fabric.framework */,
+				FA422C221B0A9DA000528A37 /* Crashlytics.framework */,
+				FA422C231B0A9DA000528A37 /* Fabric.framework */,
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
 				FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */,
 				FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */,
@@ -562,6 +562,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -575,6 +576,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -587,6 +589,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Debug;
@@ -598,6 +602,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Release;
@@ -617,6 +623,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PoseGallery/libraries",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
@@ -629,6 +636,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PoseGallery/libraries",
 				);
 			};
 			name = Adhoc;
