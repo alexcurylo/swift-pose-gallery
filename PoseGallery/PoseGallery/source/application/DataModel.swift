@@ -40,6 +40,30 @@ class DataModel {
     /// Reflect last saved state
     init() {
     }
+    
+    /**
+    Kick off whatever actions should happen at startup
+    
+    :param: options from didFinishLaunchingWithOptions
+    */
+    func intro(options: [NSObject: AnyObject]?) {
+        log.info("startup options: \(options)")
+        configureSettingsApp()
+    }
+    
+    /**
+    Kick off whatever actions should happen coming from background
+    */
+    func reintro() {
+    }
+    
+    /**
+    Kick off whatever actions should happen at background/termination
+    */
+    func outro() {
+        //save()
+    }
+    
 
     // MARK: - Exposed functionality
 

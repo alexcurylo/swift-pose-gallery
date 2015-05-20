@@ -25,38 +25,9 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
 
         startReporting()
 
-        DataModel.model.configureSettingsApp()
+        DataModel.model.intro(launchOptions)
         
         return true
-    }
-
-    /**
-    Copy build parameters to Settings display via NSUserDefaults
-    
-    :param: launchOptions as passed to didFinishLaunchingWithOptions
-    
-    :returns: Whether bundle has all expected fields
-    */
-    public func configureSettingsApp(launchOptions: [NSObject: AnyObject]?) {
-        // Info.plist configured with build scripts
-        if let bundle = NSBundle.mainBundle() as NSBundle?,
-            let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
-            let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
-            let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
-            let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
-            let build_config = bundle.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty
-        {
-            // copy to keys specified in Settings.bundle
-            let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setObject(version_number, forKey:"version_number")
-            defaults.setObject(build_number, forKey:"build_number")
-            defaults.setObject(build_date, forKey:"build_date")
-            defaults.synchronize()
-            
-            // no launch options handled currently
-            
-            log.info("launched \(display_name) \(build_config) \(version_number)(\(build_number)) \(build_date) -- options: \(launchOptions)")
-        }
     }
 
     /// UIApplicationDelegate implementation
@@ -69,11 +40,13 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     public func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        DataModel.model.outro()
     }
 
     /// UIApplicationDelegate implementation
     public func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        DataModel.model.reintro()
     }
 
     /// UIApplicationDelegate implementation
@@ -84,7 +57,8 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     /// UIApplicationDelegate implementation
     public func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
+        DataModel.model.outro()
+   }
 
 }
 
