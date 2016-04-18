@@ -2,28 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBuildConfiguration</key>
+	<string>$(CONFIGURATION)</string>
 	<key>CFBuildDate</key>
 	<string>-scripted-</string>
-	<key>CFBundleVersion</key>
-	<string>-scripted-</string>
-	<key>CFBundleName</key>
-	<string>$(BUILT_NAME)</string>
-	<key>CFBundleDisplayName</key>
-	<string>${BUILT_NAME}</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(BUILT_BUNDLE_ID)</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(BUILT_VERSION)</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>${CONFIGURATION_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(CONFIGURATION_BUNDLE_ID)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(BRAND_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>-scripted-</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>

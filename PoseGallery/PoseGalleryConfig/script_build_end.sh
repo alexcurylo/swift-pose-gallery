@@ -34,7 +34,7 @@ CFBuildDate=$(date +"%y.%m.%d %H:%M:%S %Z")
 echo Build date set to current date: $CFBuildDate
 }
 
-# https://gist.github.com/dulaccc/a52154ac4c007db2be55
+# see script_tag_icon.sh
 
 restore_icon()
 {
@@ -58,6 +58,14 @@ update_bundle_version
 update_build_date
 restore_icon
 #copy_branding
+
+# Fabric magic
+# Scripts for automating Beta distribution: https://dev.twitter.com/crashlytics/beta-distribution/ios
+
+#if [ $CONFIGURATION != "Debug" ] ; then
+    echo Uploading to Crashlytics:
+    ./PoseGallery/libraries/Fabric.framework/run 186ef2a41f30e2ce39a21f35b61600d3ae927290 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50
+#fi
 
 # reveal the binary in the Finder if you like
 

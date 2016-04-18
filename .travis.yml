@@ -7,15 +7,25 @@
 
 # references:
 # * http://www.objc.io/issue-6/travis-ci.html
+# http://docs.travis-ci.com/user/build-configuration/
+# http://docs.travis-ci.com/user/languages/objective-c/
 # * https://github.com/supermarin/xcpretty#usage
 # https://github.com/venmo/slather/issues/39 -- track Swift support status
 # * https://github.com/venmo/slather#usage
 
 language: objective-c
+
+# until Travis gets its build machines updated
+branches:
+  except:
+    - feature/Xcode_6_3
+
 before_script:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 #- gem install slather --no-rdoc --no-ri --no-document --quiet
+
 script:
 - set -o pipefail && xcodebuild -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - set -o pipefail && xcodebuild test -project PoseGallery/PoseGallery.xcodeproj -scheme PoseGalleryTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+
 #after_success: slather
