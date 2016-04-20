@@ -1,3 +1,3 @@
-github "jessesquires/JSQCoreDataKit" "1.1.0"
-github "MrAlek/Swiftalytics" "0.1.1"
-github "DaveWoodCom/XCGLogger" "Version_2.0"
+github "jessesquires/JSQCoreDataKit" "3.0.0"
+github "MrAlek/Swiftalytics" "0.2"
+github "DaveWoodCom/XCGLogger" "Version_3.3"

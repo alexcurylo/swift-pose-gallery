@@ -25,11 +25,13 @@
 import UIKit
 import Swiftalytics
 
-func setupScreenTracking() {
-    AuthorsViewController.self  >>   "Authors (start)"
-    QuoteViewController.self    >> { "Quote: "+$0.author.name }
-    NewQuoteViewController.self >>   .NavigationTitle
-    RandomQuoteViewController.computedPageName<<
+struct ScreenTracking {
+    static func setup() {
+        AuthorsViewController.self  >>   "Authors (start)"
+        QuoteViewController.self    >> { "Quote: "+$0.author.name }
+        NewQuoteViewController.self >>   .NavigationTitle
+        RandomQuoteViewController.computedPageName<<
+    }
 }
 
 extension UIViewController {
@@ -66,7 +68,7 @@ extension UIViewController {
         self.swiftalytics_viewDidAppear(animated)
         if let name = Swiftalytics.trackingNameForViewController(self) {
             // Report to your analytics service
-            println("Tracked view controller: "+name)
+            print("Tracked view controller: "+name)
         }
     }
 }

@@ -7,24 +7,25 @@
 //
 
 import XCTest
+import XCGLogger
 
 class XCGLoggerTests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     //    func testExample() {
     //        // This is an example of a functional test case.
     //        XCTAssert(true, "Pass")
     //    }
-    //    
+    //
     //    func testPerformanceExample() {
     //        // This is an example of a performance test case.
     //        self.measureBlock() {
@@ -35,10 +36,10 @@ class XCGLoggerTests: XCTestCase {
     func testDefaultInstance() {
         // Test that if we request the default instance multiple times, we always get the same instance
         let defaultInstance1: XCGLogger = XCGLogger.defaultInstance()
-        defaultInstance1.identifier = XCGLogger.constants.defaultInstanceIdentifier
+        defaultInstance1.identifier = XCGLogger.Constants.defaultInstanceIdentifier
 
         let defaultInstance2: XCGLogger = XCGLogger.defaultInstance()
-        defaultInstance2.identifier = XCGLogger.constants.defaultInstanceIdentifier + ".second" // this should also change defaultInstance1.identifier
+        defaultInstance2.identifier = XCGLogger.Constants.defaultInstanceIdentifier + ".second" // this should also change defaultInstance1.identifier
 
         XCTAssert(defaultInstance1.identifier == defaultInstance2.identifier, "Fail: defaultInstance() is not returning a common instance")
     }
@@ -77,7 +78,6 @@ class XCGLoggerTests: XCTestCase {
         let testIdentifier = "second.console"
 
         let log = XCGLogger.defaultInstance()
-        let logDestinationCountAtStart = log.logDestinations.count
 
         let additionalConsoleLogger = XCGConsoleLogDestination(owner: log, identifier: testIdentifier)
         let additionalConsoleLogger2 = XCGConsoleLogDestination(owner: log, identifier: testIdentifier)
@@ -94,11 +94,11 @@ class XCGLoggerTests: XCTestCase {
     }
 
     func testAvoidStringInterpolationWithAutoclosure() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testAvoidStringInterpolationWithAutoclosure"
         log.outputLogLevel = .Debug
 
-        class ObjectWithExpensiveDescription: Printable {
+        class ObjectWithExpensiveDescription: CustomStringConvertible {
             var descriptionInvoked = false
 
             var description: String {
@@ -109,12 +109,12 @@ class XCGLoggerTests: XCTestCase {
 
         let thisObject = ObjectWithExpensiveDescription()
 
-        log.verbose("The description of \(thisObject) is really expensive to create" )
+        log.verbose("The description of \(thisObject) is really expensive to create")
         XCTAssert(!thisObject.descriptionInvoked, "Fail: String was interpolated when it shouldn't have been")
     }
 
     func testExecExecutes() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testExecExecutes"
         log.outputLogLevel = .Debug
 
@@ -129,22 +129,22 @@ class XCGLoggerTests: XCTestCase {
     }
 
     func testExecExecutesExactlyOnceWithNilReturnAndMultipleDestinations() {
-        var log: XCGLogger = XCGLogger()
-        log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "/tmp/test.log")
+        let log: XCGLogger = XCGLogger()
+        log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "/tmp/test.log")
         log.identifier = "com.cerebralgardens.xcglogger.testExecExecutesExactlyOnceWithNilReturnAndMultipleDestinations"
-        
+
         var numberOfTimes: Int = 0
         log.debug {
             ++numberOfTimes
             return nil
         }
-        
+
         log.debug("executed: \(numberOfTimes) time(s)")
         XCTAssert(numberOfTimes == 1, "Fail: Didn't execute the closure exactly once")
     }
-    
+
     func testExecDoesntExecute() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testExecDoesntExecute"
         log.outputLogLevel = .Error
 
@@ -160,43 +160,76 @@ class XCGLoggerTests: XCTestCase {
     }
 
     func testMultiThreaded() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testMultiThreaded"
-        log.setup(logLevel: .Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+        log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
 
         let linesToLog = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
         let myConcurrentQueue = dispatch_queue_create("com.cerebralgardens.xcglogger.testMultiThreaded.queue", DISPATCH_QUEUE_CONCURRENT)
         dispatch_apply(linesToLog.count, myConcurrentQueue) { (index: Int) in
-            log.debug(linesToLog[Int(index)])
+            // log.debug(linesToLog[index])
+            // Workaround for llvm-crash
+            let line = linesToLog[index]
+            log.debug(line)
         }
     }
-    
+
+    func testMultiThreaded2() {
+        let log: XCGLogger = XCGLogger()
+        log.identifier = "com.cerebralgardens.xcglogger.testMultiThreaded2"
+        log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+
+        let linesToLog = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+        let myConcurrentQueue = dispatch_queue_create("com.cerebralgardens.xcglogger.testMultiThreaded2.queue", DISPATCH_QUEUE_CONCURRENT)
+        dispatch_apply(linesToLog.count, myConcurrentQueue) { (index: Int) in
+            log.debug {
+                return "\(linesToLog[Int(index)])"
+            }
+        }
+    }
+
+    func testBackgroundLogging() {
+        let log: XCGLogger = XCGLogger(identifier: "com.cerebralgardens.xcglogger.testBackgroundLogging", includeDefaultDestinations: false)
+        let systemLogDestination = XCGNSLogDestination(owner: log, identifier: "com.cerebralgardens.xcglogger.testBackgroundLogging.systemLogDestination")
+        systemLogDestination.outputLogLevel = .Debug
+        systemLogDestination.showThreadName = true
+        // Note: The thread name included in the log message should be "main" even though the log is processed in a background thread. This is because
+        // it uses the thread name of the thread the log function is called in, not the thread used to do the output.
+        systemLogDestination.logQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
+        log.addLogDestination(systemLogDestination)
+
+        let linesToLog = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+        for line in linesToLog {
+            log.debug(line)
+        }
+    }
+
     func testDateFormatterIsCached() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testDateFormatterIsCached"
-        
+
         let dateFormatter1 = log.dateFormatter
         let dateFormatter2 = log.dateFormatter
-        
+
         XCTAssert(dateFormatter1 == dateFormatter2, "Fail: Received two different date formatter objects")
     }
-    
+
     func testCustomDateFormatter() {
-        var log: XCGLogger = XCGLogger()
+        let log: XCGLogger = XCGLogger()
         log.identifier = "com.cerebralgardens.xcglogger.testCustomDateFormatter"
         log.outputLogLevel = .Debug
-        
+
         let defaultDateFormatter = log.dateFormatter
-        
+
         let dateFormat = "MM/dd/yyyy hh:mma"
 
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = dateFormat
 
         log.dateFormatter = dateFormatter
-        
+
         log.debug("Test date format is different than our default")
-        
+
         XCTAssertNotNil(log.dateFormatter, "Fail: date formatter is nil")
         XCTAssertEqual(log.dateFormatter!.dateFormat, dateFormat, "Fail: date format doesn't match our custom date format")
         XCTAssert(defaultDateFormatter != dateFormatter, "Fail: Did not assign a custom date formatter")
