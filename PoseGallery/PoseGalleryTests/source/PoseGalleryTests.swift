@@ -2,7 +2,7 @@
 // PoseGalleryTests.swift
 // PoseGalleryTests
 //
-// Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+// Copyright © 2016 Trollwerks Inc. All rights reserved.
 //
 
 // latest roundup: http://www.alexcurylo.com/blog/2014/07/25/xcode-6-usable-testing/

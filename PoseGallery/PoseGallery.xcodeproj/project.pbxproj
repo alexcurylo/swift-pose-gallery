@@ -356,6 +356,7 @@
 		FA6E64991A279B7700395E94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Trollwerks Inc.";
 				TargetAttributes = {

@@ -2,7 +2,7 @@
 // SecondViewController.swift
 // PoseGallery
 //
-// Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+// Copyright © 2016 Trollwerks Inc. All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,8 @@
 //
-//  DataModel.swift
-//  Rankzoo
+// DataModel.swift
+// PoseGallery
 //
-//  Created by alex on 2015-05-11.
-//  Copyright (c) 2015 Assembly Co. All rights reserved.
+// Copyright © 2016 Trollwerks Inc. All rights reserved.
 //
 
 //import CoreData
