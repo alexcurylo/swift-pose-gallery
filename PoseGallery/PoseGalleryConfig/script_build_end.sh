@@ -4,7 +4,7 @@
 # script_build_end.sh
 # PoseGallery
 #
-# Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+# Copyright © 2016 Trollwerks Inc. All rights reserved.
 #
 
 plist="${CONFIGURATION_BUILD_DIR}/${INFOPLIST_PATH}"

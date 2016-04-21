@@ -1,9 +1,8 @@
 //
 //  XCTest+Optionals.swift
-//  MdCalc
+//  PoseGallery
 //
-//  Created by alex on 2015-05-01.
-//  Copyright (c) 2015 Trollwerks Inc. All rights reserved.
+//  Copyright © 2016 Trollwerks Inc. All rights reserved.
 //
 
 import Foundation
