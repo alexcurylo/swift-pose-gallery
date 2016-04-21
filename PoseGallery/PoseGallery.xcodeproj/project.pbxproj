@@ -94,6 +94,7 @@
 		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
 		FA422C221B0A9DA000528A37 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FA422C231B0A9DA000528A37 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		FA43CBC91CC978360090E696 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
 		FA44C9DA1A499BC400776BD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
@@ -273,6 +274,7 @@
 				FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */,
 				FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
+				FA43CBC91CC978360090E696 /* .gitignore */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
 				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
