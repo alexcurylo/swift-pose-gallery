@@ -11,6 +11,7 @@ import UIKit
   
   /// :nodoc:struct image {
     /// :nodoc:static var appIcon: UIImage? { return UIImage(named: "AppIcon") }
+    /// :nodoc:static var contents: UIImage? { return UIImage(named: "Contents") }
     /// :nodoc:static var first: UIImage? { return UIImage(named: "first") }
     /// :nodoc:static var second: UIImage? { return UIImage(named: "second") }
   }
