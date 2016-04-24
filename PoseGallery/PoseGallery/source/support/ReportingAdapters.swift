@@ -35,10 +35,12 @@ CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
 */
 func CLS_LOG_SWIFT( _ format: String = "", _ args:[CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line)
 {
+    let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first!
+
     #if DEBUG
-        CLSNSLogv("\(file.lastPathComponent.stringByDeletingPathExtension).\(function) line \(line) $ \(format)", getVaList(args))
+        CLSNSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))
     #else
-        CLSLogv("\(file.lastPathComponent.stringByDeletingPathExtension).\(function) line \(line) $ \(format)", getVaList(args))
+        CLSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))
     #endif
     
 }
