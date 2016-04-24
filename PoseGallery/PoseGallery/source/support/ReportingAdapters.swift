@@ -33,7 +33,7 @@ CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
 :param: function calling function
 :param: line     calling line
 */
-func CLS_LOG_SWIFT( _ format: String = "", _ args:[CVarArgType] = [], file: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__)
+func CLS_LOG_SWIFT( _ format: String = "", _ args:[CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line)
 {
     #if DEBUG
         CLSNSLogv("\(file.lastPathComponent.stringByDeletingPathExtension).\(function) line \(line) $ \(format)", getVaList(args))
