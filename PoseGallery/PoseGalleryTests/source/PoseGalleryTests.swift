@@ -36,21 +36,21 @@ class PoseGalleryTests: XCTestCase {
     /// Make sure our extensions perform as expected
     func testOptionalTests() {
         var optional: String?
-        XCTAssertNilOptional(optional, "XCTAssertNilOptional broken?")
+        XCTAssertNilOptional(optional, message: "XCTAssertNilOptional broken?")
         optional = "option"
-        XCTAssertNotNilOptional(optional, "XCTAssertNotNilOptional broken?")
-        XCTAssertEqualOptional(optional, "option", "XCTAssertEqualOptional broken?")
+        XCTAssertNotNilOptional(optional, message: "XCTAssertNotNilOptional broken?")
+        XCTAssertEqualOptional(optional, b: "option", "XCTAssertEqualOptional broken?")
     }
     
     /// Check that setup, target plist and main storyboard are good
     func testAppDelegateConfiguration() {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
-        XCTAssertNotNilOptional(delegate, "sharedApplication().delegate does not exist - set host application!")
-        XCTAssertNotNilOptional(delegate?.window, "missing main window")
+        XCTAssertNotNilOptional(delegate, message: "sharedApplication().delegate does not exist - set host application!")
+        XCTAssertNotNilOptional(delegate?.window, message: "missing main window")
         let root = delegate?.window?.rootViewController as? UITabBarController
-        XCTAssertNotNilOptional(root, "missing root tab controller")
-        XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, "wrong first view controller")
-        XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, "wrong second view controller")
+        XCTAssertNotNilOptional(root, message: "missing root tab controller")
+        XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, message: "wrong first view controller")
+        XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, message: "wrong second view controller")
     }
     
     /// Check that resource configurations are good
@@ -58,9 +58,9 @@ class PoseGalleryTests: XCTestCase {
         
         // items copied to NSUserDefaults from plist for settings
         let defaults = NSUserDefaults.standardUserDefaults()
-        XCTAssertNotNilOptional(defaults.stringForKey("version_number"), "missing version number");
-        XCTAssertNotNilOptional(defaults.stringForKey("build_number"), "missing build number");
-        XCTAssertNotNilOptional(defaults.stringForKey("build_date"), "missing build date");
+        XCTAssertNotNilOptional(defaults.stringForKey("version_number"), message: "missing version number");
+        XCTAssertNotNilOptional(defaults.stringForKey("build_number"), message: "missing build number");
+        XCTAssertNotNilOptional(defaults.stringForKey("build_date"), message: "missing build date");
         
         // images and storyboards, as provided by R.swift
         R.validate()
@@ -86,7 +86,7 @@ class PoseGalleryTests: XCTestCase {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
             top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
             trackMaster = Swiftalytics.trackingNameForViewController(top!)
-        XCTAssertEqualOptional(trackMaster, "FirstViewController (start)")
+        XCTAssertEqualOptional(trackMaster, b: "FirstViewController (start)")
     }
     
     /// JSQCoreDataKit initialized ok
