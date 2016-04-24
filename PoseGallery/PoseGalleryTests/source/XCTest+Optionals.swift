@@ -24,7 +24,7 @@ func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a: () -> T?,
         } else {
             XCTFail((message != nil ? message! : "a != nil, b == nil"), file: file, line: line)
         }
-    } else if let _b = b() {
+    } else if b() != nil {
         XCTFail((message != nil ? message! : "a == nil, b != nil"), file: file, line: line)
     }
 }
