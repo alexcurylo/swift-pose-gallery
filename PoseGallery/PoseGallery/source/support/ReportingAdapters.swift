@@ -53,7 +53,7 @@ public func startReporting() {
     //Fabric.with([Crashlytics.sharedInstance()])
     Fabric.with([Crashlytics()])
     // logging
-    log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+    log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
     // analytics
     setupScreenTracking()
     // TO DO: Turn on when ready for beta
