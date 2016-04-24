@@ -17,7 +17,7 @@ https://gist.github.com/mprudhom/d1571213385725fd5ed8
 :param: file    file of assert
 :param: line    line of assert
 */
-func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a: () -> T?, @autoclosure b: () -> T?, _ message: String? = nil, file: String = #file, line: UInt = #line) {
+func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a: () -> T?, @autoclosure b: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
     if let _a = a() {
         if let _b = b() {
             XCTAssertEqual(_a, _b, (message != nil ? message! : ""), file: file, line: line)
@@ -38,7 +38,7 @@ http://kimmett.me/2015/02/16/xctassertnotniloptional.html
 :param: file    file of assert
 :param: line    line of assert
 */
-func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: String = #file, line: UInt = #line) {
+func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
     let optional = expression()
     let isNonNil = optional != nil
     XCTAssertTrue(isNonNil, message, file: file, line: line)
@@ -53,7 +53,7 @@ http://kimmett.me/2015/02/16/xctassertnotniloptional.html
 :param: file    file of assert
 :param: line    line of assert
 */
-func XCTAssertNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: String = #file, line: UInt = #line) {
+func XCTAssertNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
     let optional = expression()
     let isNil = optional == nil
     XCTAssertTrue(isNil, message, file: file, line: line)
