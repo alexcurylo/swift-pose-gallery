@@ -82,7 +82,7 @@ extension UIViewController {
         self.swiftalytics_viewDidAppear(animated)
         if let name = Swiftalytics.trackingNameForViewController(self) {
             // Report to your analytics service
-            println("Tracked view controller: "+name)
+            print("Tracked view controller: "+name)
         }
     }
 }
