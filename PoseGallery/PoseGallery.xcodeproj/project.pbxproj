@@ -27,6 +27,8 @@
 		FA422C251B0A9DA000528A37 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C221B0A9DA000528A37 /* Crashlytics.framework */; };
 		FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
 		FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
+		FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA46F0C91CCD5895002D33A0 /* Swiftalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
@@ -34,8 +36,6 @@
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
 		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
 		FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
-		FAF27C6E1AFC137F00190CC3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
-		FAF71BF01B05ABE8006026F9 /* ScreenTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */; };
 		FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */; };
 		FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */; };
 		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
@@ -46,7 +46,6 @@
 		FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
 		FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
 		FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
-		FAFB2EA81AF58CA800A8AB21 /* Swiftalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
 		FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -68,7 +67,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FAFB2EA81AF58CA800A8AB21 /* Swiftalytics.framework in Embed Frameworks */,
+				FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */,
+				FA46F0C91CCD5895002D33A0 /* Swiftalytics.framework in Embed Frameworks */,
 				FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -131,10 +131,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
-				FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
+				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
 				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +143,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
+				FA422C251B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */,
-				FA422C251B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
+				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
 				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,13 +466,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */,
-				FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */,
-				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
-				FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */,
-				FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */,
-				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
 				FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */,
+				FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */,
+				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
+				FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */,
+				FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */,
+				FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */,
+				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */,
 				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
-				FAF71BF01B05ABE8006026F9 /* ScreenTracking.swift in Sources */,
-				FAF27C6E1AFC137F00190CC3 /* R.generated.swift in Sources */,
+				FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,12 +587,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Debug;
 		};
@@ -602,12 +594,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Release;
 		};
@@ -636,12 +622,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/PoseGallery/libraries",
-				);
 			};
 			name = Adhoc;
 		};

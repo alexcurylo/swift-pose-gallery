@@ -9,17 +9,12 @@
 // profiling: https://www.shinobicontrols.com/blog/posts/2014/07/25/ios8-day-by-day-day-6-profiling-unit-tests
 // async: https://www.shinobicontrols.com/blog/posts/2014/08/01/ios8-day-by-day-day-11-asynchronous-testing
 
-import UIKit
 import XCTest
-// don't add AppDelegate to target, PoseGallery.AppDelegate and PoseGalleryTests.AppDelegate become different!
-// http://stackoverflow.com/questions/26946677/uiapplication-sharedapplication-delegate-as-appdelegate-causes-exc-bad-access
-import PoseGallery
-import Fabric
+@testable import PoseGallery
 import Crashlytics
+import Fabric
 import Swiftalytics
 import XCGLogger
-
-// also problems with adding view controllers that are instantiated from storyboards
 
 class PoseGalleryTests: XCTestCase {
     

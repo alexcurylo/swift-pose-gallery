@@ -12,7 +12,11 @@
 CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
 //CODE_SIGN_ENTITLEMENTS = config/TWEntitlementsDebug.plist
 
+ENABLE_TESTABILITY = YES
+MTL_ENABLE_DEBUG_INFO = YES
+
 GCC_OPTIMIZATION_LEVEL = 0
+SWIFT_OPTIMIZATION_LEVEL = -Onone
 ONLY_ACTIVE_ARCH = YES
 VALIDATE_PRODUCT = NO
 ENABLE_NS_ASSERTIONS = YES
@@ -23,14 +27,3 @@ STRIP_INSTALLED_PRODUCT = NO // "Strip Linked Product"
 
 GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
 OTHER_SWIFT_FLAGS = -D DEBUG $(inherited)
-
-// Swift Optimization Level
-// 
-// None: Compile without any optimization. [-Onone]
-// 
-// Fastest: Compile with optimizations. [-O]
-// 
-// Fastest, Unchecked: Compile with optimizations and remove runtime safety checks.
-// [-Ounchecked]
-
-SWIFT_OPTIMIZATION_LEVEL = -Onone

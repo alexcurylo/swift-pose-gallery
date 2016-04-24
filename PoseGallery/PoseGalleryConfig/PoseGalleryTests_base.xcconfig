@@ -10,7 +10,7 @@
 TEST_HOST = $(BUILT_PRODUCTS_DIR)/PoseGallery.app/PoseGallery
 BUNDLE_LOADER = $(TEST_HOST)
 
-FRAMEWORK_SEARCH_PATHS = $(SDKROOT)/Developer/Library/Frameworks $(inherited) $(PROJECT_DIR)/PoseGallery/libraries
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/PoseGallery/libraries $(PROJECT_DIR)/Carthage/Build/iOS
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
 
 INFOPLIST_FILE = PoseGalleryTests/resources/Info.plist
