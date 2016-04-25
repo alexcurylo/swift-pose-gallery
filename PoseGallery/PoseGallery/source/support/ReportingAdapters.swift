@@ -50,13 +50,16 @@ centralize crash/log/analytics setup
 */
 public func startReporting() {
     // crashes
-    //Fabric.with([Crashlytics.sharedInstance()])
-    Fabric.with([Crashlytics()])
+    // FIXME: This crashes?
+    //Fabric.with([Crashlytics.self])
+    
     // logging
     log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+   
     // analytics
     setupScreenTracking()
-    // TO DO: Turn on when ready for beta
+    
+    // TODO: Turn on when ready for beta
     //mixpanel.enabled = false; // remove when ready to start producing data
     //mixpanel.track("Launch")
 }
