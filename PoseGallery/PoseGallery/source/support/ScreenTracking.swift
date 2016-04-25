@@ -30,6 +30,8 @@ Associate an identifier with all tracked screens
 */
 func setupScreenTracking() {
 
+// TODO: Runtime check of test harness.
+//if (NSClassFromString(@"XCTestCase")) return YES;
 #if TESTING
     // no tracking
 #else
