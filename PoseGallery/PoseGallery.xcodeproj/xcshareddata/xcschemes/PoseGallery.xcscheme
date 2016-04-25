@@ -53,6 +53,16 @@
                ReferencedContainer = "container:PoseGallery.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FA46F0CD1CCED294002D33A0"
+               BuildableName = "PoseGalleryUITests.xctest"
+               BlueprintName = "PoseGalleryUITests"
+               ReferencedContainer = "container:PoseGallery.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
