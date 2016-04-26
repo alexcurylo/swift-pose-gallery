@@ -36,9 +36,12 @@ install:
 
 before_script:
 - cd PoseGallery
-- carthage build --no-skip-current --platform iOS
+# times out! https://github.com/Carthage/Carthage/issues/1163
 
 script:
+# https://github.com/dcaunt/braintree-carthage-test/blob/master/.travis.yml
+- carthage bootstrap --platform iOS --no-use-binaries --verbose
+#- carthage build --no-skip-current --platform iOS
 - set -o pipefail && xcodebuild CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 #after_success: slather
