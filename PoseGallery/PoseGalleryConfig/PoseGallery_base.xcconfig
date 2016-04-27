@@ -11,7 +11,7 @@ ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 INFOPLIST_FILE = PoseGallery/resources/Info.plist
 
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR) $(PROJECT_DIR)/PoseGallery/libraries $(PROJECT_DIR)/Carthage/Build/iOS
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/PoseGallery/libraries $(PROJECT_DIR)/Carthage/Build/iOS
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
 
 // things that should be set in brand xcconfig
