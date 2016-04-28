@@ -23,7 +23,7 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
 4. [Roadmap](#roadmap)
 5. [Author](#author)
 6. [License](#license)
-6. [Change Log](#change-log)
+7. [Change Log](#change-log)
 
 ## Purpose
 
