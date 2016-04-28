@@ -27,21 +27,35 @@ xcode_scheme: PoseGallery
 #    - feature/Xcode_(UNSUPPORTED_VERSION)
 
 before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
+ - brew update
+ - brew outdated carthage || brew upgrade carthage
+# - brew install swiftlint
+ - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+ - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
+# - gem install slather --no-rdoc --no-ri --no-document --quiet
 
 install:
-- gem install xcpretty-travis-formatter
-#- gem install slather --no-rdoc --no-ri --no-document --quiet
-
-before_script:
 - cd PoseGallery
 # times out! https://github.com/Carthage/Carthage/issues/1163
+# https://github.com/dcaunt/braintree-carthage-test/blob/master/.travis.yml
+#- carthage bootstrap --platform iOS --no-use-binaries --verbose
+- carthage bootstrap --platform iOS --no-use-binaries
+
+#before_script:
 
 script:
-# https://github.com/dcaunt/braintree-carthage-test/blob/master/.travis.yml
-- carthage bootstrap --platform iOS --no-use-binaries --verbose
+# - swiftlint
 #- carthage build --no-skip-current --platform iOS
-- set -o pipefail && xcodebuild CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
+ - set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
 
-#after_success: slather
+#after_success:
+# - slather
+
+#env:
+#global:
+# Coveralls API Key
+#- secure: XjmvN8ABJy1...
+# Github Read-only API Key (for Carthage)
+#- secure: h+aeQzBtH+...
+# Signing Certificate
+#- secure: cX/QpfuEH2wk...
