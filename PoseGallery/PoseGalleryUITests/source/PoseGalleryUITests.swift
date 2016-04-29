@@ -27,9 +27,19 @@ class PoseGalleryUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTabNavigation() {
+        let app = XCUIApplication()
+        let tabBarsQuery = app.tabBars
+        let first = tabBarsQuery.buttons["First"]
+        let second = tabBarsQuery.buttons["Second"]
+        
+        XCTAssert(first.selected == true)
+        
+        second.tap()
+        XCTAssert(second.selected == true)
+
+        first.tap()
+        XCTAssert(first.selected == true)
     }
     
 }
