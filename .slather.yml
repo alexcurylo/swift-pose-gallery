@@ -9,9 +9,9 @@
 # https://github.com/SlatherOrg/slather#usage-with-coveralls
 
 coverage_service: coveralls
-xcodeproj: PoseGallery.xcodeproj
+xcodeproj: PoseGallery/PoseGallery.xcodeproj
 scheme: PoseGallery
-source_directory: PoseGallery/source
+source_directory: PoseGallery/PoseGallery/source
 ignore:
  - ExamplePodCode/*
  - ProjectTestsGroup/*

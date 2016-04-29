@@ -46,4 +46,5 @@ script:
  - set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
+ - cd ..
  - slather
