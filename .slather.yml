@@ -6,12 +6,14 @@
 #
 
 # references:
-# https://github.com/venmo/slather/issues/39 -- track Swift support status
-# * https://github.com/venmo/slather#usage
+# https://github.com/SlatherOrg/slather#usage-with-coveralls
 
 coverage_service: coveralls
 xcodeproj: PoseGallery/PoseGallery.xcodeproj
+scheme: PoseGallery
 source_directory: PoseGallery/PoseGallery/source
 ignore:
-  - PoseGallery/PoseGalleryConfig/*
-  - PoseGallery/PoseGalleryTests/*
+ - ExamplePodCode/*
+ - ProjectTestsGroup/*
+ - PoseGallery/PoseGalleryConfig/*
+ - PoseGallery/PoseGalleryTests/*
