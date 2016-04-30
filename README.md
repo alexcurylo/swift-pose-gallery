@@ -30,12 +30,24 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
 
 - Xcode 7.3.1 or later
 - iOS 9.0 or later
-- [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
-- [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
+ 
+ Tools:
+ 
+- [Carthage](https://github.com/Carthage/Carthage), for dependency management
 - [Fabric](https://fabric.io) account, for Crashlytics crash reporting and Beta distribution
+- [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
+- [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [R.swift](https://github.com/mac-cain13/R.swift/) in /libraries for typed resource identifiers
-- [Carthage](https://github.com/Carthage/Carthage), for dependency management:
+ 
+ Libraries (Carthage))
+
+- JSQCoreDataKit: Core Data
+- Swiftalytics: view analytics
+- [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
 - [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
+
+ Resources:
+ 
 - Some interesting pose images
 
 ## Usage

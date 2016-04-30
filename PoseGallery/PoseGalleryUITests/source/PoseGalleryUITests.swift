@@ -36,6 +36,10 @@ class PoseGalleryUITests: XCTestCase {
         XCTAssert(first.selected == true)
         
         second.tap()
+        
+        // TODO: Need to delay properly? http://www.mokacoding.com/blog/xcode-ui-test-view-changes/
+        sleep(2)
+
         XCTAssert(second.selected == true)
 
         first.tap()

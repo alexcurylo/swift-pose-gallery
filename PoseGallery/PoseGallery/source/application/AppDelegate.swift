@@ -23,8 +23,10 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        startReporting()
+        R.assertValid()
 
+        startReporting()
+        
         DataModel.model.intro(launchOptions)
         
         return true
