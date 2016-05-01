@@ -38,7 +38,8 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
 - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
 - [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [R.swift](https://github.com/mac-cain13/R.swift/) in /libraries for typed resource identifiers
- 
+- [SwiftLint](https://github.com/realm/SwiftLint), for coding style review
+
  Libraries (Carthage))
 
 - JSQCoreDataKit: Core Data

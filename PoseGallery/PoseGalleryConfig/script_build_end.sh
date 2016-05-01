@@ -51,12 +51,24 @@ copy_branding()
 find -L ${SRCROOT}// -type f -not -name “.*” -not -name “`basename ${INFOPLIST_FILE}`” | xargs -t -I {} cp {} ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/;
 }
 
+# https://alexplescan.com/posts/2016/03/03/setting-up-swiftlint-on-travis-ci/
+
+check_style()
+{
+if which swiftlint >/dev/null; then
+    swiftlint
+else
+    echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+}
+
 # set build-specific info
 
 echo Setting info in plist $plist:
 update_bundle_version
 update_build_date
 restore_icon
+check_style
 #copy_branding
 
 # Fabric magic
