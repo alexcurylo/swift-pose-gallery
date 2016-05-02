@@ -130,6 +130,7 @@
 		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
+		FAC3EE5D1CD7967F0054586D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = ../../.swiftlint.yml; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -340,6 +341,7 @@
 				FA43CBC91CC978360090E696 /* .gitignore */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
 				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
+				FAC3EE5D1CD7967F0054586D /* .swiftlint.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
 				FAFB2EB41AF5E34500A8AB21 /* docs */,

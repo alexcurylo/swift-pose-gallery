@@ -51,24 +51,12 @@ copy_branding()
 find -L ${SRCROOT}// -type f -not -name “.*” -not -name “`basename ${INFOPLIST_FILE}`” | xargs -t -I {} cp {} ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/;
 }
 
-# https://alexplescan.com/posts/2016/03/03/setting-up-swiftlint-on-travis-ci/
-
-check_style()
-{
-if which swiftlint >/dev/null; then
-    swiftlint
-else
-    echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
-fi
-}
-
 # set build-specific info
 
 echo Setting info in plist $plist:
 update_bundle_version
 update_build_date
 restore_icon
-check_style
 #copy_branding
 
 # Fabric magic
@@ -78,6 +66,20 @@ if [ $CONFIGURATION != "Debug" ] ; then
     echo Uploading to Crashlytics:
     ./PoseGallery/libraries/Fabric.framework/run 186ef2a41f30e2ce39a21f35b61600d3ae927290 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50
 fi
+
+# Do post-build diagnostics if you like
+# https://alexplescan.com/posts/2016/03/03/setting-up-swiftlint-on-travis-ci/
+
+check_style()
+{
+if which swiftlint >/dev/null; then
+    # NB. .swiftlint.yml included/excluded only effective in invoked directory
+    cd ${SRCROOT}/..; swiftlint
+else
+    echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+}
+check_style
 
 # reveal the binary in the Finder if you like
 

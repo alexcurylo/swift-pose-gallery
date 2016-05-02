@@ -1,0 +1,28 @@
+#
+# .swiftlint.yml
+# PoseGallery
+#
+# Copyright © 2016 Trollwerks Inc. All rights reserved.
+#
+
+# references:
+# https://github.com/realm/SwiftLint#configuration
+
+disabled_rules:
+ - line_length
+
+opt_in_rules:
+#- empty_count
+#- force_unwrapping
+#- missing_docs
+# Find all the available rules by running:
+# swiftlint rules
+
+included:
+ - PoseGallery/PoseGallery
+ - PoseGallery/PoseGalleryTests
+ - PoseGallery/PoseGalleryUITests
+
+excluded:
+ - PoseGallery/PoseGallery/resources
+ - PoseGallery/PoseGallery/libraries
