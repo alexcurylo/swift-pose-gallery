@@ -58,4 +58,3 @@ func XCTAssertNilOptional<T>(@autoclosure expression:  () -> T?, message: String
     let isNil = optional == nil
     XCTAssertTrue(isNil, message, file: file, line: line)
 }
-

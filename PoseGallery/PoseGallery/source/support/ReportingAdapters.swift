@@ -33,8 +33,7 @@ CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
 :param: function calling function
 :param: line     calling line
 */
-func CLS_LOG_SWIFT(format: String = "", _ args:[CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line)
-{
+func CLS_LOG_SWIFT(format: String = "", _ args:[CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line) {
     let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first!
 
     #if DEBUG
