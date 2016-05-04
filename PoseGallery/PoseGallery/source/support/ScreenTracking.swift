@@ -30,16 +30,16 @@ Associate an identifier with all tracked screens
 */
 func setupScreenTracking() {
 
-// TODO: Runtime check of test harness.
-//if (NSClassFromString(@"XCTestCase")) return YES;
-#if TESTING
-    // no tracking
-#else
+    let isUnitTesting = NSClassFromString("XCTestCase") != nil
+    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
+    guard !isUnitTesting && !isUITesting else {
+        return
+    }
+    
     FirstViewController.self  >>   "FirstViewController (start)"
     SecondViewController.self  >>   .NavigationTitle
     //QuoteViewController.self    >> { "Quote: "+$0.author.name }
     //RandomQuoteViewController.computedPageName<<
-#endif
 }
 
 /**
