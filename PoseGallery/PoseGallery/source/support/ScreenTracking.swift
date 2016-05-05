@@ -36,6 +36,8 @@ func setupScreenTracking() {
         return
     }
     
+    UIViewController.swizzleAppearTracking()
+    
     FirstViewController.self  >>   "FirstViewController (start)"
     SecondViewController.self  >>   .NavigationTitle
     //QuoteViewController.self    >> { "Quote: "+$0.author.name }
@@ -47,33 +49,20 @@ Adorn viewDidAppear with screen tracking
 */
 extension UIViewController {
     
-    ///swizzle viewDidAppear to add screen tracking
-    public override class func initialize() {
-        /// wrap associated variables in structure
-        struct Static {
-            /// only swizzle once
-            static var token: dispatch_once_t = 0
-        }
+    /// swizzle viewDidAppear to add screen tracking
+    private class func swizzleAppearTracking() {
+        let originalSelector = #selector(UIViewController.viewDidAppear(_:))
+        let swizzledSelector = #selector(UIViewController.swiftalytics_viewDidAppear(_:))
         
-        // make sure this isn't a subclass
-        if self !== UIViewController.self {
-            return
-        }
+        let originalMethod = class_getInstanceMethod(self, originalSelector)
+        let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
         
-        dispatch_once(&Static.token) {
-            let originalSelector = #selector(UIViewController.viewDidAppear(_:))
-            let swizzledSelector = #selector(UIViewController.swiftalytics_viewDidAppear(_:))
-            
-            let originalMethod = class_getInstanceMethod(self, originalSelector)
-            let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-            
-            let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
-            
-            if didAddMethod {
-                class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
-            } else {
-                method_exchangeImplementations(originalMethod, swizzledMethod);
-            }
+        let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
+        
+        if didAddMethod {
+            class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     }
     
