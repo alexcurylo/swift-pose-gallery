@@ -30,12 +30,6 @@ Associate an identifier with all tracked screens
 */
 func setupScreenTracking() {
 
-    let isUnitTesting = NSClassFromString("XCTestCase") != nil
-    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
-    guard !isUnitTesting && !isUITesting else {
-        return
-    }
-    
     UIViewController.swizzleAppearTracking()
     
     FirstViewController.self  >>   "FirstViewController (start)"
@@ -72,8 +66,15 @@ extension UIViewController {
     func swiftalytics_viewDidAppear(animated: Bool) {
         self.swiftalytics_viewDidAppear(animated)
         if let name = Swiftalytics.trackingNameForViewController(self) {
+
+            let isUnitTesting = NSClassFromString("XCTestCase") != nil
+            let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
+            guard !isUnitTesting && !isUITesting else {
+                return
+            }
+
             // Report to your analytics service
-            print("Tracked view controller: "+name)
+            print("Tracked view controller: " + name)
         }
     }
 }
