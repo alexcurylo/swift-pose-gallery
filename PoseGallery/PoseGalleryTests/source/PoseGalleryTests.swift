@@ -34,7 +34,7 @@ class PoseGalleryTests: XCTestCase {
         XCTAssertNilOptional(optional, message: "XCTAssertNilOptional broken?")
         optional = "option"
         XCTAssertNotNilOptional(optional, message: "XCTAssertNotNilOptional broken?")
-        XCTAssertEqualOptional(optional, b: "option", "XCTAssertEqualOptional broken?")
+        XCTAssertEqualOptional(a: optional, b: "option", "XCTAssertEqualOptional broken?")
     }
     
     /// Check that setup, target plist and main storyboard are good
@@ -59,8 +59,7 @@ class PoseGalleryTests: XCTestCase {
         
         // images and storyboards, as provided by R.swift
         R.assertValid()
-        // TODO: Handle throw
-        try! R.validate()
+        XCTAssertNotNilOptional(try? R.validate(), message: "Invalid resources")
     }
     
     /// Fabric and Crashlytics library configured ok
@@ -83,7 +82,7 @@ class PoseGalleryTests: XCTestCase {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
             top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
             trackMaster = Swiftalytics.trackingNameForViewController(top!)
-        XCTAssertEqualOptional(trackMaster, b: "FirstViewController (start)")
+        XCTAssertEqualOptional(a: trackMaster, b: "FirstViewController (start)")
     }
     
     /// JSQCoreDataKit initialized ok

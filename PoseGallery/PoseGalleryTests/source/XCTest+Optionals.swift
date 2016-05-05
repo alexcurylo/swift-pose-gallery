@@ -17,7 +17,7 @@ https://gist.github.com/mprudhom/d1571213385725fd5ed8
 :param: file    file of assert
 :param: line    line of assert
 */
-func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure first: () -> T?, @autoclosure second: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
+func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () -> T?, @autoclosure b second: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
     if let _first = first() {
         if let _second = second() {
             XCTAssertEqual(_first, _second, (message != nil ? message! : ""), file: file, line: line)
