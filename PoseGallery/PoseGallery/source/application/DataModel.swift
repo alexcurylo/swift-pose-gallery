@@ -76,12 +76,11 @@ class DataModel {
     func configureSettingsApp() {
         // Info.plist configured with build scripts
         if let bundle = NSBundle.mainBundle() as NSBundle?,
-            let display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
+            display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
             let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
             let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
             let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
-            let build_config = bundle.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty
-        {
+            let build_config = bundle.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty {
             // copy to keys specified in Settings.bundle
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setObject(version_number, forKey:"version_number")
