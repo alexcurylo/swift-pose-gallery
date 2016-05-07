@@ -41,7 +41,6 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
     #else
         CLSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))
     #endif
-    
 }
 
 /**
@@ -51,13 +50,13 @@ public func startReporting() {
     // crashes
     // FIXME: This crashes?
     //Fabric.with([Crashlytics.self])
-    
+
     // logging
     log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-   
+
     // analytics
     setupScreenTracking()
-    
+
     // TODO: Turn on when ready for beta
     //mixpanel.enabled = false; // remove when ready to start producing data
     //mixpanel.track("Launch")

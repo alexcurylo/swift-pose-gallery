@@ -22,7 +22,7 @@ public class SecondViewController: UIViewController {
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+
     /// UIViewController override
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

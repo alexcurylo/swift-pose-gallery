@@ -17,18 +17,18 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// Root window
     public var window: UIWindow?
-    
+
     // MARK: - Life cycle methods
-    
+
     /// UIApplicationDelegate implementation
     public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         R.assertValid()
 
         startReporting()
-        
+
         DataModel.model.intro(launchOptions)
-        
+
         return true
     }
 

@@ -31,7 +31,7 @@ Associate an identifier with all tracked screens
 func setupScreenTracking() {
 
     UIViewController.swizzleAppearTracking()
-    
+
     FirstViewController.self  >>   "FirstViewController (start)"
     SecondViewController.self  >>   .NavigationTitle
     //QuoteViewController.self    >> { "Quote: "+$0.author.name }
@@ -42,26 +42,26 @@ func setupScreenTracking() {
 Adorn viewDidAppear with screen tracking
 */
 extension UIViewController {
-    
+
     /// swizzle viewDidAppear to add screen tracking
     private class func swizzleAppearTracking() {
         let originalSelector = #selector(UIViewController.viewDidAppear(_:))
         let swizzledSelector = #selector(UIViewController.swiftalytics_viewDidAppear(_:))
-        
+
         let originalMethod = class_getInstanceMethod(self, originalSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-        
+
         let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
-        
+
         if didAddMethod {
             class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
         } else {
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     }
-    
+
     // MARK: - Method Swizzling
-    
+
     /// track screen if set up
     func swiftalytics_viewDidAppear(animated: Bool) {
         self.swiftalytics_viewDidAppear(animated)
