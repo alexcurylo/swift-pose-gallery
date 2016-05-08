@@ -9,14 +9,15 @@ import Foundation
 import XCTest
 
 /**
-XCTAssertEqual that handles optional unwrapping.
-https://gist.github.com/mprudhom/d1571213385725fd5ed8
+ XCTAssertEqual that handles optional unwrapping.
+ https://gist.github.com/mprudhom/d1571213385725fd5ed8
 
-:param: a       optional to test
-:param: message error message
-:param: file    file of assert
-:param: line    line of assert
-*/
+ - parameter first:   optional to test
+ - parameter second:  optional to test
+ - parameter message: error message
+ - parameter file:    file of assert
+ - parameter line:    line of assert
+ */
 func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () -> T?, @autoclosure b second: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
     if let _first = first() {
         if let _second = second() {
@@ -30,14 +31,14 @@ func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () 
 }
 
 /**
-Assert an optional is not nil
-http://kimmett.me/2015/02/16/xctassertnotniloptional.html
+ Assert an optional is not nil
+ http://kimmett.me/2015/02/16/xctassertnotniloptional.html
 
-:param: expression optional to test
-:param: message error message
-:param: file    file of assert
-:param: line    line of assert
-*/
+ - parameter expression: optional to test
+ - parameter message:    error message
+ - parameter file:       file of assert
+ - parameter line:       line of assert
+ */
 func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
     let optional = expression()
     let isNonNil = optional != nil
@@ -45,14 +46,14 @@ func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: Str
 }
 
 /**
-Assert an optional is nil
-http://kimmett.me/2015/02/16/xctassertnotniloptional.html
+ Assert an optional is nil
+ http://kimmett.me/2015/02/16/xctassertnotniloptional.html
 
-:param: expression optional to test
-:param: message error message
-:param: file    file of assert
-:param: line    line of assert
-*/
+ - parameter expression: optional to test
+ - parameter message:    error message
+ - parameter file:       file of assert
+ - parameter line:       line of assert
+ */
 func XCTAssertNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
     let optional = expression()
     let isNil = optional == nil

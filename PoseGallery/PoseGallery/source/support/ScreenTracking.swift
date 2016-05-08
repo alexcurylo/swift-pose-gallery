@@ -62,7 +62,11 @@ extension UIViewController {
 
     // MARK: - Method Swizzling
 
-    /// track screen if set up
+    /**
+     Track screen if this controller was set up
+
+     - parameter animated: passed to original implementation
+     */
     func swiftalytics_viewDidAppear(animated: Bool) {
         self.swiftalytics_viewDidAppear(animated)
         if let name = Swiftalytics.trackingNameForViewController(self) {
@@ -81,19 +85,42 @@ extension UIViewController {
 
 
 postfix operator << { }
-/// postfix operator to associate closure
+
+/**
+ postfix operator to associate closure
+
+ - parameter trackClassFunction: name producing closure
+ */
 private postfix func <<<T: UIViewController>(trackClassFunction: (T -> () -> String)) {
     Swiftalytics.setTrackingNameForViewController(trackClassFunction)
 }
-/// infix operator to associate closure
+
+/**
+ infix operator to associate closure
+
+ - parameter left:  UIViewController
+ - parameter right: closure
+ */
 private func >> <T: UIViewController>(left: T.Type, @autoclosure right: () -> String) {
     Swiftalytics.setTrackingNameForViewController(left, name: right)
 }
-/// infix operator to associate type
+
+/**
+ infix operator to associate type
+
+ - parameter left:  UIViewController
+ - parameter right: type
+ */
 private func >> <T: UIViewController>(left: T.Type, right: TrackingNameType) {
     Swiftalytics.setTrackingNameForViewController(left, trackingType: right)
 }
-/// infix operator to associate string
+
+/**
+ infix operator to associate string
+
+ - parameter left:  UIViewController
+ - parameter right: string
+ */
 private func >> <T: UIViewController>(left: T.Type, right: (T -> String)) {
     Swiftalytics.setTrackingNameForViewController(left, nameFunction: right)
 }

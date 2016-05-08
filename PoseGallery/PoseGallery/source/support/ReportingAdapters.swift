@@ -27,11 +27,11 @@ CLS_LOG_SWIFT("message with parameter 1: %@ and 2: %@", ["First", "Second"])
 CLS_LOG() output: -[ClassName methodName:] line 10 $
 CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
 
-:param: format   message
-:param: args     array of arguments to 'message'
-:param: file     calling file
-:param: function calling function
-:param: line     calling line
+ - parameter format:   message
+ - parameter args:     array of arguments to 'message'
+ - parameter file:     calling file
+ - parameter function: calling function
+ - parameter line:     calling line
 */
 func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line) {
     let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first!

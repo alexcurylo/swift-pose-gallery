@@ -12,18 +12,17 @@ Second tab
 */
 public class SecondViewController: UIViewController {
 
-    /// UIViewController override
+    /// UIViewController overrides
+
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    /// UIViewController override
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
 
-    /// UIViewController override
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

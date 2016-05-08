@@ -41,10 +41,10 @@ class DataModel {
     }
 
     /**
-    Kick off whatever actions should happen at startup
+     Kick off whatever actions should happen at startup
 
-    :param: options from didFinishLaunchingWithOptions
-    */
+     - parameter options: from didFinishLaunchingWithOptions
+     */
     func intro(options: [NSObject: AnyObject]?) {
         log.info("startup options: \(options)")
         configureSettingsApp()
