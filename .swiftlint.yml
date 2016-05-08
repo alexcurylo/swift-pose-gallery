@@ -7,16 +7,17 @@
 
 # references:
 # https://github.com/realm/SwiftLint#configuration
+#
+# swiftlint rules last updated version 0.10.0
 
 disabled_rules:
  - line_length
+ - todo
 
 opt_in_rules:
-#- empty_count
-#- force_unwrapping
-#- missing_docs
-# Find all the available rules by running:
-# swiftlint rules
+ - empty_count
+ - force_unwrapping
+ - missing_docs
 
 included:
  - PoseGallery/PoseGallery
