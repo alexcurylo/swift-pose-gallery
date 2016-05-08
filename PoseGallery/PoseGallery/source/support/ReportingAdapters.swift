@@ -34,7 +34,7 @@ CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
  - parameter line:     calling line
 */
 func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line) {
-    let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first!
+    let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first ?? ""
 
     #if DEBUG
         CLSNSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))

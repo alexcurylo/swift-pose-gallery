@@ -21,12 +21,12 @@ import XCTest
 func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () -> T?, @autoclosure b second: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
     if let _first = first() {
         if let _second = second() {
-            XCTAssertEqual(_first, _second, (message != nil ? message! : ""), file: file, line: line)
+            XCTAssertEqual(_first, _second, message ?? "", file: file, line: line)
         } else {
-            XCTFail((message != nil ? message! : "first != nil, second == nil"), file: file, line: line)
+            XCTFail(message ?? "first != nil, second == nil", file: file, line: line)
         }
     } else if second() != nil {
-        XCTFail((message != nil ? message! : "first == nil, second != nil"), file: file, line: line)
+        XCTFail(message ?? "first == nil, second != nil", file: file, line: line)
     }
 }
 

@@ -79,9 +79,14 @@ class PoseGalleryTests: XCTestCase {
 
     /// Swiftalytics initialized ok
     func testSwiftalytics() {
-        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
-            top = (delegate?.window?.rootViewController as? UITabBarController)?.viewControllers?[0] as? FirstViewController,
-            trackMaster = Swiftalytics.trackingNameForViewController(top!)
+        guard let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
+            tabBar = delegate.window?.rootViewController as? UITabBarController,
+            first = tabBar.viewControllers?[0] as? FirstViewController else {
+            XCTFail("unexpected rootViewController")
+            return
+        }
+
+        let trackMaster = Swiftalytics.trackingNameForViewController(first)
         XCTAssertEqualOptional(a: trackMaster, b: "FirstViewController (start)")
     }
 
