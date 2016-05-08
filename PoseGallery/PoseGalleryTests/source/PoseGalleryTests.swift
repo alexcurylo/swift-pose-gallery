@@ -53,9 +53,9 @@ class PoseGalleryTests: XCTestCase {
 
         // items copied to NSUserDefaults from plist for settings
         let defaults = NSUserDefaults.standardUserDefaults()
-        XCTAssertNotNilOptional(defaults.stringForKey("version_number"), message: "missing version number");
-        XCTAssertNotNilOptional(defaults.stringForKey("build_number"), message: "missing build number");
-        XCTAssertNotNilOptional(defaults.stringForKey("build_date"), message: "missing build date");
+        XCTAssertNotNilOptional(defaults.stringForKey("version_number"), message: "missing version number")
+        XCTAssertNotNilOptional(defaults.stringForKey("build_number"), message: "missing build number")
+        XCTAssertNotNilOptional(defaults.stringForKey("build_date"), message: "missing build date")
 
         // images and storyboards, as provided by R.swift
         R.assertValid()
