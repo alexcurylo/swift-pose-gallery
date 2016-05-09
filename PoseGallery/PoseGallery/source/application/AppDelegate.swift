@@ -11,16 +11,16 @@ import UIKit
 Singleton UIApplication delegate
 */
 @UIApplicationMain
-public class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Properties
 
     /// Root window
-    public var window: UIWindow?
+    var window: UIWindow?
 
     // MARK: - UIApplicationDelegate implementations
 
-    public func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         R.assertValid()
 
@@ -31,21 +31,21 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    public func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(application: UIApplication) {
     }
 
-    public func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(application: UIApplication) {
         DataModel.model.outro()
     }
 
-    public func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(application: UIApplication) {
         DataModel.model.reintro()
     }
 
-    public func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(application: UIApplication) {
     }
 
-    public func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(application: UIApplication) {
         DataModel.model.outro()
    }
 }
