@@ -33,12 +33,13 @@ class PoseGalleryUITests: XCTestCase {
 
         second.tap()
 
-        // TODO: Need to delay properly? http://www.mokacoding.com/blog/xcode-ui-test-view-changes/
-        sleep(2)
-
-        XCTAssert(second.selected == true)
+        let selectedPredicate = NSPredicate(format: "selected == true")
+        expectationForPredicate(selectedPredicate, evaluatedWithObject: second, handler: nil)
+        waitForExpectationsWithTimeout(5, handler: nil)
 
         first.tap()
-        XCTAssert(first.selected == true)
+
+        expectationForPredicate(selectedPredicate, evaluatedWithObject: first, handler: nil)
+        waitForExpectationsWithTimeout(5, handler: nil)
     }
 }
