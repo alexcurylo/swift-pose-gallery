@@ -19,6 +19,8 @@ import XCTest
  - parameter line:    line of assert
  */
 func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () -> T?, @autoclosure b second: () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
+// swiftlint:disable:previous line_length
+
     if let _first = first() {
         if let _second = second() {
             XCTAssertEqual(_first, _second, message ?? "", file: file, line: line)
@@ -40,6 +42,8 @@ func XCTAssertEqualOptional<T: Any where T: Equatable>(@autoclosure a first: () 
  - parameter line:       line of assert
  */
 func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
+    // swiftlint:disable:previous line_length
+
     let optional = expression()
     let isNonNil = optional != nil
     XCTAssertTrue(isNonNil, message, file: file, line: line)
@@ -55,6 +59,8 @@ func XCTAssertNotNilOptional<T>(@autoclosure expression:  () -> T?, message: Str
  - parameter line:       line of assert
  */
 func XCTAssertNilOptional<T>(@autoclosure expression:  () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
+    // swiftlint:disable:previous line_length
+
     let optional = expression()
     let isNil = optional == nil
     XCTAssertTrue(isNil, message, file: file, line: line)

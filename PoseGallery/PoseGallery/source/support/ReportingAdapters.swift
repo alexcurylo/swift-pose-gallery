@@ -17,7 +17,10 @@ import XCGLogger
 public let log = XCGLogger.defaultInstance()
 
 /**
-this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift function, the only differences are that we have to use array syntax for the argument list and that we don't get see if the method being called is a class method or an instance method. We also have to define the DEBUG compiler flag with -DDEBUG.
+this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift
+ function, the only differences are that we have to use array syntax for the argument list and that
+ we don't get see if the method being called is a class method or an instance method. We also have
+ to define the DEBUG compiler flag with -DDEBUG.
 
 usage:
 CLS_LOG_SWIFT()
