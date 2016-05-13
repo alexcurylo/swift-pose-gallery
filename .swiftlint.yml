@@ -9,9 +9,13 @@
 # https://github.com/realm/SwiftLint#configuration
 #
 # swiftlint rules last updated version 0.10.0
+#
+# Disable an individual warning with [next|previous]:
+# // swiftlint:disable:previous line_length
 
 disabled_rules:
- - todo
+# If you must have a compile message, use ??? or !!!
+# - todo
 
 opt_in_rules:
  - empty_count

@@ -51,7 +51,7 @@ centralize crash/log/analytics setup
 */
 public func startReporting() {
     // crashes
-    // FIXME: This crashes?
+    // !!!: This crashes?
     //Fabric.with([Crashlytics.self])
 
     // logging
@@ -60,7 +60,7 @@ public func startReporting() {
     // analytics
     setupScreenTracking()
 
-    // TODO: Turn on when ready for beta
+    // ???: Sort out analytics
     //mixpanel.enabled = false; // remove when ready to start producing data
     //mixpanel.track("Launch")
 }
