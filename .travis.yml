@@ -46,7 +46,7 @@ script:
 
 after_success:
  - swiftlint
- - slather --build-directory build
+ - slather
 # - slather coverage -s --scheme PoseGallery  PoseGallery/PoseGallery.xcodeproj
 # check codecov badge at https://github.com/realm/SwiftLint
 # https://github.com/realm/SwiftLint/blob/master/.travis.yml
