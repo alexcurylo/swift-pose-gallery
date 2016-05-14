@@ -38,7 +38,8 @@ install:
 #before_script:
 
 script:
- - > set -o pipefail && xcodebuild clean test
+ - >
+    set -o pipefail && xcodebuild clean test
         -project PoseGallery.xcodeproj
         -scheme PoseGallery
         -sdk iphonesimulator
@@ -49,7 +50,7 @@ script:
         ONLY_ACTIVE_ARCH=YES
         GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
         GCC_GENERATE_TEST_COVERAGE_FILES=YES 
-        | xcpretty -f `xcpretty-travis-formatter`
+    | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
  - swiftlint
