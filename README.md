@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=develop)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
-[![Coverage Status](https://coveralls.io/repos/github/alexcurylo/swift-pose-gallery/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop)
+[![Test Coverage Status](https://coveralls.io/repos/github/alexcurylo/swift-pose-gallery/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop)
 [![Issues](https://img.shields.io/github/issues/alexcurylo/swift-pose-gallery.svg?style=flat
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
@@ -57,7 +57,9 @@ Place your images in /resources/branded/brand_images replacing the samples there
 
  `carthage build --platform iOS` to build checked in dependencies; `carthage update --platform iOS` to update.
 
-Build the app with the 'PoseGallery' target. Tests are in the 'PoseGalleryTests' target.
+Build the app with the 'PoseGallery' target. 
+ 
+Tests are in the 'PoseGalleryTests' and 'PoseGalleryUITests' targets. Code coverage is enabled; [Travis](https://travis-ci.org/alexcurylo/swift-pose-gallery) builds collect it with [Slather](https://github.com/SlatherOrg/slather) to pass to [Coveralls](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop) which provides the badged percentage above.
  
 Build source code documentation in /PoseGallery/docs/ with the 'Documentation' target.
 
