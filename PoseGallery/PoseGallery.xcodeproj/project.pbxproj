@@ -35,7 +35,6 @@
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4A1CE6E88300249728 /* .slather.yml */; };
 		FA82DD4D1CE6E88300249728 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4B1CE6E88300249728 /* .swiftlint.yml */; };
-		FA82DD4F1CE77C2E00249728 /* .coveralls.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4E1CE77C2E00249728 /* .coveralls.yml */; };
 		FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
@@ -507,7 +506,6 @@
 				FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */,
 				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
 				FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */,
-				FA82DD4F1CE77C2E00249728 /* .coveralls.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
