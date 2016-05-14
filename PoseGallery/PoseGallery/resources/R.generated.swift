@@ -15,14 +15,30 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `Settings.bundle`.
     static let settingsBundle = FileResource(bundle: _R.hostingBundle, name: "Settings", pathExtension: "bundle")
+    /// Resource file `.slather.yml`.
+    static let slatherYml = FileResource(bundle: _R.hostingBundle, name: ".slather", pathExtension: "yml")
+    /// Resource file `.swiftlint.yml`.
+    static let swiftlintYml = FileResource(bundle: _R.hostingBundle, name: ".swiftlint", pathExtension: "yml")
     
     /// `bundle.URLForResource("Settings", withExtension: "bundle")`
     static func settingsBundle(_: Void) -> NSURL? {
       let fileResource = R.file.settingsBundle
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
+    /// `bundle.URLForResource(".slather", withExtension: "yml")`
+    static func slatherYml(_: Void) -> NSURL? {
+      let fileResource = R.file.slatherYml
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
+    /// `bundle.URLForResource(".swiftlint", withExtension: "yml")`
+    static func swiftlintYml(_: Void) -> NSURL? {
+      let fileResource = R.file.swiftlintYml
       return fileResource.bundle.URLForResource(fileResource)
     }
     

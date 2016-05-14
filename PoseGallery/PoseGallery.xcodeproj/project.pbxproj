@@ -33,6 +33,8 @@
 		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
+		FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4A1CE6E88300249728 /* .slather.yml */; };
+		FA82DD4D1CE6E88300249728 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4B1CE6E88300249728 /* .swiftlint.yml */; };
 		FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
@@ -111,7 +113,6 @@
 		FA44C9DA1A499BC400776BD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		FA44C9DC1A499BCE00776BD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
-		FA44CA151A4E0D0600776BD6 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .slather.yml; path = ../../.slather.yml; sourceTree = "<group>"; };
 		FA46F0CE1CCED294002D33A0 /* PoseGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoseGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA46F0DA1CCED348002D33A0 /* PoseGalleryUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseGalleryUITests.swift; sourceTree = "<group>"; };
 		FA46F0DD1CCED356002D33A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,10 +128,11 @@
 		FA6E64B81A279B7800395E94 /* PoseGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoseGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64BD1A279B7800395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryTests.swift; sourceTree = "<group>"; };
+		FA82DD4A1CE6E88300249728 /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = SOURCE_ROOT; };
+		FA82DD4B1CE6E88300249728 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
-		FAC3EE5D1CD7967F0054586D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = ../../.swiftlint.yml; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -339,9 +341,9 @@
 				FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
 				FA43CBC91CC978360090E696 /* .gitignore */,
+				FA82DD4A1CE6E88300249728 /* .slather.yml */,
+				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
-				FA44CA151A4E0D0600776BD6 /* .slather.yml */,
-				FAC3EE5D1CD7967F0054586D /* .swiftlint.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
 				FAFB2EB41AF5E34500A8AB21 /* docs */,
@@ -498,6 +500,8 @@
 				FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */,
 				FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */,
 				FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */,
+				FA82DD4D1CE6E88300249728 /* .swiftlint.yml in Resources */,
+				FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */,
 				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
 				FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */,
 			);

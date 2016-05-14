@@ -73,8 +73,7 @@ fi
 check_style()
 {
 if which swiftlint >/dev/null; then
-    # NB. .swiftlint.yml included/excluded only effective in invoked directory
-    cd ${SRCROOT}/..; swiftlint
+    swiftlint
 else
     echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
 fi

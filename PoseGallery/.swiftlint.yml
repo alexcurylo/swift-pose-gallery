@@ -23,13 +23,13 @@ opt_in_rules:
  - missing_docs
 
 included:
- - PoseGallery/PoseGallery
- - PoseGallery/PoseGalleryTests
- - PoseGallery/PoseGalleryUITests
+ - PoseGallery
+ - PoseGalleryTests
+ - PoseGalleryUITests
 
 excluded:
- - PoseGallery/PoseGallery/resources
- - PoseGallery/PoseGallery/libraries
+ - PoseGallery/resources
+ - PoseGallery/libraries
 
 # defaults to 100
 line_length: 150
