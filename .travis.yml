@@ -42,13 +42,12 @@ install:
 #before_script:
 
 script:
-# Add CODE_SIGNING_ALLOWED=NO? http://www.openradar.me/radar?id=5549442786656256
-- set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
-# - set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+#- set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+- set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
- - swiftlint
  - slather
+# - swiftlint
 # - slather coverage -s --scheme PoseGallery  PoseGallery/PoseGallery.xcodeproj
 # check codecov badge at https://github.com/realm/SwiftLint
 # https://github.com/realm/SwiftLint/blob/master/.travis.yml
