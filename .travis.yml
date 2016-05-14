@@ -30,25 +30,16 @@ before_install:
  - gem install slather --no-rdoc --no-ri --no-document --quiet
  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
  - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
-# for slather
-# - rvm use $RVM_RUBY_VERSION
 
 install:
  - cd PoseGallery
  - carthage bootstrap --platform iOS --no-use-binaries
-# for slather
-# - bundle install --without=documentation --path ../travis_bundle_dir
 
 #before_script:
 
 script:
-#- set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
-- set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
+ - set -o pipefail && xcodebuild clean test -project PoseGallery.xcodeproj -scheme PoseGallery -sdk iphonesimulator -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
+ - swiftlint
  - slather
-# - swiftlint
-# - slather coverage -s --scheme PoseGallery  PoseGallery/PoseGallery.xcodeproj
-# check codecov badge at https://github.com/realm/SwiftLint
-# https://github.com/realm/SwiftLint/blob/master/.travis.yml
-#- bash <(curl -s https://codecov.io/bash)
