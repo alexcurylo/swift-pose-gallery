@@ -9,7 +9,8 @@
 coverage_service: coveralls
 
 # https://github.com/SlatherOrg/slather/issues/197
-build_directory: build
+# http://www.openradar.me/radar?id=5549442786656256
+#build_directory: build
 
 xcodeproj: PoseGallery.xcodeproj
 scheme: PoseGallery
