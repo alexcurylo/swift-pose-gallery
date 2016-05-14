@@ -13,7 +13,6 @@ xcodeproj: PoseGallery.xcodeproj
 scheme: PoseGallery
 source_directory: PoseGallery/source
 ignore:
- - ExamplePodCode/*
- - ProjectTestsGroup/*
  - PoseGalleryConfig/*
  - PoseGalleryTests/*
+ - PoseGalleryUITests/*
