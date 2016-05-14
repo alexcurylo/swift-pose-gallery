@@ -11,7 +11,6 @@
 coverage_service: coveralls
 xcodeproj: PoseGallery.xcodeproj
 scheme: PoseGallery
-source_directory: PoseGallery/source
 ignore:
  - PoseGalleryConfig/*
  - PoseGalleryTests/*

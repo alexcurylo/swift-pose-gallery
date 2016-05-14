@@ -31,13 +31,13 @@ before_install:
  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
  - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
 # for slather
- - rvm use $RVM_RUBY_VERSION
+# - rvm use $RVM_RUBY_VERSION
 
 install:
  - cd PoseGallery
  - carthage bootstrap --platform iOS --no-use-binaries
 # for slather
- - bundle install --without=documentation --path ../travis_bundle_dir
+# - bundle install --without=documentation --path ../travis_bundle_dir
 
 #before_script:
 
