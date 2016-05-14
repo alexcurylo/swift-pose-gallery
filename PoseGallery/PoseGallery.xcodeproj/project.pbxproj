@@ -35,6 +35,7 @@
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4A1CE6E88300249728 /* .slather.yml */; };
 		FA82DD4D1CE6E88300249728 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4B1CE6E88300249728 /* .swiftlint.yml */; };
+		FA82DD4F1CE77C2E00249728 /* .coveralls.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA82DD4E1CE77C2E00249728 /* .coveralls.yml */; };
 		FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
@@ -130,6 +131,7 @@
 		FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryTests.swift; sourceTree = "<group>"; };
 		FA82DD4A1CE6E88300249728 /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = SOURCE_ROOT; };
 		FA82DD4B1CE6E88300249728 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		FA82DD4E1CE77C2E00249728 /* .coveralls.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .coveralls.yml; sourceTree = SOURCE_ROOT; };
 		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
@@ -341,9 +343,10 @@
 				FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
 				FA43CBC91CC978360090E696 /* .gitignore */,
-				FA82DD4A1CE6E88300249728 /* .slather.yml */,
 				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
+				FA82DD4A1CE6E88300249728 /* .slather.yml */,
+				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
 				FAFB2EB41AF5E34500A8AB21 /* docs */,
@@ -504,6 +507,7 @@
 				FA82DD4C1CE6E88300249728 /* .slather.yml in Resources */,
 				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
 				FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */,
+				FA82DD4F1CE77C2E00249728 /* .coveralls.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

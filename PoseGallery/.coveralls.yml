@@ -1,0 +1,8 @@
+#
+# .coveralls.yml
+# PoseGallery
+#
+# Copyright © 2016 Trollwerks Inc. All rights reserved.
+#
+
+service_name: travis-ci
