@@ -134,7 +134,6 @@
 		FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTracking.swift; sourceTree = "<group>"; };
 		FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftalytics.framework; path = ../../Carthage/Build/iOS/Swiftalytics.framework; sourceTree = "<group>"; };
 		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = ../../Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
-		FAFB2EB41AF5E34500A8AB21 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,7 +333,6 @@
 				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
 				FA44C9DC1A499BCE00776BD6 /* README.md */,
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
-				FAFB2EB41AF5E34500A8AB21 /* docs */,
 			);
 			path = PoseGalleryConfig;
 			sourceTree = "<group>";
