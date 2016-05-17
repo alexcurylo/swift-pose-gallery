@@ -5,7 +5,7 @@
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)][linkMIT]
 
 [swift-pose-gallery](https://github.com/alexcurylo/swift-pose-gallery)
 ==================
@@ -75,9 +75,13 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## License
 
-The [MIT License](http://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for details.
- 
+The [linkMIT]. See the [LICENSE](LICENSE) file for details.
+
+**Copyright &copy; 2016 Trollwerks Inc.**
+
 ## Change Log
  
  * **Version 1.0**: *(????.??.??)* - Initial Release
+ 
+[linkMIT]: http://opensource.org/licenses/MIT "MIT License"
 
