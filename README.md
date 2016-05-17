@@ -36,7 +36,6 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
 - [Carthage](https://github.com/Carthage/Carthage), for dependency management
 - [Fabric](https://fabric.io) account, for Crashlytics crash reporting and Beta distribution
 - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
-- [jazzy](https://github.com/realm/jazzy), for automatic documentation generation
 - [R.swift](https://github.com/mac-cain13/R.swift/) in /libraries for typed resource identifiers
 - [SwiftLint](https://github.com/realm/SwiftLint), for coding style review
 
@@ -57,11 +56,15 @@ Place your images in /resources/branded/brand_images replacing the samples there
 
  `carthage build --platform iOS` to build checked in dependencies; `carthage update --platform iOS` to update.
 
-Build the app with the 'PoseGallery' target. 
+Build the app with the 'PoseGallery' target.
+ 
+## Testing
  
 Tests are in the 'PoseGalleryTests' and 'PoseGalleryUITests' targets. Code coverage is enabled; [Travis](https://travis-ci.org/alexcurylo/swift-pose-gallery) builds collect it with [Slather](https://github.com/SlatherOrg/slather) to pass to [Coveralls](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop) which provides the badged percentage above.
+
+## Documentation
  
-Build source code documentation in /PoseGallery/docs/ with the 'Documentation' target.
+Read the [docs](http://alexcurylo.github.io/swift-pose-gallery/). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com). More information on the [`gh-pages`](https://github.com/alexcurylo/swift-pose-gallery/tree/gh-pages) branch.
 
 ## Roadmap
 
