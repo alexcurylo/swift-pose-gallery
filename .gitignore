@@ -1,0 +1,10 @@
+#
+# .gitignore
+#
+
+# OS X
+.DS_Store
+.Trashes
+
+# Docsets
+docsets/*
