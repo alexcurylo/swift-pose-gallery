@@ -75,13 +75,13 @@ Feel free to [open an issue](https://github.com/alexcurylo/swift-pose-gallery/is
 
 ## License
 
-The [linkMIT]. See the [LICENSE](LICENSE) file for details.
+The [MIT License][linkMIT]. See the [LICENSE](LICENSE) file for details.
 
-**Copyright &copy; 2016 Trollwerks Inc.**
+>**Copyright &copy; 2016 Trollwerks Inc.**
 
 ## Change Log
  
  * **Version 1.0**: *(????.??.??)* - Initial Release
  
-[linkMIT]: http://opensource.org/licenses/MIT "MIT License"
+[linkMIT]: http://opensource.org/licenses/MIT
 
