@@ -1,0 +1,4 @@
+[submodule "swift-pose-gallery"]
+	path = swift-pose-gallery
+	url = https://github.com/alexcurylo/swift-pose-gallery.git
+	branch = develop
