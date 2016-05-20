@@ -50,7 +50,7 @@ class StackFactoryTests: TestCase {
         let expectation = expectationWithDescription("\(#function)")
 
         // WHEN: we create a stack in the background
-        factory.createStackInBackground { (result: StackResult) in
+        factory.createStack { (result: StackResult) in
             XCTAssertTrue(NSThread.isMainThread(), "Factory completion handler should return on main thread")
 
             switch result {
@@ -126,7 +126,7 @@ class StackFactoryTests: TestCase {
 
         XCTAssertEqual(stack.mainContext.name, "JSQCoreDataKit.CoreDataStack.context.main")
         XCTAssertEqual(stack.mainContext.concurrencyType, NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType)
-        XCTAssertEqual(stack.mainContext.parentContext, stack.backgroundContext)
+        XCTAssertNil(stack.mainContext.parentContext)
         XCTAssertNotNil(stack.mainContext.persistentStoreCoordinator)
 
         XCTAssertEqual(stack.backgroundContext.name, "JSQCoreDataKit.CoreDataStack.context.background")

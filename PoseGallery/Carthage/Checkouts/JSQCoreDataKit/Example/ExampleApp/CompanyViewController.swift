@@ -42,7 +42,7 @@ class CompanyViewController: UITableViewController, NSFetchedResultsControllerDe
         let model = CoreDataModel(name: modelName, bundle: modelBundle)
         let factory = CoreDataStackFactory(model: model)
 
-        factory.createStackInBackground { (result: StackResult) -> Void in
+        factory.createStack { (result: StackResult) -> Void in
             switch result {
             case .success(let s):
                 self.stack = s
@@ -130,8 +130,8 @@ class CompanyViewController: UITableViewController, NSFetchedResultsControllerDe
             let request = self.fetchRequest(backgroundChildContext)
 
             do {
-                let objects = try fetch(request: request, inContext: backgroundChildContext)
-                deleteObjects(objects, inContext: backgroundChildContext)
+                let objects = try backgroundChildContext.fetch(request: request)
+                backgroundChildContext.delete(objects: objects)
                 saveContext(backgroundChildContext)
             } catch {
                 print("Error deleting objects: \(error)")
@@ -177,7 +177,7 @@ class CompanyViewController: UITableViewController, NSFetchedResultsControllerDe
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             let obj = frc?.objectAtIndexPath(indexPath) as! Company
-            deleteObjects([obj], inContext: self.stack.mainContext)
+            self.stack.mainContext.delete(objects: [obj])
             saveContext(self.stack.mainContext)
         }
     }
