@@ -8,10 +8,6 @@ import Foundation
 import Fabric
 import Crashlytics
 import XCGLogger
-//import Mixpanel
-
-// Analytics singleton -- Alex's token!
-//public let mixpanel = Mixpanel(token: "f92302f6975b0dcd77ee32db93cf778e")
 
 /// Logging singleton
 public let log = XCGLogger.defaultInstance()
@@ -50,19 +46,12 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
 centralize crash/log/analytics setup
 */
 public func startReporting() {
-    // crashes
+    // Fabric: crash reporting, distribution, analytics
     // !!!: This crashes?
     //Fabric.with([Crashlytics.self])
 
     // logging
     log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-
-    // analytics
-    setupScreenTracking()
-
-    // ???: Sort out analytics
-    //mixpanel.enabled = false; // remove when ready to start producing data
-    //mixpanel.track("Launch")
 }
 
 /**

@@ -42,7 +42,6 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
  Libraries (Carthage))
 
 - JSQCoreDataKit: Core Data
-- Swiftalytics: view analytics
 - [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
 - [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
 

@@ -14,7 +14,6 @@
 		FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
 		FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C231B0A9DA000528A37 /* Fabric.framework */; };
 		FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA46F0C91CCD5895002D33A0 /* Swiftalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA46F0DB1CCED348002D33A0 /* PoseGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46F0DA1CCED348002D33A0 /* PoseGalleryUITests.swift */; };
 		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
@@ -33,10 +32,7 @@
 		FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */; };
 		FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */; };
 		FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
-		FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */; };
-		FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
 		FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
-		FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */; };
 		FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
 		FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -66,7 +62,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */,
-				FA46F0C91CCD5895002D33A0 /* Swiftalytics.framework in Embed Frameworks */,
 				FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */,
 				FAAF41C01CD5517C00BBA025 /* Rswift.framework in Embed Frameworks */,
 			);
@@ -129,8 +124,6 @@
 		FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Optionals.swift"; sourceTree = "<group>"; };
 		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
 		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTracking.swift; sourceTree = "<group>"; };
-		FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftalytics.framework; path = ../../Carthage/Build/iOS/Swiftalytics.framework; sourceTree = "<group>"; };
 		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = ../../Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +143,6 @@
 				FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */,
-				FAFB2EA71AF58CA800A8AB21 /* Swiftalytics.framework in Frameworks */,
 				FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */,
 				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
@@ -164,7 +156,6 @@
 				FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */,
-				FAFB2EA51AF58C6A00A8AB21 /* Swiftalytics.framework in Frameworks */,
 				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +286,6 @@
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
 				FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */,
 				FAAF41BC1CD54B7500BBA025 /* Rswift.framework */,
-				FAFB2EA11AF58C5A00A8AB21 /* Swiftalytics.framework */,
 				FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */,
 			);
 			path = libraries;
@@ -357,7 +347,6 @@
 			isa = PBXGroup;
 			children = (
 				FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */,
-				FAFB2E9C1AF58B0400A8AB21 /* ScreenTracking.swift */,
 			);
 			path = support;
 			sourceTree = "<group>";
@@ -543,7 +532,6 @@
 				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
 				FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */,
 				FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */,
-				FAFB2E9D1AF58B0400A8AB21 /* ScreenTracking.swift in Sources */,
 				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

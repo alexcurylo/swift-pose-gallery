@@ -13,7 +13,6 @@ import XCTest
 @testable import PoseGallery
 import Crashlytics
 import Fabric
-import Swiftalytics
 import XCGLogger
 
 class PoseGalleryTests: XCTestCase {
@@ -75,19 +74,6 @@ class PoseGalleryTests: XCTestCase {
     /// XCGLogger initialized ok
     func testXCGLogger() {
         XCTAssertTrue(log === XCGLogger.defaultInstance(), "wrong XCGLogger")
-    }
-
-    /// Swiftalytics initialized ok
-    func testSwiftalytics() {
-        guard let delegate = UIApplication.sharedApplication().delegate as? AppDelegate,
-            tabBar = delegate.window?.rootViewController as? UITabBarController,
-            first = tabBar.viewControllers?[0] as? FirstViewController else {
-            XCTFail("unexpected rootViewController")
-            return
-        }
-
-        let trackMaster = Swiftalytics.trackingNameForViewController(first)
-        XCTAssertEqualOptional(a: trackMaster, b: "FirstViewController (start)")
     }
 
     /// JSQCoreDataKit initialized ok
