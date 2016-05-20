@@ -8,9 +8,6 @@
 # JSQCoreDataKit: Core Data
 github "jessesquires/JSQCoreDataKit"
 
-# Swiftalytics: view analytics
-github "MrAlek/Swiftalytics" >= 0.1.1
-
 # R.swift.Library: Static resource typing
 github "mac-cain13/R.swift.Library"
 
