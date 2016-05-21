@@ -14,8 +14,8 @@ CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
 
 ENABLE_TESTABILITY = YES
 MTL_ENABLE_DEBUG_INFO = YES
-// remove this if sending debug builds to Crashlytics etc.
-DEBUG_INFORMATION_FORMAT = dwarf
+// disable if sending debug builds to Crashlytics etc.
+//DEBUG_INFORMATION_FORMAT = dwarf
 
 GCC_OPTIMIZATION_LEVEL = 0
 SWIFT_OPTIMIZATION_LEVEL = -Onone
