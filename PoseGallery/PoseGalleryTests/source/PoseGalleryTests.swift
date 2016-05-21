@@ -49,7 +49,6 @@ class PoseGalleryTests: XCTestCase {
 
     /// Check that resource configurations are good
     func testAppResources() {
-
         // items copied to NSUserDefaults from plist for settings
         let defaults = NSUserDefaults.standardUserDefaults()
         XCTAssertNotNilOptional(defaults.stringForKey("version_number"), message: "missing version number")
@@ -63,12 +62,15 @@ class PoseGalleryTests: XCTestCase {
 
     /// Fabric and Crashlytics library configured ok
     func testFabricCrashlytics() {
-        // Fabric and Crashlytics library configured ok
+        let fabricKey = NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric")
+        XCTAssertNotNil(fabricKey, "missing Info.plist Fabric key")
+
         XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
-        let crash = Crashlytics.sharedInstance()
-        XCTAssertNotNil(crash, "missing Crashlytics")
-        //let crashKey = crash.apiKey;
-        //XCTAssertEqual(crashKey, "186ef2a41f30e2ce39a21f35b61600d3ae927290", "wrong Crashlytics apiKey")
+        let crashlytics = Crashlytics.sharedInstance()
+        XCTAssertNotNil(crashlytics, "missing Crashlytics")
+        XCTAssertEqual(crashlytics.version, "3.7.0", "unexpected Crashlytics version")
+
+        XCTAssertEqual(crashlytics.APIKey, "186ef2a41f30e2ce39a21f35b61600d3ae927290", "unexpected Crashlytics apiKey")
     }
 
     /// XCGLogger initialized ok
