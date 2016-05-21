@@ -18,6 +18,9 @@ this method gives us pretty much the same functionality as the CLS_LOG macro, bu
  we don't get see if the method being called is a class method or an instance method. We also have
  to define the DEBUG compiler flag with -DDEBUG.
 
+ See https://docs.fabric.io/ios/crashlytics/enhanced-reports.html#custom-keys
+     https://docs.fabric.io/ios/crashlytics/enhanced-reports.html#custom-logs
+
 usage:
 CLS_LOG_SWIFT()
 CLS_LOG_SWIFT("message!")
@@ -47,8 +50,17 @@ centralize crash/log/analytics setup
 */
 public func startReporting() {
     // Fabric: crash reporting, distribution, analytics
-    // !!!: This crashes?
-    //Fabric.with([Crashlytics.self])
+
+    // Optionally set up delegate, user ID
+    //CrashlyticsKit.delegate = self;
+    //- (void)crashlyticsDidDetectReportForLastExecution:(CLSReport *)report completionHandler:(void (^)(BOOL submit))completionHandler;
+    // Do we have any user-identifying information?
+    //Crashlytics.sharedInstance().setUserEmail("user@fabric.io")
+    //Crashlytics.sharedInstance().setUserIdentifier("12345")
+    //Crashlytics.sharedInstance().setUserName("Test User")
+
+    Fabric.sharedSDK().debug = true
+    Fabric.with([Crashlytics.self])
 
     // logging
     log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
