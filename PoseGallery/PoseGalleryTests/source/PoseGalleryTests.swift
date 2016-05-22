@@ -62,15 +62,16 @@ class PoseGalleryTests: XCTestCase {
 
     /// Fabric and Crashlytics library configured ok
     func testFabricCrashlytics() {
-        let fabricKey = NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric")
-        XCTAssertNotNil(fabricKey, "missing Info.plist Fabric key")
-
+        let fabricSettings = NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") as? [String: AnyObject]
+        let fabricKey = fabricSettings?["APIKey"] as? String
+        XCTAssertNotNil(fabricKey, "missing Info.plist Fabric settings")
+        XCTAssert(!(fabricKey ?? "").isEmpty, "Fabric API key should not be empty")
         XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
+
         let crashlytics = Crashlytics.sharedInstance()
         XCTAssertNotNil(crashlytics, "missing Crashlytics")
         XCTAssertEqual(crashlytics.version, "3.7.0", "unexpected Crashlytics version")
-
-        XCTAssertEqual(crashlytics.APIKey, "186ef2a41f30e2ce39a21f35b61600d3ae927290", "unexpected Crashlytics apiKey")
+        XCTAssertEqual(crashlytics.APIKey, fabricKey, "unexpected Crashlytics APIKey")
     }
 
     /// XCGLogger initialized ok

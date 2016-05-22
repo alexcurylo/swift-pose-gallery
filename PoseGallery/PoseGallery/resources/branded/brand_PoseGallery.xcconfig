@@ -10,3 +10,11 @@
 BRAND_NAME = Poses Pro
 BRAND_BUNDLE_ID = com.trollwerks.posespro
 BRAND_VERSION = 3.0
+
+// service access identifiers
+
+// https://fabric.io/settings/organizations
+FABRIC_API_KEY = 186ef2a41f30e2ce39a21f35b61600d3ae927290
+// "The build secret is a security measure designed to help protects your Beta users from certain types of attacks. If you aren't (or aren't planning on using) our Beta product, you can safely remove it."
+// https://twittercommunity.com/t/whats-the-correct-way-to-keep-credentials-out-of-version-control-if-at-all-required/27248
+FABRIC_BUILD_SECRET = 3ce3168d4276f7278273f34fbc45d96dd492c71a98dc7a3dcd8f1fc3da321e50
