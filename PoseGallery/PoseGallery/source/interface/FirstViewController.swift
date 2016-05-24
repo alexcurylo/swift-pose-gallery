@@ -20,7 +20,8 @@ public class FirstViewController: UIViewController {
 
     /// UIViewController override
     override public func didReceiveMemoryWarning() {
+        print("INFO: \(self.dynamicType) didReceiveMemoryWarning")
+
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

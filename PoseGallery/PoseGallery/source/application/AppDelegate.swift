@@ -45,6 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(application: UIApplication) {
     }
 
+    func applicationDidReceiveMemoryWarning(application: UIApplication) {
+        print("INFO: \(self.dynamicType) applicationDidReceiveMemoryWarning")
+    }
+
     func applicationWillTerminate(application: UIApplication) {
         DataModel.model.outro()
    }

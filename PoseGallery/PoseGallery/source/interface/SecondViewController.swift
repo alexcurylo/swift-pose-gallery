@@ -24,8 +24,8 @@ public class SecondViewController: UIViewController {
     }
 
     override public func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        print("INFO: \(self.dynamicType) didReceiveMemoryWarning")
 
+        super.didReceiveMemoryWarning()
+    }
 }

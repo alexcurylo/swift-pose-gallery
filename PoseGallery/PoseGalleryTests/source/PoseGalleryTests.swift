@@ -38,13 +38,33 @@ class PoseGalleryTests: XCTestCase {
 
     /// Check that setup, target plist and main storyboard are good
     func testAppDelegateConfiguration() {
-        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let app = UIApplication.sharedApplication()
+        let delegate = app.delegate as? AppDelegate
         XCTAssertNotNilOptional(delegate, message: "sharedApplication().delegate does not exist - set host application!")
         XCTAssertNotNilOptional(delegate?.window, message: "missing main window")
         let root = delegate?.window?.rootViewController as? UITabBarController
         XCTAssertNotNilOptional(root, message: "missing root tab controller")
         XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, message: "wrong first view controller")
         XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, message: "wrong second view controller")
+
+        // cover delegate implementation without side effects
+        delegate?.applicationWillResignActive(app)
+        delegate?.applicationDidEnterBackground(app)
+        delegate?.applicationWillEnterForeground(app)
+        delegate?.applicationDidBecomeActive(app)
+        delegate?.applicationWillTerminate(app)
+    }
+
+    // Check low memory handlers are called
+    func testLowMemoryHandling() {
+        let app = UIApplication.sharedApplication()
+
+        UIControl().sendAction(Selector("_performMemoryWarning"), to: app, forEvent: nil)
+
+        // Currently implemented without effect aside from console notes:
+        // INFO: AppDelegate applicationDidReceiveMemoryWarning
+        // INFO: FirstViewController didReceiveMemoryWarning
+        // INFO: SecondViewController didReceiveMemoryWarning
     }
 
     /// Check that resource configurations are good
@@ -110,5 +130,4 @@ class PoseGalleryTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
