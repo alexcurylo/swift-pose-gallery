@@ -10,20 +10,20 @@ import UIKit
 /**
 Second tab
 */
-public class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
 
     /// UIViewController overrides
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override public func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
 
-    override public func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         print("INFO: \(self.dynamicType) didReceiveMemoryWarning")
 
         super.didReceiveMemoryWarning()

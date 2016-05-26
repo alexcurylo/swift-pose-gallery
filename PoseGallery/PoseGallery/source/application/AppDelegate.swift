@@ -11,7 +11,7 @@ import UIKit
 Singleton UIApplication delegate
 */
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Properties
 

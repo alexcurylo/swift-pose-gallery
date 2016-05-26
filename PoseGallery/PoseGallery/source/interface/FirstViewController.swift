@@ -10,16 +10,16 @@ import UIKit
 /**
     First tab
 */
-public class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
 
     /// UIViewController override
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     /// UIViewController override
-    override public func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         print("INFO: \(self.dynamicType) didReceiveMemoryWarning")
 
         super.didReceiveMemoryWarning()

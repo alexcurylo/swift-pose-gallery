@@ -7,7 +7,7 @@
 
 import XCTest
 
-class PoseGalleryUITests: XCTestCase {
+final class PoseGalleryUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()

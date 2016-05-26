@@ -10,7 +10,7 @@ import Crashlytics
 import XCGLogger
 
 /// Logging singleton
-public let log = XCGLogger.defaultInstance()
+let log = XCGLogger.defaultInstance()
 
 /**
 this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift
@@ -48,7 +48,7 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
 /**
 centralize crash/log/analytics setup
 */
-public func startReporting() {
+func startReporting() {
     // Fabric: crash reporting, distribution, analytics
 
     // Optionally set up delegate, user ID

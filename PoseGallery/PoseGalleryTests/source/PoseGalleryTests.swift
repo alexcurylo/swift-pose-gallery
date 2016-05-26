@@ -15,7 +15,7 @@ import Crashlytics
 import Fabric
 import XCGLogger
 
-class PoseGalleryTests: XCTestCase {
+final class PoseGalleryTests: XCTestCase {
 
     /// Put setup code here. This method is called before the invocation of each test method in the class.
     override func setUp() {
