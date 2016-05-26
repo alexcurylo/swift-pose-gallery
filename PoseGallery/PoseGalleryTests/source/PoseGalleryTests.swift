@@ -59,7 +59,8 @@ class PoseGalleryTests: XCTestCase {
     func testLowMemoryHandling() {
         let app = UIApplication.sharedApplication()
 
-        UIControl().sendAction(Selector("_performMemoryWarning"), to: app, forEvent: nil)
+        // Note we rely on MemoryWarner.h via the bridging header to expose private selector
+        UIControl().sendAction(#selector(UIApplication._performMemoryWarning), to: app, forEvent: nil)
 
         // Currently implemented without effect aside from console notes:
         // INFO: AppDelegate applicationDidReceiveMemoryWarning

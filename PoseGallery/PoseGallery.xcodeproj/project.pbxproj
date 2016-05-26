@@ -22,6 +22,7 @@
 		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41C01CD5517C00BBA025 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8D5D31CF67C140030247C /* MemoryWarner.m */; };
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
 		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
@@ -113,6 +114,9 @@
 		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
+		FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseGalleryTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAD8D5D21CF67C140030247C /* MemoryWarner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryWarner.h; sourceTree = "<group>"; };
+		FAD8D5D31CF67C140030247C /* MemoryWarner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryWarner.m; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -176,8 +180,11 @@
 		FA38C2C31A38A83600A76606 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8D5D21CF67C140030247C /* MemoryWarner.h */,
+				FAD8D5D31CF67C140030247C /* MemoryWarner.m */,
 				FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */,
 				FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */,
+				FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -540,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */,
 				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
 				FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */,
 			);
@@ -641,6 +649,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -648,6 +660,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -669,6 +684,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
 			};
 			name = Adhoc;
 		};
