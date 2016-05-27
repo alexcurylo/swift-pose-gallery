@@ -44,6 +44,7 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(delegate?.window, message: "missing main window")
         let root = delegate?.window?.rootViewController as? UITabBarController
         XCTAssertNotNilOptional(root, message: "missing root tab controller")
+        XCTAssert(root?.viewControllers?.count == 2, "wrong number of tabs")
         XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, message: "wrong first view controller")
         XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, message: "wrong second view controller")
 
