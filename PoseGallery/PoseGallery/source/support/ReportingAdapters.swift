@@ -61,6 +61,8 @@ func startReporting() {
 
     Fabric.sharedSDK().debug = true
     Fabric.with([Crashlytics.self])
+    
+    // set up Answers here
 
     // logging
     log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
@@ -70,5 +72,11 @@ func startReporting() {
 centralize Crashlytics dependencies -- crashing
 */
 func crash() {
+    let isUnitTesting = NSClassFromString("XCTestCase") != nil
+    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
+    guard !isUnitTesting && !isUITesting else {
+        return
+    }
+
     Crashlytics.sharedInstance().crash()
 }
