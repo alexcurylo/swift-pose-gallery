@@ -107,6 +107,10 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssertNotNil(crashlytics, "missing Crashlytics")
         XCTAssertEqual(crashlytics.version, "3.7.0", "unexpected Crashlytics version")
         XCTAssertEqual(crashlytics.APIKey, fabricKey, "unexpected Crashlytics APIKey")
+
+        // ReportingAdapter wrappers
+        CLS_LOG_SWIFT("testFabricCrashlytics")
+        crash()
     }
 
     /// XCGLogger initialized ok
