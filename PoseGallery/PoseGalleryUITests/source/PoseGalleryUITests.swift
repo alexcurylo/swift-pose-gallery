@@ -25,12 +25,14 @@ final class PoseGalleryUITests: XCTestCase {
 
     func testTabNavigation() {
         let app = XCUIApplication()
-        let tabBarsQuery = app.tabBars
-        let first = tabBarsQuery.buttons["First"]
-        let second = tabBarsQuery.buttons["Second"]
+        let tabBar = app.tabBars.elementBoundByIndex(0)
+        let first = tabBar.buttons.elementBoundByIndex(0)
+        let second = tabBar.buttons.elementBoundByIndex(1)
 
-        XCTAssert(first.selected == true)
+        XCTAssert(first.selected == true, "first tab not selected at startup")
 
+        // note foreseeable failure here:
+        // https://openradar.appspot.com/26493495
         second.tap()
 
         let selectedPredicate = NSPredicate(format: "selected == true")
