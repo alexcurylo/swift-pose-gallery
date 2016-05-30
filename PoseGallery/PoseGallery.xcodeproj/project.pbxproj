@@ -119,6 +119,8 @@
 		FAD8D5D31CF67C140030247C /* MemoryWarner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryWarner.m; sourceTree = "<group>"; };
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FADFA6F81CFCB40000D198A1 /* acknowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acknowledge.swift; sourceTree = "<group>"; };
+		FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQCoreDataKit.framework; path = ../../Carthage/Build/iOS/JSQCoreDataKit.framework; sourceTree = "<group>"; };
 		FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				FAB13EF41A3878850053620A /* script_build_begin.sh */,
 				FAB13EF51A3878850053620A /* script_build_end.sh */,
 				FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */,
+				FADFA6F81CFCB40000D198A1 /* acknowledge.swift */,
 				FA3287E11AF08D8500B905DC /* project_base.xcconfig */,
 				FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */,
 				FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */,
@@ -321,6 +324,7 @@
 				FA46F0DE1CCED8C9002D33A0 /* PoseGalleryUITests_Adhoc.xcconfig */,
 				FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
+				FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */,
 				FA43CBC91CC978360090E696 /* .gitignore */,
 				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
 				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,

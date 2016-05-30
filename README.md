@@ -53,7 +53,7 @@ Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 
 
 Place your images in /resources/branded/brand_images replacing the samples there; set your App Store branding in /resources/branded/brand_PoseGallery.xcconfig.
 
- `carthage build --platform iOS` to build checked in dependencies; `carthage update --platform iOS` to update.
+ `carthage build` to build dependencies -- note that this repo includes Carthage/Checkouts, to avoid [availability failures](http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/); `carthage update` to update.
 
 Build the app with the 'PoseGallery' target.
  
@@ -64,6 +64,8 @@ Tests are in the 'PoseGalleryTests' and 'PoseGalleryUITests' targets. Code cover
 ## Documentation
  
 Read the [docs](http://alexcurylo.github.io/swift-pose-gallery/). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com). More information on the [`gh-pages`](https://github.com/alexcurylo/swift-pose-gallery/tree/gh-pages) branch.
+
+In-app acknowledgements generated with [acknowledge](PoseGallery/PoseGalleryConfig/acknowledge.swift) script using [Markingbird](https://github.com/kristopherjohnson/Markingbird) private Carthage framework, from [Swift Scripting By Example: Generating Acknowledgements For CocoaPods & Carthage Dependencies](http://swift.ayaka.me/posts/2015/11/5/swift-scripting-generating-acknowledgements-for-cocoapods-and-carthage-dependencies)
 
 ## Roadmap
 
