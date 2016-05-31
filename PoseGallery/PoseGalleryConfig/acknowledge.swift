@@ -65,7 +65,7 @@ func run() throws {
     }
 
     guard
-        let carthageDirURL = NSURL(string: cocoaPodsDir),
+        let carthageDirURL = NSURL(string: carthageDir),
         let carthageEnumerator = fileManager.enumeratorAtURL(carthageDirURL, includingPropertiesForKeys: nil, options: options, errorHandler: nil)
     else {
         print("Error: \(carthageDir) directory not found. Please run `rake`")
