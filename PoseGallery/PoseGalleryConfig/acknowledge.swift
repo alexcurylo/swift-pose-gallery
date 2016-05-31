@@ -48,7 +48,7 @@ func run() throws {
 
     let cocoaPodsDir = "Pods/"
     let carthageDir = "../Carthage/Checkouts/"
-    let outputFile = "../PoseGallery/resources/LICENSES.html"
+    let outputFile = "../PoseGallery/resources/LICENSES.generated.html"
     let options: NSDirectoryEnumerationOptions = [.SkipsPackageDescendants, .SkipsHiddenFiles]
 
     let fileManager = NSFileManager.defaultManager()
@@ -98,6 +98,8 @@ func run() throws {
     let html = licenses.map { markdown.transform($0.writableString) }.joinWithSeparator("\n")
 
     try html.writeToFile(outputFile, atomically: false, encoding: NSUTF8StringEncoding)
+    
+    print("Acknowledgements written to \(outputFile)")
 }
 
 func main() {
