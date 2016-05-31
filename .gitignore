@@ -95,5 +95,8 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-# R.swift
-*.generated.swift
+# R.swift -- tool for reource reference generation
+R.generated.swift
+
+# acknowledge.swift -- script for licenses display generation
+LICENSES.generated.html
