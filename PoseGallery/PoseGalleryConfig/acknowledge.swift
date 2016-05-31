@@ -1,4 +1,4 @@
-#!/usr/bin/env xcrun swift -F Carthage/Build/Mac
+#!/usr/bin/env xcrun swift -F ../Carthage/Build/Mac
 
 //
 // acknowledge.swift
@@ -47,8 +47,8 @@ func getLicense(URL: NSURL) throws -> License {
 func run() throws {
 
     let cocoaPodsDir = "Pods/"
-    let carthageDir = "Carthage/Checkouts/"
-    let outputFile = "Venmo/Resources/LICENSES.html"
+    let carthageDir = "../Carthage/Checkouts/"
+    let outputFile = "../PoseGallery/resources/LICENSES.html"
     let options: NSDirectoryEnumerationOptions = [.SkipsPackageDescendants, .SkipsHiddenFiles]
 
     let fileManager = NSFileManager.defaultManager()
