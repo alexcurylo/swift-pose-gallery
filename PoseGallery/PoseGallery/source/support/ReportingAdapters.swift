@@ -61,7 +61,7 @@ func startReporting() {
 
     Fabric.sharedSDK().debug = true
     Fabric.with([Crashlytics.self])
-    
+
     // set up Answers here
 
     // logging
