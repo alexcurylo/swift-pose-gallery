@@ -69,14 +69,20 @@ func startReporting() {
 }
 
 /**
-centralize Crashlytics dependencies -- crashing
-*/
-func crash() {
-    let isUnitTesting = NSClassFromString("XCTestCase") != nil
-    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
-    guard !isUnitTesting && !isUITesting else {
-        return
-    }
+ Runtime enviroment inquiries
 
-    Crashlytics.sharedInstance().crash()
+ - returns: whether queried condition is true
+ */
+func isUnitTesting() -> Bool {
+    let isUnitTesting = NSClassFromString("XCTestCase") != nil
+    return isUnitTesting
+}
+
+func isUITesting() -> Bool {
+    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
+    return isUITesting
+}
+
+func isTesting() -> Bool {
+    return isUITesting() || isUnitTesting()
 }

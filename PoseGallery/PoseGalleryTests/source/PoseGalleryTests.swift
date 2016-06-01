@@ -109,8 +109,13 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssertEqual(crashlytics.APIKey, fabricKey, "unexpected Crashlytics APIKey")
 
         // ReportingAdapter wrappers
+
         CLS_LOG_SWIFT("testFabricCrashlytics")
-        crash()
+        CLS_LOG_SWIFT("testFabricCrashlytics empty file", file: "")
+
+        XCTAssertFalse(isUITesting(), "isUITesting() should be false")
+        XCTAssert(isUnitTesting(), "isUnitTesting() should be true")
+        XCTAssert(isTesting(), "isTesting() should be true")
     }
 
     /// XCGLogger initialized ok
