@@ -10,7 +10,14 @@ import Crashlytics
 import XCGLogger
 
 /// Logging singleton
-let log = XCGLogger.defaultInstance()
+let log: XCGLogger = {
+    $0.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.dateFormat = "MM/dd/yyyy hh:mma"
+    dateFormatter.locale = NSLocale.currentLocale()
+    $0.dateFormatter = dateFormatter
+    return $0
+}(XCGLogger.defaultInstance())
 
 /**
 this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift
@@ -64,8 +71,12 @@ func startReporting() {
 
     // set up Answers here
 
-    // logging
-    log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
+    // !!!: set up Crashlytics logging, see
+    // https://github.com/DaveWoodCom/XCGLogger/blob/master/README.md
+    // http://jogabo.github.io/firelog/
+
+    // trigger logging initialization
+    log.info("Reporting started")
 }
 
 /**
