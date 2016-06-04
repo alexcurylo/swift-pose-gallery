@@ -69,8 +69,6 @@ func startReporting() {
     Fabric.sharedSDK().debug = true
     Fabric.with([Crashlytics.self])
 
-    // set up Answers here
-
     // !!!: set up Crashlytics logging, see
     // https://github.com/DaveWoodCom/XCGLogger/blob/master/README.md
     // http://jogabo.github.io/firelog/
