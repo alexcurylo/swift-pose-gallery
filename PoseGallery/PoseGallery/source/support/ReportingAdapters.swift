@@ -12,10 +12,14 @@ import XCGLogger
 /// Logging singleton
 let log: XCGLogger = {
     $0.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
+
     let dateFormatter = NSDateFormatter()
     dateFormatter.dateFormat = "MM/dd/yyyy hh:mma"
     dateFormatter.locale = NSLocale.currentLocale()
     $0.dateFormatter = dateFormatter
+
+    $0.addLogDestination(CrashlyticsDestination(owner: $0, identifier: "Crashlytics"))
+
     return $0
 }(XCGLogger.defaultInstance())
 
@@ -53,8 +57,24 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
 }
 
 /**
-centralize crash/log/analytics setup
-*/
+ Log destination for XCGLogger
+ */
+class CrashlyticsDestination: XCGBaseLogDestination {
+    
+    /**
+     XCGLogger extension for Crashlytics logging
+     
+     - parameter logDetails: As per the owner's log() call
+     - parameter text:       As logged in Xcode, ie "06/05/2016 07:19AM [Info] [ReportingAdapters.swift:90] startReporting() > Reporting started"
+     */
+    override func output(logDetails: XCGLogDetails, text: String) {
+        CLS_LOG_SWIFT(logDetails.logMessage, file: logDetails.fileName, function: logDetails.fileName, line: logDetails.lineNumber)
+    }
+}
+
+/**
+ centralize crash/log/analytics setup
+ */
 func startReporting() {
     // Fabric: crash reporting, distribution, analytics
 
