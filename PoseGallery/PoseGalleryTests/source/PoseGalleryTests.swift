@@ -47,8 +47,10 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssert(root?.viewControllers?.count == 2, "wrong number of tabs")
         XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, message: "wrong first view controller")
         XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, message: "wrong second view controller")
-
-        // cover delegate implementation without side effects
+    }
+    
+    /// check for any fatal UIApplicationDelegate side effects
+    func testAppDelegateDelegation() {
         delegate?.applicationWillResignActive(app)
         delegate?.applicationDidEnterBackground(app)
         delegate?.applicationWillEnterForeground(app)
