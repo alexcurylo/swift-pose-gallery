@@ -48,9 +48,12 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(root?.viewControllers?[0] as? FirstViewController, message: "wrong first view controller")
         XCTAssertNotNilOptional(root?.viewControllers?[1] as? SecondViewController, message: "wrong second view controller")
     }
-    
+
     /// check for any fatal UIApplicationDelegate side effects
     func testAppDelegateDelegation() {
+        let app = UIApplication.sharedApplication()
+        let delegate = app.delegate as? AppDelegate
+
         delegate?.applicationWillResignActive(app)
         delegate?.applicationDidEnterBackground(app)
         delegate?.applicationWillEnterForeground(app)
