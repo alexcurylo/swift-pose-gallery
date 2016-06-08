@@ -60,10 +60,10 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
  Log destination for XCGLogger
  */
 class CrashlyticsDestination: XCGBaseLogDestination {
-    
+
     /**
      XCGLogger extension for Crashlytics logging
-     
+
      - parameter logDetails: As per the owner's log() call
      - parameter text:       As logged in Xcode, ie "06/05/2016 07:19AM [Info] [ReportingAdapters.swift:90] startReporting() > Reporting started"
      */
