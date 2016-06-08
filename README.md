@@ -4,7 +4,7 @@
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+[![Language](http://img.shields.io/badge/language-swift_2.2.1-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)][linkMIT]
 
 [swift-pose-gallery](https://github.com/alexcurylo/swift-pose-gallery)
