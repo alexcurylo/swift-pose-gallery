@@ -11,5 +11,8 @@ github "jessesquires/JSQCoreDataKit"
 # R.swift.Library: Static resource typing
 github "mac-cain13/R.swift.Library"
 
+# ScreamingParty: Utilities collection
+github "alexcurylo/ScreamingParty" "develop"
+
 # XCGLogger: logging
 github "DaveWoodCom/XCGLogger" >= 2.0

@@ -5,6 +5,7 @@
 //
 
 import Foundation
+import ScreamingParty
 import Fabric
 import Crashlytics
 import XCGLogger
@@ -13,9 +14,10 @@ import XCGLogger
 let log: XCGLogger = {
     $0.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
 
-    let dateFormatter = NSDateFormatter()
-    dateFormatter.dateFormat = "MM/dd/yyyy hh:mma"
-    dateFormatter.locale = NSLocale.currentLocale()
+    let dateFormatter = NSDateFormatter().then {
+        $0.dateFormat = "MM/dd/yyyy hh:mma"
+        $0.locale = NSLocale.currentLocale()
+    }
     $0.dateFormatter = dateFormatter
 
     $0.addLogDestination(CrashlyticsDestination(owner: $0, identifier: "Crashlytics"))

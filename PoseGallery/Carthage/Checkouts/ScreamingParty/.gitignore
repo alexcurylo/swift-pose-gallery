@@ -1,0 +1,96 @@
+#
+# .gitignore
+#
+# Github:
+# https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
+# https://github.com/github/gitignore/blob/master/Objective-C.gitignore
+# https://github.com/github/gitignore/blob/master/Swift.gitignore
+#
+# Others:
+# https://gist.github.com/muhasturk/19684c884142a3eb0b63
+# http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+#
+
+# OS X
+.DS_Store
+.Trashes
+*.swp
+*.lock
+
+# Xcode
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*~.nib
+*.moved-aside
+*.xcuserstate
+# Do not ignore these if your workspace uses multiple repositories
+# https://github.com/github/gitignore/pull/1686
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## Playgrounds
+#timeline.xctimeline
+#playground.xcworkspace
+
+# JetBrains AppCode
+.idea/
+
+# other SCC directories
+.hg
+.svn
+CVS
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pods/
+!Podfile.lock
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+Carthage/Build
+
+# Ruby
+# http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+!Gemfile.lock
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output

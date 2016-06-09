@@ -4,13 +4,13 @@
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
-[![Language](http://img.shields.io/badge/language-swift_2.2.1-brightgreen.svg)](https://developer.apple.com/swift)
+[![Language](http://img.shields.io/badge/language-swift_2.2.1-orange.svg)](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT]
 
 [swift-pose-gallery](https://github.com/alexcurylo/swift-pose-gallery)
 ==================
 
-Pose displaying app engine in Swift 2.2 for iOS 9 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
+Pose displaying app engine in Swift 2.2.1 for iOS 9 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ Experimenting with best practices for how to handle what keeps turning out to be
 ## Requirements
 
 - Xcode 7.3.1 or later
-- iOS 9.0 or later
+- iOS 9.3 or later
  
  Tools:
  
@@ -45,6 +45,7 @@ Experimenting with best practices for how to handle what keeps turning out to be
 
 - JSQCoreDataKit: Core Data
 - [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
+- [ScreamingParty](https://github.com/alexcurylo/ScreamingParty) for general utilities
 - [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
 
  Resources:

@@ -20,8 +20,9 @@
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
 		FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
 		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
-		FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
-		FAAF41C01CD5517C00BBA025 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */; };
+		FACFD8C21D0A1ED4002077D6 /* ScreamingParty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACFD8C31D0A1EDF002077D6 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8D5D31CF67C140030247C /* MemoryWarner.m */; };
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
@@ -63,8 +64,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */,
+				FACFD8C31D0A1EDF002077D6 /* Rswift.framework in Embed Frameworks */,
+				FACFD8C21D0A1ED4002077D6 /* ScreamingParty.framework in Embed Frameworks */,
 				FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */,
-				FAAF41C01CD5517C00BBA025 /* Rswift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +116,7 @@
 		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
+		FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreamingParty.framework; path = Carthage/Build/iOS/ScreamingParty.framework; sourceTree = SOURCE_ROOT; };
 		FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseGalleryTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAD8D5D21CF67C140030247C /* MemoryWarner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryWarner.h; sourceTree = "<group>"; };
 		FAD8D5D31CF67C140030247C /* MemoryWarner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryWarner.m; sourceTree = "<group>"; };
@@ -145,11 +148,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */,
 				FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */,
-				FAAF41BF1CD5517B00BBA025 /* Rswift.framework in Frameworks */,
 				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +300,7 @@
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
 				FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */,
 				FAAF41BC1CD54B7500BBA025 /* Rswift.framework */,
+				FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */,
 				FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */,
 			);
 			path = libraries;
@@ -639,6 +643,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Debug;
 		};
@@ -646,6 +654,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Release;
 		};
@@ -681,6 +693,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 			};
 			name = Adhoc;
 		};
