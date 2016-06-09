@@ -29,7 +29,7 @@
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
-		<string>$(FABRIC_API_KEY)</string>
+		<string>186ef2a41f30e2ce39a21f35b61600d3ae927290</string>
 		<key>Kits</key>
 		<array>
 			<dict>
