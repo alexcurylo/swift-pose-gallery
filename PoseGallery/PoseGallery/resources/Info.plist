@@ -29,7 +29,7 @@
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
-		<string>186ef2a41f30e2ce39a21f35b61600d3ae927290</string>
+		<string>$(FABRIC_API_KEY)</string>
 		<key>Kits</key>
 		<array>
 			<dict>
@@ -73,5 +73,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>SwiftyBeaver</key>
+	<dict>
+		<key>AppID</key>
+		<string>$(SWIFTYBEAVER_APPID)</string>
+		<key>AppSecret</key>
+		<string>$(SWIFTYBEAVER_APPSECRET)</string>
+		<key>EncryptionKey</key>
+		<string>$(SWIFTYBEAVER_ENCRYPTIONKEY)</string>
+	</dict>
 </dict>
 </plist>

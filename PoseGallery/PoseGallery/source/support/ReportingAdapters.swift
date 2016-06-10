@@ -19,17 +19,26 @@ extension SwiftyBeaver {
         // http://docs.swiftybeaver.com/article/9-log-to-xcode-console
         let console = ConsoleDestination()  // log to Xcode Console
         log.addDestination(console)
-
+        
         // http://docs.swiftybeaver.com/article/10-log-to-file
         //let file = FileDestination()  // log to default swiftybeaver.log file
         //log.addDestination(file)
+        
+        // !!!: Put these in library
+        let infoPlist = NSBundle.mainBundle().infoDictionary
+        let config = infoPlist?["SwiftyBeaver"] as? Dictionary<String, AnyObject>
+        let appID = config?["AppID"] as? String
+        let appSecret = config?["AppSecret"] as? String
+        let encryptionKey = config?["EncryptionKey"] as? String
 
         // http://docs.swiftybeaver.com/article/11-log-to-swiftybeaver-platform
-        let platform = SBPlatformDestination(
-            appID: "Ybnnv9",
-            appSecret: "ww5peokn1qzlkivTJsikjpnV6enhf4Mb",
-            encryptionKey: "vpksr7qnjgpobzmv6Qgu4eh8toM9dhac")
-        log.addDestination(platform)
+        if let appID = appID, appSecret = appSecret, encryptionKey = encryptionKey {
+            let platform = SBPlatformDestination(
+                appID: appID,
+                appSecret: appSecret,
+                encryptionKey: encryptionKey)
+            log.addDestination(platform)
+        }
 
         // !!!: set up Crashlytics logging, see
 
