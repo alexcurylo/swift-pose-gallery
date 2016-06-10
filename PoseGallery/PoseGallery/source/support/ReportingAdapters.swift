@@ -25,6 +25,11 @@ extension SwiftyBeaver {
         //log.addDestination(file)
 
         // http://docs.swiftybeaver.com/article/11-log-to-swiftybeaver-platform
+        let platform = SBPlatformDestination(
+            appID: "Ybnnv9",
+            appSecret: "ww5peokn1qzlkivTJsikjpnV6enhf4Mb",
+            encryptionKey: "vpksr7qnjgpobzmv6Qgu4eh8toM9dhac")
+        log.addDestination(platform)
 
         // !!!: set up Crashlytics logging, see
 
