@@ -13,7 +13,7 @@ import XCTest
 @testable import PoseGallery
 import Crashlytics
 import Fabric
-import XCGLogger
+import SwiftyBeaver
 
 final class PoseGalleryTests: XCTestCase {
 
@@ -110,7 +110,7 @@ final class PoseGalleryTests: XCTestCase {
 
         let crashlytics = Crashlytics.sharedInstance()
         XCTAssertNotNil(crashlytics, "missing Crashlytics")
-        XCTAssertEqual(crashlytics.version, "3.7.0", "unexpected Crashlytics version")
+        XCTAssertEqual(crashlytics.version, "3.7.1", "unexpected Crashlytics version")
         XCTAssertEqual(crashlytics.APIKey, fabricKey, "unexpected Crashlytics APIKey")
 
         // ReportingAdapter wrappers
@@ -123,9 +123,9 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssert(isTesting(), "isTesting() should be true")
     }
 
-    /// XCGLogger initialized ok
-    func testXCGLogger() {
-        XCTAssertTrue(log === XCGLogger.defaultInstance(), "wrong XCGLogger")
+    /// SwiftyBeaver initialized ok
+    func testSwiftyBeaver() {
+        XCTAssertTrue(log === SwiftyBeaver.self, "wrong SwiftyBeaver")
     }
 
     /// JSQCoreDataKit initialized ok

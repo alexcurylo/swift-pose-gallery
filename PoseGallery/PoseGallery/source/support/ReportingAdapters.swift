@@ -8,22 +8,39 @@ import Foundation
 import ScreamingParty
 import Fabric
 import Crashlytics
-import XCGLogger
+import SwiftyBeaver
 
 /// Logging singleton
-let log: XCGLogger = {
-    $0.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
+let log = SwiftyBeaver.self
 
-    let dateFormatter = NSDateFormatter().then {
-        $0.dateFormat = "MM/dd/yyyy hh:mma"
-        $0.locale = NSLocale.currentLocale()
+extension SwiftyBeaver {
+    /// Think we'll adopt "scream" as a convention for ScreamingParty supplied setuppers
+    static func scream() {
+        // http://docs.swiftybeaver.com/article/9-log-to-xcode-console
+        let console = ConsoleDestination()  // log to Xcode Console
+        log.addDestination(console)
+
+        // http://docs.swiftybeaver.com/article/10-log-to-file
+        //let file = FileDestination()  // log to default swiftybeaver.log file
+        //log.addDestination(file)
+
+        // http://docs.swiftybeaver.com/article/11-log-to-swiftybeaver-platform
+
+        // !!!: set up Crashlytics logging, see
+
+        /*
+        $0.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
+
+        let dateFormatter = NSDateFormatter().then {
+            $0.dateFormat = "MM/dd/yyyy hh:mma"
+            $0.locale = NSLocale.currentLocale()
+        }
+        $0.dateFormatter = dateFormatter
+
+        $0.addLogDestination(CrashlyticsDestination(owner: $0, identifier: "Crashlytics"))
+         */
     }
-    $0.dateFormatter = dateFormatter
-
-    $0.addLogDestination(CrashlyticsDestination(owner: $0, identifier: "Crashlytics"))
-
-    return $0
-}(XCGLogger.defaultInstance())
+}
 
 /**
 this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift
@@ -61,6 +78,7 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
 /**
  Log destination for XCGLogger
  */
+/*
 class CrashlyticsDestination: XCGBaseLogDestination {
 
     /**
@@ -73,6 +91,7 @@ class CrashlyticsDestination: XCGBaseLogDestination {
         CLS_LOG_SWIFT(logDetails.logMessage, file: logDetails.fileName, function: logDetails.fileName, line: logDetails.lineNumber)
     }
 }
+ */
 
 /**
  centralize crash/log/analytics setup
@@ -91,12 +110,10 @@ func startReporting() {
     Fabric.sharedSDK().debug = true
     Fabric.with([Crashlytics.self])
 
-    // !!!: set up Crashlytics logging, see
-    // https://github.com/DaveWoodCom/XCGLogger/blob/master/README.md
-    // http://jogabo.github.io/firelog/
+    // SwiftyBeaver logging setup
 
-    // trigger logging initialization
-    log.info("Reporting started")
+    log.scream()
+    log.verbose("Reporting started")
 }
 
 /**

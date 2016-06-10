@@ -46,7 +46,7 @@ Experimenting with best practices for how to handle what keeps turning out to be
 - JSQCoreDataKit: Core Data
 - [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
 - [ScreamingParty](https://github.com/alexcurylo/ScreamingParty) for general utilities
-- [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) for logging
+- [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) for logging
 
  Resources:
  

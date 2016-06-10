@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA35CAB01D0B3D5D00D73C75 /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA35CAAF1D0B3D5D00D73C75 /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
 		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
 		FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA422C221B0A9DA000528A37 /* Crashlytics.framework */; };
@@ -28,15 +29,13 @@
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
 		FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
 		FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */; };
+		FAF9058E1D0B3D9C0013479E /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA35CAAF1D0B3D5D00D73C75 /* SwiftyBeaver.framework */; };
 		FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */; };
 		FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */; };
 		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
 		FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */; };
 		FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */; };
 		FAFB2E901AF4A33F00A8AB21 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */; };
-		FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
-		FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; };
-		FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,7 @@
 				FA46F0C81CCD5877002D33A0 /* JSQCoreDataKit.framework in Embed Frameworks */,
 				FACFD8C31D0A1EDF002077D6 /* Rswift.framework in Embed Frameworks */,
 				FACFD8C21D0A1ED4002077D6 /* ScreamingParty.framework in Embed Frameworks */,
-				FAFB2EAA1AF58CAE00A8AB21 /* XCGLogger.framework in Embed Frameworks */,
+				FA35CAB01D0B3D5D00D73C75 /* SwiftyBeaver.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +85,7 @@
 		FA3287E11AF08D8500B905DC /* project_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_base.xcconfig; sourceTree = "<group>"; };
 		FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Debug.xcconfig; sourceTree = "<group>"; };
 		FA3287E31AF08D8500B905DC /* project_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Release.xcconfig; sourceTree = "<group>"; };
+		FA35CAAF1D0B3D5D00D73C75 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../../Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		FA38C2BE1A38A67A00A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA38C2C11A38A69900A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 		FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Optionals.swift"; sourceTree = "<group>"; };
 		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
 		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = ../../Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +147,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */,
 				FA422C241B0A9DA000528A37 /* Crashlytics.framework in Frameworks */,
 				FA422C261B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C401AFBD68A00190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */,
-				FAFB2EA91AF58CAE00A8AB21 /* XCGLogger.framework in Frameworks */,
+				FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */,
+				FAF9058E1D0B3D9C0013479E /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +164,6 @@
 				FA422C271B0A9DA000528A37 /* Fabric.framework in Frameworks */,
 				FAF27C411AFBD69400190CC3 /* JSQCoreDataKit.framework in Frameworks */,
 				FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */,
-				FAFB2EA61AF58C6D00A8AB21 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +299,7 @@
 				FAF27C3F1AFBD68A00190CC3 /* JSQCoreDataKit.framework */,
 				FAAF41BC1CD54B7500BBA025 /* Rswift.framework */,
 				FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */,
-				FAFB2EA21AF58C5A00A8AB21 /* XCGLogger.framework */,
+				FA35CAAF1D0B3D5D00D73C75 /* SwiftyBeaver.framework */,
 			);
 			path = libraries;
 			sourceTree = "<group>";
