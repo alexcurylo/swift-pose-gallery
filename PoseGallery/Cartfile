@@ -14,5 +14,8 @@ github "mac-cain13/R.swift.Library"
 # ScreamingParty: Utilities collection
 github "alexcurylo/ScreamingParty" "develop"
 
+# SwiftyBeaver: logging
+github "SwiftyBeaver/SwiftyBeaver"
+
 # XCGLogger: logging
 github "DaveWoodCom/XCGLogger" >= 2.0
