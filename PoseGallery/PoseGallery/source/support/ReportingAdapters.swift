@@ -19,11 +19,11 @@ extension SwiftyBeaver {
         // http://docs.swiftybeaver.com/article/9-log-to-xcode-console
         let console = ConsoleDestination()  // log to Xcode Console
         log.addDestination(console)
-        
+
         // http://docs.swiftybeaver.com/article/10-log-to-file
         //let file = FileDestination()  // log to default swiftybeaver.log file
         //log.addDestination(file)
-        
+
         // !!!: Put these in library
         let infoPlist = NSBundle.mainBundle().infoDictionary
         let config = infoPlist?["SwiftyBeaver"] as? Dictionary<String, AnyObject>

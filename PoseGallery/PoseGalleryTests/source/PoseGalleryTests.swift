@@ -17,12 +17,10 @@ import SwiftyBeaver
 
 final class PoseGalleryTests: XCTestCase {
 
-    /// Put setup code here. This method is called before the invocation of each test method in the class.
     override func setUp() {
         super.setUp()
     }
 
-    /// Put teardown code here. This method is called after the invocation of each test method in the class.
     override func tearDown() {
         super.tearDown()
     }
@@ -40,7 +38,7 @@ final class PoseGalleryTests: XCTestCase {
     func testAppDelegateConfiguration() {
         let app = UIApplication.sharedApplication()
         let delegate = app.delegate as? AppDelegate
-        XCTAssertNotNilOptional(delegate, message: "sharedApplication().delegate does not exist - set host application!")
+        XCTAssertNotNilOptional(delegate, message: "sharedApplication().delegate does not exist - set host application")
         XCTAssertNotNilOptional(delegate?.window, message: "missing main window")
         let root = delegate?.window?.rootViewController as? UITabBarController
         XCTAssertNotNilOptional(root, message: "missing root tab controller")
@@ -105,7 +103,7 @@ final class PoseGalleryTests: XCTestCase {
         let fabricSettings = NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") as? [String: AnyObject]
         let fabricKey = fabricSettings?["APIKey"] as? String
         XCTAssertNotNil(fabricKey, "missing Info.plist Fabric settings")
-        XCTAssert(!(fabricKey ?? "").isEmpty, "Fabric API key should not be empty")
+        XCTAssertFalse((fabricKey ?? "").isEmpty, "Fabric API key should not be empty")
         XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
 
         let crashlytics = Crashlytics.sharedInstance()
@@ -126,6 +124,15 @@ final class PoseGalleryTests: XCTestCase {
     /// SwiftyBeaver initialized ok
     func testSwiftyBeaver() {
         XCTAssertTrue(log === SwiftyBeaver.self, "wrong SwiftyBeaver")
+
+        let infoPlist = NSBundle.mainBundle().infoDictionary
+        let config = infoPlist?["SwiftyBeaver"] as? Dictionary<String, AnyObject>
+        let appID = config?["AppID"] as? String
+        XCTAssertFalse((appID ?? "").isEmpty, "SwiftyBeaver AppID should not be empty")
+        let appSecret = config?["AppSecret"] as? String
+        XCTAssertFalse((appSecret ?? "").isEmpty, "SwiftyBeaver AppSecret should not be empty")
+        let encryptionKey = config?["EncryptionKey"] as? String
+        XCTAssertFalse((encryptionKey ?? "").isEmpty, "SwiftyBeaver EncryptionKey should not be empty")
     }
 
     /// JSQCoreDataKit initialized ok
