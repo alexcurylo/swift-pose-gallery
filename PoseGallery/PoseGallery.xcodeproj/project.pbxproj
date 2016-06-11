@@ -225,6 +225,21 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		FA4D57BA1D0C4EA600F5BBC3 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				FA52B5281AF20B29008229D8 /* Cartfile */,
+				FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */,
+				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
+				FA43CBC91CC978360090E696 /* .gitignore */,
+				FA82DD4A1CE6E88300249728 /* .slather.yml */,
+				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
+				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
+			);
+			name = Metadata;
+			path = PoseGalleryConfig;
+			sourceTree = "<group>";
+		};
 		FA6E64981A279B7700395E94 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +247,7 @@
 				FA44C9DA1A499BC400776BD6 /* LICENSE */,
 				FA6E64A31A279B7700395E94 /* PoseGallery */,
 				FAB13EEA1A3878850053620A /* PoseGalleryConfig */,
+				FA4D57BA1D0C4EA600F5BBC3 /* Metadata */,
 				FA6E64BB1A279B7800395E94 /* PoseGalleryTests */,
 				FA46F0CF1CCED294002D33A0 /* PoseGalleryUITests */,
 				FA6E64A21A279B7700395E94 /* Products */,
@@ -327,13 +343,6 @@
 				FA46F0E01CCED8C9002D33A0 /* PoseGalleryUITests_Debug.xcconfig */,
 				FA46F0DE1CCED8C9002D33A0 /* PoseGalleryUITests_Adhoc.xcconfig */,
 				FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */,
-				FA52B5281AF20B29008229D8 /* Cartfile */,
-				FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */,
-				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
-				FA43CBC91CC978360090E696 /* .gitignore */,
-				FA82DD4A1CE6E88300249728 /* .slather.yml */,
-				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
-				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
 			);
 			path = PoseGalleryConfig;
 			sourceTree = "<group>";

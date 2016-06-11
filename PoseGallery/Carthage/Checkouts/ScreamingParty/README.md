@@ -1,10 +1,12 @@
+# [ScreamingParty](https://github.com/alexcurylo/ScreamingParty)
 [![Language](http://img.shields.io/badge/language-swift_2.2.1-orange.svg)](https://developer.apple.com/swift)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT]
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT] 
 
-[ScreamingParty](https://github.com/alexcurylo/ScreamingParty)
-==================
+[comment]: # (CocoaPods badges: [![Version Status](https://img.shields.io/cocoapods/v/JSQCoreDataKit.svg)][podLink] [![Platform](https://img.shields.io/cocoapods/p/JSQCoreDataKit.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQCoreDataKit.svg)][linkMIT])
 
-Swift utilities collection. "The screaming helps the birds bond as a screaming party..." [Video](https://www.youtube.com/watch?v=gA925WlKKF4)
+Swift utilities collection. *“The screaming helps the birds bond as a [screaming party...](https://www.youtube.com/watch?v=gA925WlKKF4)”*
 
 ## Table of Contents
 
@@ -25,7 +27,7 @@ Collecting [MIT-licensable](linkMIT) snippets, gists, small packages and so fort
 ## Requirements
 
 - Xcode 7.3.1 or later
-- iOS 9.0 or later
+- iOS 9.3 or later
 
 Tools:
 
@@ -35,13 +37,31 @@ Tools:
 
 - [Carthage](https://github.com/alexcurylo/ScreamingParty): No tags yet, so
 
-```
-github "alexcurylo/ScreamingParty" "HEAD"
-```
+    ```
+    github "alexcurylo/ScreamingParty" "HEAD"
+    ```
 
-- TODO: CocoaPods
-- TODO: Swift Package Manager
+- [Swift Package Manager](https://swift.org/package-manager) [Untested!]:
  
+    ```swift
+    import PackageDescription
+
+    let package = Package(
+        name: "YourApp",
+        targets: [],
+        dependencies: [
+            .Package(url: "https://github.com/alexcurylo/ScreamingParty.git",
+                     majorVersion: 0),
+        ]
+    )
+    ```
+
+- [CocoaPods](https://cocoapods.org) [Not deployed!]:
+
+    ```ruby
+    pod 'ScreamingParty'
+    ```
+
 To use directly, build the framework with the 'ScreamingParty' target.
  
 ## Testing
