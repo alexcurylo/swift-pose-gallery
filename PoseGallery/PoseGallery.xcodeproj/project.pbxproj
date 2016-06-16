@@ -439,19 +439,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Trollwerks Inc.";
 				TargetAttributes = {
 					FA46F0CD1CCED294002D33A0 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = FA6E64A01A279B7700395E94;
 					};
 					FA6E64A01A279B7700395E94 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 556343DW3U;
+						LastSwiftMigration = 0800;
 					};
 					FA6E64B71A279B7800395E94 = {
 						CreatedOnToolsVersion = 6.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = FA6E64A01A279B7700395E94;
 					};
 				};
@@ -650,10 +653,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				PROVISIONING_PROFILE = "984811ca-d541-44b9-ad39-64bdf57eece3";
+				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Development";
 			};
 			name = Debug;
 		};
@@ -661,10 +663,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				PROVISIONING_PROFILE = "d88038ac-d2c1-4e24-95ec-6fd6f5a40001";
+				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Ad Hoc";
 			};
 			name = Release;
 		};
@@ -672,10 +672,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -683,9 +679,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -700,10 +693,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				PROVISIONING_PROFILE = "d88038ac-d2c1-4e24-95ec-6fd6f5a40001";
+				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Ad Hoc";
 			};
 			name = Adhoc;
 		};
@@ -711,9 +702,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				SWIFT_OBJC_BRIDGING_HEADER = "PoseGalleryTests/source/PoseGalleryTests-Bridging-Header.h";
 			};
 			name = Adhoc;
 		};

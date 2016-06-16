@@ -27,5 +27,8 @@ OTHER_SWIFT_FLAGS = -D NDEBUG $(inherited)
 //
 // Fastest, Unchecked: Compile with optimizations and remove runtime safety checks.
 // [-Ounchecked]
+//
+// https://developer.apple.com/swift/blog/?id=27
+// [-Owholemodule]
 
 SWIFT_OPTIMIZATION_LEVEL = -O

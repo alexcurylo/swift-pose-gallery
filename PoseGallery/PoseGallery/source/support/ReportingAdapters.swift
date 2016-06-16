@@ -120,7 +120,7 @@ func startReporting() {
     //Crashlytics.sharedInstance().setUserEmail("user@fabric.io")
     //Crashlytics.sharedInstance().setUserIdentifier("12345")
     //Crashlytics.sharedInstance().setUserName("Test User")
-    
+
     // https://docs.fabric.io/ios/crashlytics/logged-errors.html
     // "In addition to automatically reporting your app’s crashes, Crashlytics lets you log NSError objects..."
 
