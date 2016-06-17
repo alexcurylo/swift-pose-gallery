@@ -34,5 +34,4 @@ class ThenTests: XCTestCase {
         XCTAssertEqual(user.name, "devxoul")
         XCTAssertEqual(user.email, "devxoul@gmail.com")
     }
-
 }

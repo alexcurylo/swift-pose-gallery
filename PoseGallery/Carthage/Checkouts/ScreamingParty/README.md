@@ -2,6 +2,8 @@
 [![Language](http://img.shields.io/badge/language-swift_2.2.1-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Build Status](https://travis-ci.org/alexcurylo/ScreamingParty.svg?branch=develop)](https://travis-ci.org/alexcurylo/ScreamingParty)
+[![Test Coverage Status](https://coveralls.io/repos/github/alexcurylo/ScreamingParty/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/ScreamingParty?branch=develop)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT] 
 
 [comment]: # (CocoaPods badges: [![Version Status](https://img.shields.io/cocoapods/v/JSQCoreDataKit.svg)][podLink] [![Platform](https://img.shields.io/cocoapods/p/JSQCoreDataKit.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQCoreDataKit.svg)][linkMIT])
@@ -66,9 +68,8 @@ To use directly, build the framework with the 'ScreamingParty' target.
  
 ## Testing
 
-Tests are in the 'ScreamingPartyTests' target.
+Tests are in the 'ScreamingPartyTests' target. Code coverage is enabled; [Travis](https://travis-ci.org/alexcurylo/ScreamingParty) builds collect it with [Slather](https://github.com/SlatherOrg/slather) to pass to [Coveralls](https://coveralls.io/github/alexcurylo/ScreamingParty?branch=develop) which provides the badged percentage above.
 
-- TODO: Code coverage
 
 ## Documentation
 

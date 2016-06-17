@@ -11,8 +11,6 @@
 		FA203A081D08EF7A004C1DA5 /* ScreamingParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2039FD1D08EF7A004C1DA5 /* ScreamingParty.framework */; };
 		FA203A0D1D08EF7A004C1DA5 /* ScreamingPartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA203A0C1D08EF7A004C1DA5 /* ScreamingPartyTests.swift */; };
 		FA203A1A1D0901E5004C1DA5 /* ThenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA203A191D0901E5004C1DA5 /* ThenTests.swift */; };
-		FA4D57B41D0C46DE00F5BBC3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FA4D57B31D0C46DE00F5BBC3 /* .gitkeep */; };
-		FA4D57B81D0C46E800F5BBC3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FA4D57B61D0C46E800F5BBC3 /* .gitkeep */; };
 		FA4D57B91D0C46E800F5BBC3 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D57B71D0C46E800F5BBC3 /* Then.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +38,9 @@
 		FA4D57B31D0C46DE00F5BBC3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FA4D57B61D0C46E800F5BBC3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FA4D57B71D0C46E800F5BBC3 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		FA4D57BB1D0C512200F5BBC3 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
+		FA4D57BD1D0C548A00F5BBC3 /* .coveralls.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .coveralls.yml; sourceTree = SOURCE_ROOT; };
+		FA4D57BE1D0C548A00F5BBC3 /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = SOURCE_ROOT; };
 		FA7E95E41D0B900D001FEDB7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../Package.swift; sourceTree = "<group>"; };
 		FA7E95E51D0B9CA8001FEDB7 /* ScreamingParty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ScreamingParty.podspec; path = ../ScreamingParty.podspec; sourceTree = SOURCE_ROOT; };
 		FACFD8C51D0A222D002077D6 /* project_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_base.xcconfig; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				FA203A001D08EF7A004C1DA5 /* ScreamingParty.h */,
 				FA4D57B21D0C46DE00F5BBC3 /* Assets */,
 				FA4D57B51D0C46E800F5BBC3 /* Classes */,
+				FACFD8C41D0A222D002077D6 /* ScreamingPartyConfig */,
 				FA203A1D1D09B1FB004C1DA5 /* Metadata */,
 			);
 			path = ScreamingParty;
@@ -117,10 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				FA203A021D08EF7A004C1DA5 /* Info.plist */,
-				FACFD8C41D0A222D002077D6 /* ScreamingPartyConfig */,
 				FA7E95E41D0B900D001FEDB7 /* Package.swift */,
 				FA7E95E51D0B9CA8001FEDB7 /* ScreamingParty.podspec */,
+				FA4D57BD1D0C548A00F5BBC3 /* .coveralls.yml */,
 				FA203A2A1D09B4DB004C1DA5 /* .gitignore */,
+				FA4D57BE1D0C548A00F5BBC3 /* .slather.yml */,
+				FA4D57BB1D0C512200F5BBC3 /* .travis.yml */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -176,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA203A111D08EF7A004C1DA5 /* Build configuration list for PBXNativeTarget "ScreamingParty" */;
 			buildPhases = (
+				FA4D57C11D0C6C4400F5BBC3 /* SwiftLint */,
 				FA2039F81D08EF7A004C1DA5 /* Sources */,
 				FA2039F91D08EF7A004C1DA5 /* Frameworks */,
 				FA2039FA1D08EF7A004C1DA5 /* Headers */,
@@ -249,8 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4D57B81D0C46E800F5BBC3 /* .gitkeep in Resources */,
-				FA4D57B41D0C46DE00F5BBC3 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +265,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA4D57C11D0C6C4400F5BBC3 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA2039F81D08EF7A004C1DA5 /* Sources */ = {

@@ -1,0 +1,21 @@
+#
+# .slather.yml
+# ScreamingParty
+#
+# Copyright © 2016 Trollwerks Inc. All rights reserved.
+#
+
+# https://github.com/SlatherOrg/slather#usage-with-coveralls
+coverage_service: coveralls
+
+# https://github.com/SlatherOrg/slather/issues/197
+# http://www.openradar.me/radar?id=5549442786656256
+build_directory: build
+
+xcodeproj: ScreamingParty.xcodeproj
+scheme: ScreamingParty
+
+ignore:
+ - ScreamingPartyConfig/*
+ - ScreamingPartyTests/*
+ - ScreamingPartyUITests/*

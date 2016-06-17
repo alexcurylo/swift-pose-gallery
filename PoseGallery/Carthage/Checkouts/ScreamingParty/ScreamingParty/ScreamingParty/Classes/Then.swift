@@ -1,9 +1,9 @@
 /*
  Then.swift
- 
+
  Source:
     https://github.com/devxoul/Then v1.0.3
- 
+
  References:
     http://khanlou.com/2016/06/configuration-in-swift/
  */
@@ -36,13 +36,19 @@ public protocol Then {}
 
 extension Then where Self: Any {
 
-    /// Makes it available to set properties with closures just after initializing.
-    ///
-    ///     let label = UILabel().then {
-    ///         $0.textAlignment = .Center
-    ///         $0.textColor = UIColor.blackColor()
-    ///         $0.text = "Hello, World!"
-    ///     }
+    /**
+     Makes it available to set properties with closures just after initializing.
+
+          let label = UILabel().then {
+              $0.textAlignment = .Center
+              $0.textColor = UIColor.blackColor()
+              $0.text = "Hello, World!"
+          }
+
+     - parameter block: Closure operating on Self
+
+     - returns: Self
+     */
     public func then(@noescape block: inout Self -> Void) -> Self {
         var copy = self
         block(&copy)
@@ -53,18 +59,23 @@ extension Then where Self: Any {
 
 extension Then where Self: AnyObject {
 
-    /// Makes it available to set properties with closures just after initializing.
-    ///
-    ///     let label = UILabel().then {
-    ///         $0.textAlignment = .Center
-    ///         $0.textColor = UIColor.blackColor()
-    ///         $0.text = "Hello, World!"
-    ///     }
+    /**
+     Makes it available to set properties with closures just after initializing.
+
+         let label = UILabel().then {
+             $0.textAlignment = .Center
+             $0.textColor = UIColor.blackColor()
+             $0.text = "Hello, World!"
+         }
+
+     - parameter block: Closure operating on Self
+
+     - returns: Self
+     */
     public func then(@noescape block: Self -> Void) -> Self {
         block(self)
         return self
     }
-    
 }
 
 extension NSObject: Then {}
