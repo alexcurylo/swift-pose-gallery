@@ -49,14 +49,14 @@ extension Then where Self: Any {
 
      - returns: Self
      */
-    public func then(@noescape block: inout Self -> Void) -> Self {
+    public func then(block: @noescape (inout Self) -> Void) -> Self {
         var copy = self
         block(&copy)
         return copy
     }
 
 }
-
+/* 'Type of expression is ambiguous without more context' in Swift 3???
 extension Then where Self: AnyObject {
 
     /**
@@ -72,10 +72,10 @@ extension Then where Self: AnyObject {
 
      - returns: Self
      */
-    public func then(@noescape block: Self -> Void) -> Self {
+    public func then(block: @noescape (Self) -> Void) -> Self {
         block(self)
         return self
     }
 }
-
+*/
 extension NSObject: Then {}

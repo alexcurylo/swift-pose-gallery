@@ -18,7 +18,7 @@ extension User: Then {}
 class ThenTests: XCTestCase {
 
     func testThen_object() {
-        let queue = NSOperationQueue().then {
+        let queue = OperationQueue().then {
             $0.name = "awesome"
             $0.maxConcurrentOperationCount = 5
         }

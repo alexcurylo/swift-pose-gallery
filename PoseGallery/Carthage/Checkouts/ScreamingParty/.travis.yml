@@ -13,8 +13,13 @@
 # https://github.com/SlatherOrg/slather
 
 language: objective-c
-osx_image: xcode7.3
-xcode_sdk: iphonesimulator9.3
+#osx_image: xcode7.3
+# https://blog.travis-ci.com/2016-06-13-xcode-8-beta-initial-release
+osx_image: xcode8
+# http://stackoverflow.com/questions/33747828/a-build-only-device-cannot-be-used-to-run-this-target
+#xcode_sdk: iphonesimulator9.3
+#xcode_sdk: iphonesimulator10.0
+xcode_sdk: iphonesimulator
 xcode_project: ScreamingParty.xcodeproj
 xcode_scheme: ScreamingParty
 
@@ -39,11 +44,13 @@ install:
 
 script:
  - open -b com.apple.iphonesimulator
+# http://www.mokacoding.com/blog/xcodebuild-destination-options/
  - >
     set -o pipefail && xcodebuild clean test
     -project ScreamingParty.xcodeproj
     -scheme ScreamingParty
     -sdk iphonesimulator
+    -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.0'
     -derivedDataPath build
     CODE_SIGN_IDENTITY=""
     CODE_SIGNING_REQUIRED=NO

@@ -19,6 +19,10 @@
 // For backwards compatibility reasons, this setting is enabled by default, but disabling
 // it is strongly recommended.
 
+
+SWIFT_VERSION = 3.0
+
+
 ALWAYS_SEARCH_USER_PATHS = NO
 
 
@@ -144,8 +148,7 @@ GCC_WARN_UNUSED_VARIABLE = YES
 
 
 
-IPHONEOS_DEPLOYMENT_TARGET = 9.3
-
+IPHONEOS_DEPLOYMENT_TARGET = 10.0
 
 
 // Base SDK

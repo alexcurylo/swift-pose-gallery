@@ -1,5 +1,6 @@
-# [ScreamingParty](https://github.com/alexcurylo/ScreamingParty)
-[![Language](http://img.shields.io/badge/language-swift_2.2.1-orange.svg)](https://developer.apple.com/swift)
+[ScreamingParty](https://github.com/alexcurylo/ScreamingParty)
+================
+[![Language](http://img.shields.io/badge/language-swift_3-orange.svg)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Build Status](https://travis-ci.org/alexcurylo/ScreamingParty.svg?branch=develop)](https://travis-ci.org/alexcurylo/ScreamingParty)
@@ -10,7 +11,8 @@
 
 Swift utilities collection. *“The screaming helps the birds bond as a [screaming party...](https://www.youtube.com/watch?v=gA925WlKKF4)”*
 
-## Table of Contents
+Table of Contents
+-----------------
 
 1. [Purpose](#purpose)
 2. [Requirements](#requirements)
@@ -22,26 +24,29 @@ Swift utilities collection. *“The screaming helps the birds bond as a [screami
 8. [License](#license)
 9. [Change Log](#change-log)
 
-## Purpose
+Purpose
+-------
+ 
+Collecting [MIT-licensable](linkMIT) snippets, gists, small packages and so forth into a single stably versioned Swift 3 package.
 
-Collecting [MIT-licensable](linkMIT) snippets, gists, small packages and so forth into a single stably versioned package.
+Requirements
+------------
+ 
+- Xcode 8.0 or later
+- iOS 10.0 or later
 
-## Requirements
-
-- Xcode 7.3.1 or later
-- iOS 9.3 or later
-
-Tools:
+### Tools:
 
 - TODO: SwiftLint
 
-## Usage
-
+Usage
+-----
+ 
 - [Carthage](https://github.com/alexcurylo/ScreamingParty): No tags yet, so
 
-    ```
-    github "alexcurylo/ScreamingParty" "HEAD"
-    ```
+```
+github "alexcurylo/ScreamingParty" "HEAD"
+```
 
 - [Swift Package Manager](https://swift.org/package-manager) [Untested!]:
  
@@ -66,41 +71,46 @@ Tools:
 
 To use directly, build the framework with the 'ScreamingParty' target.
  
-## Testing
-
+Testing
+-------
+ 
 Tests are in the 'ScreamingPartyTests' target. Code coverage is enabled; [Travis](https://travis-ci.org/alexcurylo/ScreamingParty) builds collect it with [Slather](https://github.com/SlatherOrg/slather) to pass to [Coveralls](https://coveralls.io/github/alexcurylo/ScreamingParty?branch=develop) which provides the badged percentage above.
 
 
-## Documentation
-
+Documentation
+-------------
+ 
 - TODO: Github docs
 - TODO: Generate acknowledgements for embedded sources 
 
-Embedded sources:
+### Embedded sources:
 
 - [Then](https://github.com/devxoul/Then) v1.0.3: ✨ Super sweet syntactic sugar for Swift initializers.
 
-## Roadmap
+Roadmap
+-------
+ 
+Feel free to [open an issue](https://github.com/alexcurylo/ScreamingParty/issues/new) if there's something in particular you'd like to see added. Or a pull request.
 
-Feel free to [open an issue](https://github.com/alexcurylo/ScreamingParty/issues/new) if there's something in particular you'd like to see added.
-
-## Author
-
+Author
+------
+ 
 [![web: trollwerks.com](http://img.shields.io/badge/web-www.trollwerks.com-blue.svg)](http://trollwerks.com) 
 [![twitter: @trollwerks](http://img.shields.io/badge/twitter-%40trollwerks-blue.svg)](https://twitter.com/trollwerks) 
 [![email: alex@trollwerks.com](http://img.shields.io/badge/email-alex%40trollwerks.com-blue.svg)](mailto:alex@trollwerks.com) 
 
-## License
-
+License
+-------
+ 
 The [MIT License][linkMIT]. See the [LICENSE](LICENSE) file for details.
 
 >** ScreamingParty Copyright &copy; 2016 Trollwerks Inc.**
  
 >• [Then](https://github.com/devxoul/Then) Copyright &copy; 2015 Suyeol Jeon (xoul.kr)
 
-## Change Log
-
+Change Log
+----------
+ 
 * **Version 0.0.1-alpha.1**: *(2016.06.08)* - Initial commit
 
 [linkMIT]: http://opensource.org/licenses/MIT
-

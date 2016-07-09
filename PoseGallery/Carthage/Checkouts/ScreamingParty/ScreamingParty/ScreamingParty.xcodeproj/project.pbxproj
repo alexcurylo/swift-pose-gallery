@@ -36,7 +36,6 @@
 		FA203A291D09B336004C1DA5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA203A2A1D09B4DB004C1DA5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
 		FA4D57B31D0C46DE00F5BBC3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		FA4D57B61D0C46E800F5BBC3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FA4D57B71D0C46E800F5BBC3 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		FA4D57BB1D0C512200F5BBC3 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../../.travis.yml; sourceTree = "<group>"; };
 		FA4D57BD1D0C548A00F5BBC3 /* .coveralls.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .coveralls.yml; sourceTree = SOURCE_ROOT; };
@@ -140,7 +139,6 @@
 		FA4D57B51D0C46E800F5BBC3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FA4D57B61D0C46E800F5BBC3 /* .gitkeep */,
 				FA4D57B71D0C46E800F5BBC3 /* Then.swift */,
 			);
 			path = Classes;
@@ -220,14 +218,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Trollwerks Inc.";
 				TargetAttributes = {
 					FA2039FC1D08EF7A004C1DA5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					FA203A061D08EF7A004C1DA5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -330,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FACFD8C91D0A222D002077D6 /* ScreamingParty_Debug.xcconfig */;
 			buildSettings = {
+				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/;
 			};
 			name = Debug;
 		};
@@ -337,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FACFD8CA1D0A222D002077D6 /* ScreamingParty_Release.xcconfig */;
 			buildSettings = {
+				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/;
 			};
 			name = Release;
 		};
@@ -344,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FACFD8CC1D0A222D002077D6 /* ScreamingPartyTests_Debug.xcconfig */;
 			buildSettings = {
+				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/;
 			};
 			name = Debug;
 		};
@@ -351,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FACFD8CD1D0A222D002077D6 /* ScreamingPartyTests_Release.xcconfig */;
 			buildSettings = {
+				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/;
 			};
 			name = Release;
 		};
