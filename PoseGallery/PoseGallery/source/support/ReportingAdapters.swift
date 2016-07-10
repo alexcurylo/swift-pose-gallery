@@ -6,6 +6,7 @@
 
 import Foundation
 import ScreamingParty
+/* awaiting Swift 3 / Xcode 8 compatibility
 import Fabric
 import Crashlytics
 import SwiftyBeaver
@@ -55,6 +56,7 @@ extension SwiftyBeaver {
          */
     }
 }
+ */
 
 /**
 this method gives us pretty much the same functionality as the CLS_LOG macro, but written as a Swift
@@ -79,8 +81,9 @@ CLS_LOG_SWIFT() output: ClassName.methodName line 10 $
  - parameter function: calling function
  - parameter line:     calling line
 */
-func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String = #file, function: String = #function, line: Int = #line) {
-    let filename = NSURL(string:file)?.lastPathComponent?.componentsSeparatedByString(".").first ?? ""
+/*
+func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArg] = [], file: String = #file, function: String = #function, line: Int = #line) {
+    let filename = NSURL(string:file)?.lastPathComponent?.components(separatedBy: ".").first ?? ""
 
     #if DEBUG
         CLSNSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))
@@ -88,6 +91,7 @@ func CLS_LOG_SWIFT(format: String = "", _ args: [CVarArgType] = [], file: String
         CLSLogv("\(filename).\(function) line \(line) $ \(format)", getVaList(args))
     #endif
 }
+*/
 
 /**
  Log destination for XCGLogger
@@ -124,13 +128,14 @@ func startReporting() {
     // https://docs.fabric.io/ios/crashlytics/logged-errors.html
     // "In addition to automatically reporting your app’s crashes, Crashlytics lets you log NSError objects..."
 
-    Fabric.sharedSDK().debug = true
-    Fabric.with([Crashlytics.self])
+    //Fabric.sharedSDK().debug = true
+    //Fabric.with([Crashlytics.self])
 
     // SwiftyBeaver logging setup
-
+/*
     log.scream()
     log.verbose("Reporting started")
+*/
 }
 
 /**
@@ -144,7 +149,7 @@ func isUnitTesting() -> Bool {
 }
 
 func isUITesting() -> Bool {
-    let isUITesting = NSProcessInfo.processInfo().arguments.contains("UI_TESTING_MODE")
+    let isUITesting = ProcessInfo.processInfo.arguments.contains("UI_TESTING_MODE")
     return isUITesting
 }
 

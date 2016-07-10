@@ -46,7 +46,7 @@ final class DataModel {
      - parameter options: from didFinishLaunchingWithOptions
      */
     func intro(options: [NSObject: AnyObject]?) {
-        log.info("startup options: \(options)")
+        //log.info("startup options: \(options)")
         configureSettingsApp()
     }
 
@@ -75,17 +75,16 @@ final class DataModel {
     */
     func configureSettingsApp() {
         // Info.plist configured with build scripts
-        if let bundle = NSBundle.mainBundle() as NSBundle?,
-            display_name = bundle.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
-            let version_number = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
-            let build_number = bundle.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
-            let build_date = bundle.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
-            let build_config = bundle.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty {
+        if let display_name = Bundle.main.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
+            let version_number = Bundle.main.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
+            let build_number = Bundle.main.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
+            let build_date = Bundle.main.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
+            let build_config = Bundle.main.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty {
             // copy to keys specified in Settings.bundle
-            let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setObject(version_number, forKey:"version_number")
-            defaults.setObject(build_number, forKey:"build_number")
-            defaults.setObject(build_date, forKey:"build_date")
+            let defaults = UserDefaults.standard
+            defaults.set(version_number, forKey:"version_number")
+            defaults.set(build_number, forKey:"build_number")
+            defaults.set(build_date, forKey:"build_date")
             defaults.synchronize()
         }
     }
