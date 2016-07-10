@@ -6,5 +6,5 @@
 #
 
 # Markingbird: Markdown processor for acknowledge.swift script
-# NB. On 16.05.30 Swift 3 warnings not addressed in a release
-github "kristopherjohnson/Markingbird" "HEAD"
+# NB. Currently not Swift 3 compatible
+#github "kristopherjohnson/Markingbird" "HEAD"

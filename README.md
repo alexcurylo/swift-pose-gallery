@@ -42,10 +42,14 @@ Requirements
  - [ImageMagick](http://www.imagemagick.org) and [Ghostscript](http://www.ghostscript.com), for debug and adhoc [icon tagging](https://gist.github.com/dulaccc/a52154ac4c007db2be55)
  - [R.swift](https://github.com/mac-cain13/R.swift/) in /libraries for typed resource identifiers
  - [SwiftLint](https://github.com/realm/SwiftLint), for opinionated coding style enforcement
+ 
+ NB. Crashlytics/Fabric currently broken
+ https://github.com/CocoaPods/CocoaPods/issues/5598
+ http://www.openradar.me/radar?id=5045072026402816
 
 ### Libraries (Carthage):
 
- - JSQCoreDataKit: Core Data
+ - [JSQCoreDataKit](https://github.com/jessesquires/JSQCoreDataKit) for Core Data conveniences
  - [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
  - [ScreamingParty](https://github.com/alexcurylo/ScreamingParty) for general utilities
  - [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) for logging
@@ -75,7 +79,7 @@ Documentation
  
 Read the [docs](http://alexcurylo.github.io/swift-pose-gallery/). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com). More information on the [`gh-pages`](https://github.com/alexcurylo/swift-pose-gallery/tree/gh-pages) branch.
 
-In-app acknowledgements generated with [acknowledge](PoseGallery/PoseGalleryConfig/acknowledge.swift) script using [Markingbird](https://github.com/kristopherjohnson/Markingbird) private Carthage framework, from [Swift Scripting By Example: Generating Acknowledgements For CocoaPods & Carthage Dependencies](http://swift.ayaka.me/posts/2015/11/5/swift-scripting-generating-acknowledgements-for-cocoapods-and-carthage-dependencies)
+[NB. Currently suspended until Markingbird is Swift 3 friendly] In-app acknowledgements generated with [acknowledge](PoseGallery/PoseGalleryConfig/acknowledge.swift) script using [Markingbird](https://github.com/kristopherjohnson/Markingbird) private Carthage framework, from [Swift Scripting By Example: Generating Acknowledgements For CocoaPods & Carthage Dependencies](http://swift.ayaka.me/posts/2015/11/5/swift-scripting-generating-acknowledgements-for-cocoapods-and-carthage-dependencies)
 
 Roadmap
 -------
