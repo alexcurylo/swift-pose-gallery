@@ -53,6 +53,9 @@ Requirements
  - [R.swift.Library](https://github.com/mac-cain13/R.swift.Library) for R.swift support
  - [ScreamingParty](https://github.com/alexcurylo/ScreamingParty) for general utilities
  - [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) for logging
+ 
+ - [SuperDelegate](https://github.com/square/SuperDelegate) for lifecycle management
+ - [SwiftIconFont](https://github.com/0x73/SwiftIconFont) for icon fonts
 
 ### Resources:
  
