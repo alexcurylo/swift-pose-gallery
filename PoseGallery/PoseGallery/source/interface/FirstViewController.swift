@@ -23,7 +23,7 @@ final class FirstViewController: UIViewController {
 
     /// UIViewController override
     override func didReceiveMemoryWarning() {
-        print("INFO: \(self.dynamicType) didReceiveMemoryWarning")
+        print("INFO: \(type(of: self)) didReceiveMemoryWarning")
 
         super.didReceiveMemoryWarning()
     }

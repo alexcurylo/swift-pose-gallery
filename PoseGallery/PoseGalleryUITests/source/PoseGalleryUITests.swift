@@ -25,23 +25,23 @@ final class PoseGalleryUITests: XCTestCase {
 
     func testTabNavigation() {
         let app = XCUIApplication()
-        let tabBar = app.tabBars.elementBoundByIndex(0)
-        let first = tabBar.buttons.elementBoundByIndex(0)
-        let second = tabBar.buttons.elementBoundByIndex(1)
+        let tabBar = app.tabBars.element(boundBy: 0)
+        let first = tabBar.buttons.element(boundBy: 0)
+        let second = tabBar.buttons.element(boundBy: 1)
 
-        XCTAssert(first.selected == true, "first tab not selected at startup")
+        XCTAssertTrue(first.isSelected, "first tab not selected at startup")
 
         // note foreseeable failure here:
         // https://openradar.appspot.com/26493495
         second.tap()
 
         let selectedPredicate = NSPredicate(format: "selected == true")
-        expectationForPredicate(selectedPredicate, evaluatedWithObject: second, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        expectation(for: selectedPredicate, evaluatedWith: second, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
 
         first.tap()
 
-        expectationForPredicate(selectedPredicate, evaluatedWithObject: first, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        expectation(for: selectedPredicate, evaluatedWith: first, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 }

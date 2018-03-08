@@ -5,8 +5,8 @@
 //
 
 import Foundation
-import ScreamingParty
 /* awaiting Swift 3 / Xcode 8 compatibility
+import ScreamingParty
 import Fabric
 import Crashlytics
 import SwiftyBeaver
