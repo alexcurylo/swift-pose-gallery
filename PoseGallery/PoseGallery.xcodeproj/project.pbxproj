@@ -13,11 +13,6 @@
 		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
 		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
 		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
-		FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
-		FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; };
-		FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */; };
-		FACFD8C21D0A1ED4002077D6 /* ScreamingParty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FACFD8C31D0A1EDF002077D6 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAF41BC1CD54B7500BBA025 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8D5D31CF67C140030247C /* MemoryWarner.m */; };
 		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
 		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
@@ -52,8 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FACFD8C31D0A1EDF002077D6 /* Rswift.framework in Embed Frameworks */,
-				FACFD8C21D0A1ED4002077D6 /* ScreamingParty.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,10 +91,8 @@
 		FA82DD4A1CE6E88300249728 /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = SOURCE_ROOT; };
 		FA82DD4B1CE6E88300249728 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		FA82DD4E1CE77C2E00249728 /* .coveralls.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .coveralls.yml; sourceTree = SOURCE_ROOT; };
-		FAAF41BC1CD54B7500BBA025 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../../Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
 		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
-		FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreamingParty.framework; path = Carthage/Build/iOS/ScreamingParty.framework; sourceTree = SOURCE_ROOT; };
 		FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseGalleryTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAD8D5D21CF67C140030247C /* MemoryWarner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryWarner.h; sourceTree = "<group>"; };
 		FAD8D5D31CF67C140030247C /* MemoryWarner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryWarner.m; sourceTree = "<group>"; };
@@ -131,8 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAF41BD1CD54B7500BBA025 /* Rswift.framework in Frameworks */,
-				FACFD8C11D0A1E4B002077D6 /* ScreamingParty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAF41BE1CD54C1900BBA025 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
-				FAAF41BC1CD54B7500BBA025 /* Rswift.framework */,
-				FACFD8C01D0A1E4B002077D6 /* ScreamingParty.framework */,
 			);
 			path = libraries;
 			sourceTree = "<group>";

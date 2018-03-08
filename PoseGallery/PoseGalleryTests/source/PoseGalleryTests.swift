@@ -80,6 +80,7 @@ final class PoseGalleryTests: XCTestCase {
         XCTAssertNotNilOptional(defaults.stringForKey("build_number"), message: "missing build number")
         XCTAssertNotNilOptional(defaults.stringForKey("build_date"), message: "missing build date")
 
+        /*
         // R.swift provided diagnostics
         R.assertValid()
         XCTAssertNotNilOptional(try? R.validate(), message: "Invalid resources")
@@ -96,6 +97,7 @@ final class PoseGalleryTests: XCTestCase {
 
         let _ = R.storyboard.main()
         XCTAssertNotNilOptional(try? _R.storyboard.main.validate(), message: "Invalid resources")
+         */
     }
 
     /// Fabric and Crashlytics library configured ok
