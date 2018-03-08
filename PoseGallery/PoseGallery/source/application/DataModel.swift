@@ -45,7 +45,7 @@ final class DataModel {
 
      - parameter options: from didFinishLaunchingWithOptions
      */
-    func intro(options: [NSObject: AnyObject]?) {
+    func intro(options: [UIApplicationLaunchOptionsKey : Any]?) {
         //log.info("startup options: \(options)")
         configureSettingsApp()
     }
@@ -75,11 +75,11 @@ final class DataModel {
     */
     func configureSettingsApp() {
         // Info.plist configured with build scripts
-        if let display_name = Bundle.main.objectForInfoDictionaryKey("CFBundleDisplayName") as? String where !display_name.isEmpty,
-            let version_number = Bundle.main.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String where !version_number.isEmpty,
-            let build_number = Bundle.main.objectForInfoDictionaryKey("CFBundleVersion") as? String where !build_number.isEmpty,
-            let build_date = Bundle.main.objectForInfoDictionaryKey("CFBuildDate") as? String where !build_date.isEmpty,
-            let build_config = Bundle.main.objectForInfoDictionaryKey("CFBuildConfiguration") as? String where !build_config.isEmpty {
+        if let display_name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String, !display_name.isEmpty,
+            let version_number = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String, !version_number.isEmpty,
+            let build_number = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String, !build_number.isEmpty,
+            let build_date = Bundle.main.object(forInfoDictionaryKey: "CFBuildDate") as? String, !build_date.isEmpty,
+            let build_config = Bundle.main.object(forInfoDictionaryKey: "CFBuildConfiguration") as? String, !build_config.isEmpty {
             // copy to keys specified in Settings.bundle
             let defaults = UserDefaults.standard
             defaults.set(version_number, forKey:"version_number")
