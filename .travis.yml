@@ -28,9 +28,7 @@ cache:
 
 before_install:
  - brew update && brew bundle
- - gem install slather --no-rdoc --no-ri --no-document --quiet
- - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
- - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
+ - bundle install
 
 install:
  - cd PoseGallery
