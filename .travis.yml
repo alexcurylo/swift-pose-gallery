@@ -22,17 +22,19 @@ branches:
   except:
     - feature/xcode-93
 
+cache:
+  directories:
+    - Carthage
+
 before_install:
- - brew update
- - brew outdated carthage || brew upgrade carthage
- - brew install swiftlint
+ - brew update && brew bundle
  - gem install slather --no-rdoc --no-ri --no-document --quiet
  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
  - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
 
 install:
  - cd PoseGallery
- - carthage bootstrap --platform iOS --no-use-binaries
+ - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
 
 #before_script:
 
