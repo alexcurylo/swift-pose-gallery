@@ -18,10 +18,9 @@ xcode_sdk: iphonesimulator11.2
 xcode_project: PoseGallery.xcodeproj
 xcode_scheme: PoseGallery
 
-# enable for unsupported toolchains, like pre-release Xcode versions
-#branches:
-#  except:
-#    - feature/Xcode_(UNSUPPORTED_VERSION)
+branches:
+  except:
+    - feature/xcode-93
 
 before_install:
  - brew update
