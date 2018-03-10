@@ -103,7 +103,6 @@
 		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
 		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FADFA6F81CFCB40000D198A1 /* acknowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acknowledge.swift; sourceTree = "<group>"; };
-		FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -199,7 +198,6 @@
 			children = (
 				FA6B47062052BFBF00669E69 /* Brewfile */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
-				FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */,
 				FA6B47082052C62F00669E69 /* Dangerfile */,
 				FA6B47072052C51600669E69 /* Gemfile */,
 				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
