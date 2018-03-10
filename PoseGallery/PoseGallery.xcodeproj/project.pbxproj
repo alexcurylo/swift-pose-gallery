@@ -84,6 +84,7 @@
 		FA6B47052051753900669E69 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
 		FA6B47062052BFBF00669E69 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = SOURCE_ROOT; };
 		FA6B47072052C51600669E69 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		FA6B47082052C62F00669E69 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
 		FA6E39BB1AF96949006E0C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA6E64A11A279B7700395E94 /* PoseGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoseGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 				FA6B47062052BFBF00669E69 /* Brewfile */,
 				FA52B5281AF20B29008229D8 /* Cartfile */,
 				FADFA6FA1CFCEBE300D198A1 /* Cartfile.private */,
+				FA6B47082052C62F00669E69 /* Dangerfile */,
 				FA6B47072052C51600669E69 /* Gemfile */,
 				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
 				FA43CBC91CC978360090E696 /* .gitignore */,
