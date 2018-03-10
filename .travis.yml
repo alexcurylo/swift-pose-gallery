@@ -1,10 +1,3 @@
-#
-# .travis.yml
-# PoseGallery
-#
-# Copyright © 2016 Trollwerks Inc. All rights reserved.
-#
-
 # references:
 # http://www.objc.io/issue-6/travis-ci.html
 # http://docs.travis-ci.com/user/build-configuration/
@@ -34,7 +27,8 @@ install:
  - cd PoseGallery
  - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
 
-#before_script:
+before_script:
+ - bundle exec danger
 
 script:
  - >
@@ -52,5 +46,4 @@ script:
     | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
- - swiftlint
  - slather
