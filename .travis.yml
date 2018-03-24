@@ -41,6 +41,7 @@ script:
     -project PoseGallery.xcodeproj
     -scheme PoseGallery
     -sdk iphonesimulator
+    -destination platform="iOS Simulator,OS=latest,name=iPhone 8"
     -derivedDataPath build
     CODE_SIGN_IDENTITY=""
     CODE_SIGNING_REQUIRED=NO
