@@ -42,7 +42,6 @@ func XCTAssertEqualOptional<T: Equatable>( a first: @autoclosure () -> T?, b sec
  - parameter line:       line of assert
  */
 func XCTAssertNotNilOptional<T>( expression:  @autoclosure () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
-    // swiftlint:disable:previous line_length
 
     let optional = expression()
     let isNonNil = optional != nil
@@ -59,7 +58,6 @@ func XCTAssertNotNilOptional<T>( expression:  @autoclosure () -> T?, message: St
  - parameter line:       line of assert
  */
 func XCTAssertNilOptional<T>( expression:  @autoclosure () -> T?, message: String, file: StaticString = #file, line: UInt = #line) {
-    // swiftlint:disable:previous line_length
 
     let optional = expression()
     let isNil = optional == nil
