@@ -2,6 +2,7 @@
 # http://www.objc.io/issue-6/travis-ci.html
 # http://docs.travis-ci.com/user/build-configuration/
 # http://docs.travis-ci.com/user/languages/objective-c/
+# http://www.mokacoding.com/blog/xcodebuild-destination-options/
 # https://github.com/kattrali/xcpretty-travis-formatter
 # https://github.com/SlatherOrg/slather
 
@@ -15,7 +16,7 @@ env:
   global:
     - PROJECT='PoseGallery.xcodeproj'
     - IOS_SCHEME='PoseGallery'
-    - IOS_DESTINATION='platform=iOS Simulator,name=iPhone 8'
+    - IOS_DESTINATION='platform=iOS Simulator,name=iPhone SE'
 
 branches:
   except:
@@ -41,7 +42,7 @@ script:
     -project PoseGallery.xcodeproj
     -scheme PoseGallery
     -sdk iphonesimulator
-    -destination platform="iOS Simulator,OS=latest,name=iPhone 8"
+    -destination platform="iOS Simulator,OS=latest,name=iPhone SE"
     -derivedDataPath build
     CODE_SIGN_IDENTITY=""
     CODE_SIGNING_REQUIRED=NO
