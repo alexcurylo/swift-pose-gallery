@@ -15,9 +15,10 @@ gemfile: Gemfile
 
 env:
   global:
-    - PROJECT='PoseGallery.xcodeproj'
-    - IOS_SCHEME='PoseGallery'
-    - IOS_DESTINATION='platform=iOS Simulator,name=iPhone SE'
+  - LANG=en_US.UTF-8
+  - PROJECT='PoseGallery.xcodeproj'
+  - IOS_SCHEME='PoseGallery'
+  - IOS_DESTINATION='platform=iOS Simulator,name=iPhone SE'
 
 branches:
   except:
