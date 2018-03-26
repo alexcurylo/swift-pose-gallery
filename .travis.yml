@@ -55,4 +55,4 @@ script:
     | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
- - slather
+  - bundle exec slather
