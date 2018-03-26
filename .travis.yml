@@ -38,7 +38,7 @@ before_script:
 
 script:
  - >
-    set -o pipefail && xcodebuild clean test
+    set -o pipefail && travis_retry xcodebuild clean test
     -project "$PROJECT"
     -scheme "$IOS_SCHEME"
     -sdk iphonesimulator
