@@ -1,3 +1,2 @@
-- get Travis running
+_notes on current branch task:_
 
-https://travis-ci.org/alexcurylo/swift-pose-gallery/builds/350821657
