@@ -39,10 +39,10 @@ before_script:
 script:
  - >
     set -o pipefail && xcodebuild clean test
-    -project PoseGallery.xcodeproj
-    -scheme PoseGallery
+    -project "$PROJECT"
+    -scheme "$IOS_SCHEME"
     -sdk iphonesimulator
-    -destination platform="iOS Simulator,OS=latest,name=iPhone SE"
+    -destination "$IOS_DESTINATION"
     -derivedDataPath build
     CODE_SIGN_IDENTITY=""
     CODE_SIGNING_REQUIRED=NO
