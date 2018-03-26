@@ -11,6 +11,7 @@ osx_image: xcode9.2
 xcode_project: PoseGallery.xcodeproj
 xcode_scheme: PoseGallery
 xcode_sdk: iphonesimulator11.2
+gemfile: Gemfile
 
 env:
   global:
