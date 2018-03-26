@@ -22,7 +22,6 @@ Table of Contents
  6. [Roadmap](#roadmap)
  7. [Author](#author)
  8. [License](#license)
- 9. [Change Log](#change-log)
  
 Purpose
 -------
@@ -101,11 +100,6 @@ License
  
 The [MIT License][linkMIT]. See the [LICENSE](LICENSE) file for details.
 
->**Copyright &copy; 2016 Trollwerks Inc.**
+>**Copyright &copy;2008-2018 Trollwerks Inc.**
 
-Change Log
-----------
- 
- * **Version 0.0.1-alpha.1**: *(2014.11.24)* - Initial commit
- 
 [linkMIT]: http://opensource.org/licenses/MIT

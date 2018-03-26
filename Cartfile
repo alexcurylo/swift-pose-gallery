@@ -1,0 +1,11 @@
+# Logging
+#github "SwiftyBeaver/SwiftyBeaver"
+
+# Static resource typing
+github "mac-cain13/R.swift.Library"
+
+# Markdown processor for acknowledge.swift script
+#github "kristopherjohnson/Markingbird" "HEAD"
+
+# Utilities collection
+#github "alexcurylo/ScreamingParty" "develop"

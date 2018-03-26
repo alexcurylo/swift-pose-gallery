@@ -11,8 +11,8 @@
 
 import XCTest
 @testable import PoseGallery
-import Crashlytics
-import Fabric
+//import Crashlytics
+//import Fabric
 //import SwiftyBeaver
 
 final class PoseGalleryTests: XCTestCase {
@@ -105,12 +105,12 @@ final class PoseGalleryTests: XCTestCase {
         let fabricKey = fabricSettings?["APIKey"] as? String
         XCTAssertNotNil(fabricKey, "missing Info.plist Fabric settings")
         XCTAssertFalse((fabricKey ?? "").isEmpty, "Fabric API key should not be empty")
-        XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
+        //XCTAssertNotNil(Fabric.sharedSDK(), "missing Fabric")
 
-        let crashlytics = Crashlytics.sharedInstance()
-        XCTAssertNotNil(crashlytics, "missing Crashlytics")
-        XCTAssertEqual(crashlytics.version, "3.7.1", "unexpected Crashlytics version")
-        XCTAssertEqual(crashlytics.apiKey, fabricKey, "unexpected Crashlytics APIKey")
+        //let crashlytics = Crashlytics.sharedInstance()
+        //XCTAssertNotNil(crashlytics, "missing Crashlytics")
+        //XCTAssertEqual(crashlytics.version, "3.7.1", "unexpected Crashlytics version")
+        //XCTAssertEqual(crashlytics.apiKey, fabricKey, "unexpected Crashlytics APIKey")
 
         // ReportingAdapter wrappers
 
