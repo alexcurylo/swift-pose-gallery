@@ -31,7 +31,7 @@ before_install:
  - bundle install
 
 install:
- - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
+ - carthage bootstrap --no-use-binaries --platform iOS --cache-builds
 
 before_script:
  - bundle exec danger
