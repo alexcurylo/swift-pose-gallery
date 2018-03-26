@@ -46,6 +46,7 @@ script:
     -scheme "$IOS_SCHEME"
     -sdk iphonesimulator
     -destination "$IOS_DESTINATION"
+    -configuration Debug
     -derivedDataPath build
     -enableCodeCoverage YES
     CODE_SIGN_IDENTITY=""
