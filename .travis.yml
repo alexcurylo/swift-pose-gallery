@@ -26,6 +26,8 @@ branches:
 
 cache:
   - bundler
+
+cache:
   directories:
     - Carthage
 
