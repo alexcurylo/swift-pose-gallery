@@ -7,10 +7,10 @@
 # https://github.com/SlatherOrg/slather
 
 language: objective-c
-osx_image: xcode9.2
+osx_image: xcode9.3
 xcode_project: PoseGallery.xcodeproj
 xcode_scheme: PoseGallery
-xcode_sdk: iphonesimulator11.2
+xcode_sdk: iphonesimulator11.3
 gemfile: Gemfile
 
 env:
@@ -18,11 +18,11 @@ env:
   - LANG=en_US.UTF-8
   - PROJECT='PoseGallery.xcodeproj'
   - IOS_SCHEME='PoseGallery'
-  - IOS_DESTINATION='platform=iOS Simulator,name=iPhone SE'
+  - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
 
 branches:
   except:
-    - feature/xcode-93
+    - feature/xcode-beta
 
 cache:
   - bundler

@@ -1,7 +1,7 @@
 [swift-pose-gallery](https://github.com/alexcurylo/swift-pose-gallery)
 ====================
 [![Build Status](https://travis-ci.org/alexcurylo/swift-pose-gallery.svg?branch=develop)](https://travis-ci.org/alexcurylo/swift-pose-gallery)
-[![Test Coverage Status](https://coveralls.io/repos/github/alexcurylo/swift-pose-gallery/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/alexcurylo/swift-pose-gallery/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop)
 [![Issues](https://img.shields.io/github/issues/alexcurylo/swift-pose-gallery.svg
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
 [![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
@@ -9,7 +9,7 @@
 [![Language](http://img.shields.io/badge/language-swift_3-orange.svg)](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT]
 
-Pose displaying app engine in Swift 3 for iOS 10 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
+Pose displaying app engine in Swift 4 for iOS 11 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
 
 Table of Contents
 -----------------
@@ -31,8 +31,8 @@ Purpose
 Requirements
 ------------
  
- - Xcode 8.0 or later
- - iOS 10.0 or later
+ - Xcode 9.3 or later
+ - iOS 11.0 or later
 
 ### Tools:
  
