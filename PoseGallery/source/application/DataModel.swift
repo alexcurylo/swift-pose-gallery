@@ -75,16 +75,16 @@ final class DataModel {
     */
     func configureSettingsApp() {
         // Info.plist configured with build scripts
-        if let display_name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String, !display_name.isEmpty,
-            let version_number = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String, !version_number.isEmpty,
-            let build_number = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String, !build_number.isEmpty,
-            let build_date = Bundle.main.object(forInfoDictionaryKey: "CFBuildDate") as? String, !build_date.isEmpty,
-            let build_config = Bundle.main.object(forInfoDictionaryKey: "CFBuildConfiguration") as? String, !build_config.isEmpty {
+        if let displayName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String, !displayName.isEmpty,
+            let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String, !versionNumber.isEmpty,
+            let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String, !buildNumber.isEmpty,
+            let buildDate = Bundle.main.object(forInfoDictionaryKey: "CFBuildDate") as? String, !buildDate.isEmpty,
+            let buildConfig = Bundle.main.object(forInfoDictionaryKey: "CFBuildConfiguration") as? String, !buildConfig.isEmpty {
             // copy to keys specified in Settings.bundle
             let defaults = UserDefaults.standard
-            defaults.set(version_number, forKey:"version_number")
-            defaults.set(build_number, forKey:"build_number")
-            defaults.set(build_date, forKey:"build_date")
+            defaults.set(versionNumber, forKey:"version_number")
+            defaults.set(buildNumber, forKey:"build_number")
+            defaults.set(buildDate, forKey:"build_date")
             defaults.synchronize()
         }
     }

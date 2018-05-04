@@ -21,9 +21,9 @@ import XCTest
 func XCTAssertEqualOptional<T: Equatable>( a first: @autoclosure () -> T?, b second: @autoclosure () -> T?, _ message: String? = nil, file: StaticString = #file, line: UInt = #line) {
 // swiftlint:disable:previous line_length
 
-    if let _first = first() {
-        if let _second = second() {
-            XCTAssertEqual(_first, _second, message ?? "", file: file, line: line)
+    if let first = first() {
+        if let second = second() {
+            XCTAssertEqual(first, second, message ?? "", file: file, line: line)
         } else {
             XCTFail(message ?? "first != nil, second == nil", file: file, line: line)
         }
