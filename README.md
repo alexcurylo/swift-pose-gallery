@@ -9,7 +9,7 @@
 [![Language](http://img.shields.io/badge/language-swift_3-orange.svg)](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT]
 
-Pose displaying app engine in Swift 4 for iOS 11 -- powers [Poses Professional 3.0 on the App Store](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme)
+Pose displaying app engine in Swift 4 for iOS 11 -- superseded by [poses](https://github.com/alexcurylo/poses) for SwiftUI
 
 Table of Contents
 -----------------
@@ -26,7 +26,7 @@ Table of Contents
 Purpose
 -------
 
- Experimenting with best practices for how to handle efficiently shipping and maintaining branded variations on a common engine using Xcode. In this case, [the App Store-shipping branded version](https://itunes.apple.com/us/app/poses-professional-guide-to/id357099619?mt=8&at=10l4B9&ct=SRCreadme) is a collection of model poses for photographers.
+ Experimenting with best practices for how to handle efficiently shipping and maintaining branded variations on a common engine using Xcode.
 
 Requirements
 ------------
@@ -100,6 +100,6 @@ License
  
 The [MIT License][linkMIT]. See the [LICENSE](LICENSE) file for details.
 
->**Copyright &copy;2008-2018 Trollwerks Inc.**
+>**Copyright &copy;2008-2019 Trollwerks Inc.**
 
 [linkMIT]: http://opensource.org/licenses/MIT
