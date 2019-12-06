@@ -9,7 +9,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${CONFIGURATION_NAME}</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -42,6 +42,15 @@
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SwiftyBeaver</key>
+	<dict>
+		<key>AppID</key>
+		<string>$(SWIFTYBEAVER_APPID)</string>
+		<key>AppSecret</key>
+		<string>$(SWIFTYBEAVER_APPSECRET)</string>
+		<key>EncryptionKey</key>
+		<string>$(SWIFTYBEAVER_ENCRYPTIONKEY)</string>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -73,14 +82,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>SwiftyBeaver</key>
-	<dict>
-		<key>AppID</key>
-		<string>$(SWIFTYBEAVER_APPID)</string>
-		<key>AppSecret</key>
-		<string>$(SWIFTYBEAVER_APPSECRET)</string>
-		<key>EncryptionKey</key>
-		<string>$(SWIFTYBEAVER_ENCRYPTIONKEY)</string>
-	</dict>
 </dict>
 </plist>

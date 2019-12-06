@@ -619,6 +619,7 @@
 			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				PRODUCT_NAME = PoseGallery;
 				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Development";
 			};
 			name = Debug;
@@ -627,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = PoseGallery;
 				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/PosesProfessionalAppStore;
 			};
 			name = Release;
@@ -656,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = PoseGallery;
 				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Ad Hoc";
 			};
 			name = Adhoc;

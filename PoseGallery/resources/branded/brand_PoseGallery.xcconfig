@@ -8,7 +8,7 @@
 // base branding
 
 BRAND_NAME = Poses Pro
-BRAND_BUNDLE_ID = com.trollwerks.posespro
+BRAND_BUNDLE_ID = com.trollwerks.posegallery
 BRAND_VERSION = 3.0
 
 // service access identifiers

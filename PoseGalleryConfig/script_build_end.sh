@@ -66,22 +66,22 @@ fi
 # do build post-processing
 
 echo Setting info in plist $plist:
-update_bundle_version
-update_build_date
-restore_icon
+#update_bundle_version
+#update_build_date
+#restore_icon
 #copy_branding
-check_style
+#check_style
 
 # Fabric diagnostics/analytics/distribution support
 # Scripts for automating Beta distribution: https://dev.twitter.com/crashlytics/beta-distribution/ios
 
 #if [ $CONFIGURATION != "Debug" ] ; then
-if [[ -n $FABRIC_API_KEY ]]; then
-    echo Running Fabric -- uploading symbolics
-    ./PoseGallery/libraries/Fabric.framework/run ${FABRIC_API_KEY} ${FABRIC_BUILD_SECRET}
-else
-    echo Define branded FABRIC_API_KEY and FABRIC_BUILD_SECRET to upload symbolics
-fi
+#if [[ -n $FABRIC_API_KEY ]]; then
+#    echo Running Fabric -- uploading symbolics
+#    ./PoseGallery/libraries/Fabric.framework/run ${FABRIC_API_KEY} ${FABRIC_BUILD_SECRET}
+#else
+#    echo Define branded FABRIC_API_KEY and FABRIC_BUILD_SECRET to upload symbolics
+#fi
 #fi
 
 # reveal the binary in the Finder if you like
