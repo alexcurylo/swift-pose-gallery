@@ -4,12 +4,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/alexcurylo/swift-pose-gallery/badge.svg?branch=develop)](https://coveralls.io/github/alexcurylo/swift-pose-gallery?branch=develop)
 [![Issues](https://img.shields.io/github/issues/alexcurylo/swift-pose-gallery.svg
             )](https://github.com/alexcurylo/swift-pose-gallery/issues)
-[![Stories in Ready](https://badge.waffle.io/alexcurylo/swift-pose-gallery.png?label=ready&title=Ready)](https://waffle.io/alexcurylo/swift-pose-gallery)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexcurylo/swift-pose-gallery)
 [![Language](http://img.shields.io/badge/language-swift_3-orange.svg)](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg)][linkMIT]
 
-Pose displaying app engine in Swift 4 for iOS 11 -- superseded by [poses](https://github.com/alexcurylo/poses) for SwiftUI
+Pose displaying app engine in Swift 3 for iOS 11 -- superseded by [poses](https://github.com/alexcurylo/poses) for SwiftUI
 
 Table of Contents
 -----------------
