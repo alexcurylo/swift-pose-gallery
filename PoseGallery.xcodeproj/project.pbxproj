@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */; };
+		FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA38C2C01A38A69900A76606 /* Main.storyboard */; };
+		FA46F0DB1CCED348002D33A0 /* PoseGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46F0DA1CCED348002D33A0 /* PoseGalleryUITests.swift */; };
+		FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6E39BA1AF96949006E0C18 /* Localizable.strings */; };
+		FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6E64AF1A279B7700395E94 /* Images.xcassets */; };
+		FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */; };
+		FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8D5D31CF67C140030247C /* MemoryWarner.m */; };
+		FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */; };
+		FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2502B1B06922000D792E3 /* DataModel.swift */; };
+		FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */; };
+		FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */; };
+		FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */; };
+		FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */; };
+		FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA46F0D31CCED294002D33A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6E64991A279B7700395E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6E64A01A279B7700395E94;
+			remoteInfo = PoseGallery;
+		};
+		FA6E64B91A279B7800395E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6E64991A279B7700395E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6E64A01A279B7700395E94;
+			remoteInfo = PoseGallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA52B52D1AF20E56008229D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287D91AF08D8500B905DC /* PoseGallery_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_base.xcconfig; sourceTree = "<group>"; };
+		FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGallery_Release.xcconfig; sourceTree = "<group>"; };
+		FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287DD1AF08D8500B905DC /* PoseGalleryTests_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_base.xcconfig; sourceTree = "<group>"; };
+		FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryTests_Release.xcconfig; sourceTree = "<group>"; };
+		FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA3287E11AF08D8500B905DC /* project_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_base.xcconfig; sourceTree = "<group>"; };
+		FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Debug.xcconfig; sourceTree = "<group>"; };
+		FA3287E31AF08D8500B905DC /* project_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Release.xcconfig; sourceTree = "<group>"; };
+		FA38C2BE1A38A67A00A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FA38C2C11A38A69900A76606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = brand_PoseGallery.xcconfig; sourceTree = "<group>"; };
+		FA43CBC91CC978360090E696 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		FA44C9E01A4DE7E900776BD6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		FA46F0CE1CCED294002D33A0 /* PoseGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoseGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA46F0DA1CCED348002D33A0 /* PoseGalleryUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseGalleryUITests.swift; sourceTree = "<group>"; };
+		FA46F0DD1CCED356002D33A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA46F0DE1CCED8C9002D33A0 /* PoseGalleryUITests_Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryUITests_Adhoc.xcconfig; sourceTree = "<group>"; };
+		FA46F0DF1CCED8C9002D33A0 /* PoseGalleryUITests_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryUITests_base.xcconfig; sourceTree = "<group>"; };
+		FA46F0E01CCED8C9002D33A0 /* PoseGalleryUITests_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryUITests_Debug.xcconfig; sourceTree = "<group>"; };
+		FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PoseGalleryUITests_Release.xcconfig; sourceTree = "<group>"; };
+		FA52B5281AF20B29008229D8 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		FA6B47062052BFBF00669E69 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = SOURCE_ROOT; };
+		FA6B47072052C51600669E69 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		FA6B47082052C62F00669E69 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
+		FA6B474A20538DF600669E69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA6B474B20538DF700669E69 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
+		FA6B474C20538DF700669E69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FA6E39BB1AF96949006E0C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA6E64A11A279B7700395E94 /* PoseGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoseGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6E64A51A279B7700395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6E64AF1A279B7700395E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA6E64B81A279B7800395E94 /* PoseGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoseGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6E64BD1A279B7800395E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGalleryTests.swift; sourceTree = "<group>"; };
+		FA82DD4A1CE6E88300249728 /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = SOURCE_ROOT; };
+		FA82DD4B1CE6E88300249728 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		FA82DD4E1CE77C2E00249728 /* .coveralls.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .coveralls.yml; sourceTree = SOURCE_ROOT; };
+		FAB13EF41A3878850053620A /* script_build_begin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_begin.sh; sourceTree = "<group>"; };
+		FAB13EF51A3878850053620A /* script_build_end.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script_build_end.sh; sourceTree = "<group>"; };
+		FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseGalleryTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAD8D5D21CF67C140030247C /* MemoryWarner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryWarner.h; sourceTree = "<group>"; };
+		FAD8D5D31CF67C140030247C /* MemoryWarner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryWarner.m; sourceTree = "<group>"; };
+		FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = script_tag_icon.sh; sourceTree = "<group>"; };
+		FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FADFA6F81CFCB40000D198A1 /* acknowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acknowledge.swift; sourceTree = "<group>"; };
+		FAE2502B1B06922000D792E3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportingAdapters.swift; sourceTree = "<group>"; };
+		FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Optionals.swift"; sourceTree = "<group>"; };
+		FAFB2E881AF48F1600A8AB21 /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = SOURCE_ROOT; };
+		FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA46F0CB1CCED294002D33A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E649E1A279B7700395E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E64B51A279B7800395E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA38C2BC1A38A50F00A76606 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E641AF32BD000A8AB21 /* application */,
+				FAFB2E661AF32BD000A8AB21 /* interface */,
+				FAFB2E691AF32BD000A8AB21 /* support */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		FA38C2C31A38A83600A76606 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FAD8D5D21CF67C140030247C /* MemoryWarner.h */,
+				FAD8D5D31CF67C140030247C /* MemoryWarner.m */,
+				FA6E64BE1A279B7800395E94 /* PoseGalleryTests.swift */,
+				FAFB2E791AF47FEA00A8AB21 /* XCTest+Optionals.swift */,
+				FAD8D5D11CF67C130030247C /* PoseGalleryTests-Bridging-Header.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		FA38C2C41A39CCB700A76606 /* branded */ = {
+			isa = PBXGroup;
+			children = (
+				FA38C2C51A39CD1300A76606 /* brand_PoseGallery.xcconfig */,
+			);
+			path = branded;
+			sourceTree = "<group>";
+		};
+		FA46F0CF1CCED294002D33A0 /* PoseGalleryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA46F0D91CCED348002D33A0 /* source */,
+				FA46F0DC1CCED356002D33A0 /* resources */,
+			);
+			path = PoseGalleryUITests;
+			sourceTree = "<group>";
+		};
+		FA46F0D91CCED348002D33A0 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FA46F0DA1CCED348002D33A0 /* PoseGalleryUITests.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		FA46F0DC1CCED356002D33A0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA46F0DD1CCED356002D33A0 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FA4D57BA1D0C4EA600F5BBC3 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B47062052BFBF00669E69 /* Brewfile */,
+				FA52B5281AF20B29008229D8 /* Cartfile */,
+				FA6B47082052C62F00669E69 /* Dangerfile */,
+				FA6B47072052C51600669E69 /* Gemfile */,
+				FA82DD4E1CE77C2E00249728 /* .coveralls.yml */,
+				FA43CBC91CC978360090E696 /* .gitignore */,
+				FA82DD4A1CE6E88300249728 /* .slather.yml */,
+				FA82DD4B1CE6E88300249728 /* .swiftlint.yml */,
+				FA44C9E01A4DE7E900776BD6 /* .travis.yml */,
+				FA6B474B20538DF700669E69 /* TODO.md */,
+				FA6B474A20538DF600669E69 /* README.md */,
+				FA6B474C20538DF700669E69 /* LICENSE */,
+			);
+			name = Metadata;
+			path = PoseGalleryConfig;
+			sourceTree = "<group>";
+		};
+		FA6E64981A279B7700395E94 = {
+			isa = PBXGroup;
+			children = (
+				FA6E64A31A279B7700395E94 /* PoseGallery */,
+				FAB13EEA1A3878850053620A /* PoseGalleryConfig */,
+				FA4D57BA1D0C4EA600F5BBC3 /* Metadata */,
+				FA6E64BB1A279B7800395E94 /* PoseGalleryTests */,
+				FA46F0CF1CCED294002D33A0 /* PoseGalleryUITests */,
+				FA6E64A21A279B7700395E94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6E64A21A279B7700395E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E64A11A279B7700395E94 /* PoseGallery.app */,
+				FA6E64B81A279B7800395E94 /* PoseGalleryTests.xctest */,
+				FA46F0CE1CCED294002D33A0 /* PoseGalleryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6E64A31A279B7700395E94 /* PoseGallery */ = {
+			isa = PBXGroup;
+			children = (
+				FA38C2BC1A38A50F00A76606 /* source */,
+				FA6E64A41A279B7700395E94 /* resources */,
+				FA957B601A478E130015CCC3 /* libraries */,
+			);
+			path = PoseGallery;
+			sourceTree = "<group>";
+		};
+		FA6E64A41A279B7700395E94 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E8F1AF4A33F00A8AB21 /* R.generated.swift */,
+				FA38C2C41A39CCB700A76606 /* branded */,
+				FA38C2C01A38A69900A76606 /* Main.storyboard */,
+				FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */,
+				FA6E39BA1AF96949006E0C18 /* Localizable.strings */,
+				FA6E64AF1A279B7700395E94 /* Images.xcassets */,
+				FA6E64A51A279B7700395E94 /* Info.plist */,
+				FAD9A7E51A4F7F6A000DE885 /* Settings.bundle */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FA6E64BB1A279B7800395E94 /* PoseGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA38C2C31A38A83600A76606 /* source */,
+				FA6E64BC1A279B7800395E94 /* resources */,
+			);
+			path = PoseGalleryTests;
+			sourceTree = "<group>";
+		};
+		FA6E64BC1A279B7800395E94 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E64BD1A279B7800395E94 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FA957B601A478E130015CCC3 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E881AF48F1600A8AB21 /* Checkouts */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		FAB13EEA1A3878850053620A /* PoseGalleryConfig */ = {
+			isa = PBXGroup;
+			children = (
+				FAB13EF41A3878850053620A /* script_build_begin.sh */,
+				FAB13EF51A3878850053620A /* script_build_end.sh */,
+				FAD9A7E01A4E5D70000DE885 /* script_tag_icon.sh */,
+				FADFA6F81CFCB40000D198A1 /* acknowledge.swift */,
+				FA3287E11AF08D8500B905DC /* project_base.xcconfig */,
+				FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */,
+				FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */,
+				FA3287E31AF08D8500B905DC /* project_Release.xcconfig */,
+				FA3287D91AF08D8500B905DC /* PoseGallery_base.xcconfig */,
+				FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */,
+				FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */,
+				FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */,
+				FA3287DD1AF08D8500B905DC /* PoseGalleryTests_base.xcconfig */,
+				FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */,
+				FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */,
+				FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */,
+				FA46F0DF1CCED8C9002D33A0 /* PoseGalleryUITests_base.xcconfig */,
+				FA46F0E01CCED8C9002D33A0 /* PoseGalleryUITests_Debug.xcconfig */,
+				FA46F0DE1CCED8C9002D33A0 /* PoseGalleryUITests_Adhoc.xcconfig */,
+				FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */,
+			);
+			path = PoseGalleryConfig;
+			sourceTree = "<group>";
+		};
+		FAFB2E641AF32BD000A8AB21 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E651AF32BD000A8AB21 /* AppDelegate.swift */,
+				FAE2502B1B06922000D792E3 /* DataModel.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		FAFB2E661AF32BD000A8AB21 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E671AF32BD000A8AB21 /* FirstViewController.swift */,
+				FAFB2E681AF32BD000A8AB21 /* SecondViewController.swift */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		FAFB2E691AF32BD000A8AB21 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB2E6A1AF32BD000A8AB21 /* ReportingAdapters.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA46F0CD1CCED294002D33A0 /* PoseGalleryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA46F0D51CCED294002D33A0 /* Build configuration list for PBXNativeTarget "PoseGalleryUITests" */;
+			buildPhases = (
+				FA46F0CA1CCED294002D33A0 /* Sources */,
+				FA46F0CB1CCED294002D33A0 /* Frameworks */,
+				FA46F0CC1CCED294002D33A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA46F0D41CCED294002D33A0 /* PBXTargetDependency */,
+			);
+			name = PoseGalleryUITests;
+			productName = PoseGalleryUITests;
+			productReference = FA46F0CE1CCED294002D33A0 /* PoseGalleryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FA6E64A01A279B7700395E94 /* PoseGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6E64C21A279B7800395E94 /* Build configuration list for PBXNativeTarget "PoseGallery" */;
+			buildPhases = (
+				FAB13F011A38789E0053620A /* Run script_build_begin.sh */,
+				FA6E649D1A279B7700395E94 /* Sources */,
+				FA6E649E1A279B7700395E94 /* Frameworks */,
+				FA6E649F1A279B7700395E94 /* Resources */,
+				FA8162481A3879110014EE14 /* Run script_build_end.sh */,
+				FA52B52D1AF20E56008229D8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoseGallery;
+			productName = PoseGallery;
+			productReference = FA6E64A11A279B7700395E94 /* PoseGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA6E64B71A279B7800395E94 /* PoseGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6E64C51A279B7800395E94 /* Build configuration list for PBXNativeTarget "PoseGalleryTests" */;
+			buildPhases = (
+				FA6E64B41A279B7800395E94 /* Sources */,
+				FA6E64B51A279B7800395E94 /* Frameworks */,
+				FA6E64B61A279B7800395E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA6E64BA1A279B7800395E94 /* PBXTargetDependency */,
+			);
+			name = PoseGalleryTests;
+			productName = PoseGalleryTests;
+			productReference = FA6E64B81A279B7800395E94 /* PoseGalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6E64991A279B7700395E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Trollwerks Inc.";
+				TargetAttributes = {
+					FA46F0CD1CCED294002D33A0 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+						TestTargetID = FA6E64A01A279B7700395E94;
+					};
+					FA6E64A01A279B7700395E94 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 556343DW3U;
+						LastSwiftMigration = 0800;
+					};
+					FA6E64B71A279B7800395E94 = {
+						CreatedOnToolsVersion = 6.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = FA6E64A01A279B7700395E94;
+					};
+				};
+			};
+			buildConfigurationList = FA6E649C1A279B7700395E94 /* Build configuration list for PBXProject "PoseGallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = FA6E64981A279B7700395E94;
+			productRefGroup = FA6E64A21A279B7700395E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6E64A01A279B7700395E94 /* PoseGallery */,
+				FA6E64B71A279B7800395E94 /* PoseGalleryTests */,
+				FA46F0CD1CCED294002D33A0 /* PoseGalleryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA46F0CC1CCED294002D33A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E649F1A279B7700395E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6E39BC1AF96949006E0C18 /* Localizable.strings in Resources */,
+				FAD9A7E61A4F7F6A000DE885 /* Settings.bundle in Resources */,
+				FA38C2C21A38A69900A76606 /* Main.storyboard in Resources */,
+				FA38C2BF1A38A67A00A76606 /* LaunchScreen.xib in Resources */,
+				FA6E64B01A279B7700395E94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E64B61A279B7800395E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA8162481A3879110014EE14 /* Run script_build_end.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run script_build_end.sh";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script_file=\"script_build_end.sh\"\n\necho \"Running a custom build phase script: $script_file\"\n. \"${PROJECT_DIR}/PoseGalleryConfig/${script_file}\"\nscriptExitStatus=$?\n\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\"\n\nexit \"${scriptExitStatus}\"\n";
+		};
+		FAB13F011A38789E0053620A /* Run script_build_begin.sh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run script_build_begin.sh";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script_file=\"script_build_begin.sh\"\n\necho \"Running a custom build phase script: $script_file\"\n. \"${PROJECT_DIR}/PoseGalleryConfig/${script_file}\"\nscriptExitStatus=$?\n\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\"\n\nexit \"${scriptExitStatus}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA46F0CA1CCED294002D33A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA46F0DB1CCED348002D33A0 /* PoseGalleryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E649D1A279B7700395E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB2E6B1AF32BD000A8AB21 /* AppDelegate.swift in Sources */,
+				FAE2502C1B06922000D792E3 /* DataModel.swift in Sources */,
+				FAFB2E6C1AF32BD000A8AB21 /* FirstViewController.swift in Sources */,
+				FAFB2E6E1AF32BD000A8AB21 /* ReportingAdapters.swift in Sources */,
+				FAFB2E6D1AF32BD000A8AB21 /* SecondViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6E64B41A279B7800395E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD8D5D41CF67C140030247C /* MemoryWarner.m in Sources */,
+				FA6E64BF1A279B7800395E94 /* PoseGalleryTests.swift in Sources */,
+				FAFB2E7A1AF47FEA00A8AB21 /* XCTest+Optionals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA46F0D41CCED294002D33A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6E64A01A279B7700395E94 /* PoseGallery */;
+			targetProxy = FA46F0D31CCED294002D33A0 /* PBXContainerItemProxy */;
+		};
+		FA6E64BA1A279B7800395E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6E64A01A279B7700395E94 /* PoseGallery */;
+			targetProxy = FA6E64B91A279B7800395E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA38C2BD1A38A67A00A76606 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA38C2BE1A38A67A00A76606 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FA38C2C01A38A69900A76606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA38C2C11A38A69900A76606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA6E39BA1AF96949006E0C18 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6E39BB1AF96949006E0C18 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA46F0D61CCED294002D33A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA46F0E01CCED8C9002D33A0 /* PoseGalleryUITests_Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FA46F0D71CCED294002D33A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA46F0E11CCED8C9002D33A0 /* PoseGalleryUITests_Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		FA46F0D81CCED294002D33A0 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA46F0DE1CCED8C9002D33A0 /* PoseGalleryUITests_Adhoc.xcconfig */;
+			buildSettings = {
+			};
+			name = Adhoc;
+		};
+		FA6E64C01A279B7800395E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287E21AF08D8500B905DC /* project_Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FA6E64C11A279B7800395E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287E31AF08D8500B905DC /* project_Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		FA6E64C31A279B7800395E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287DA1AF08D8500B905DC /* PoseGallery_Debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				PRODUCT_NAME = PoseGallery;
+				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Development";
+			};
+			name = Debug;
+		};
+		FA6E64C41A279B7800395E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287DB1AF08D8500B905DC /* PoseGallery_Release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PoseGallery;
+				PROVISIONING_PROFILE_SPECIFIER = 556343DW3U/PosesProfessionalAppStore;
+			};
+			name = Release;
+		};
+		FA6E64C61A279B7800395E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287DE1AF08D8500B905DC /* PoseGalleryTests_Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FA6E64C71A279B7800395E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287DF1AF08D8500B905DC /* PoseGalleryTests_Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		FAD9A7E21A4F6425000DE885 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287E01AF08D8500B905DC /* project_Adhoc.xcconfig */;
+			buildSettings = {
+			};
+			name = Adhoc;
+		};
+		FAD9A7E31A4F6425000DE885 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287D81AF08D8500B905DC /* PoseGallery_Adhoc.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PoseGallery;
+				PROVISIONING_PROFILE_SPECIFIER = "556343DW3U/Trollwerks Wildcard - Ad Hoc";
+			};
+			name = Adhoc;
+		};
+		FAD9A7E41A4F6425000DE885 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3287DC1AF08D8500B905DC /* PoseGalleryTests_Adhoc.xcconfig */;
+			buildSettings = {
+			};
+			name = Adhoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA46F0D51CCED294002D33A0 /* Build configuration list for PBXNativeTarget "PoseGalleryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA46F0D61CCED294002D33A0 /* Debug */,
+				FA46F0D71CCED294002D33A0 /* Release */,
+				FA46F0D81CCED294002D33A0 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6E649C1A279B7700395E94 /* Build configuration list for PBXProject "PoseGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6E64C01A279B7800395E94 /* Debug */,
+				FA6E64C11A279B7800395E94 /* Release */,
+				FAD9A7E21A4F6425000DE885 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6E64C21A279B7800395E94 /* Build configuration list for PBXNativeTarget "PoseGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6E64C31A279B7800395E94 /* Debug */,
+				FA6E64C41A279B7800395E94 /* Release */,
+				FAD9A7E31A4F6425000DE885 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6E64C51A279B7800395E94 /* Build configuration list for PBXNativeTarget "PoseGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6E64C61A279B7800395E94 /* Debug */,
+				FA6E64C71A279B7800395E94 /* Release */,
+				FAD9A7E41A4F6425000DE885 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA6E64991A279B7700395E94 /* Project object */;
+}

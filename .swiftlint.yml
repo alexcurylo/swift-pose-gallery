@@ -1,0 +1,35 @@
+#
+# .swiftlint.yml
+# PoseGallery
+#
+# Copyright © 2016 Trollwerks Inc. All rights reserved.
+#
+
+# references:
+# https://github.com/realm/SwiftLint#configuration
+#
+# swiftlint rules last updated version 0.10.0
+#
+# Disable an individual warning with [next|previous]:
+# // swiftlint:disable:previous line_length
+
+disabled_rules:
+# If you must have a compile message, use ??? or !!!
+# - todo
+
+opt_in_rules:
+ - empty_count
+ - force_unwrapping
+ - missing_docs
+
+included:
+ - PoseGallery
+ - PoseGalleryTests
+ - PoseGalleryUITests
+
+excluded:
+ - PoseGallery/resources
+ - PoseGallery/libraries
+
+# defaults to 100
+line_length: 150
