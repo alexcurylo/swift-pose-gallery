@@ -23,7 +23,7 @@ final class DataModel {
 /*
     /// Core Data stack
     var stack: CoreDataStack = {
-        let model = CoreDataModel(name: "Rankzoo")
+        let model = CoreDataModel(name: "PoseGallery")
 
         // for while we're messing with data model
         NSFileManager.defaultManager().removeItemAtURL(model.storeURL, error: nil)
